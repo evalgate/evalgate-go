@@ -6,7 +6,7 @@ as the TypeScript, Python, and CLI clients. Product: https://evalgate.com.
 Requires Go 1.23 or newer. The module has no third-party dependencies.
 
 ```sh
-go get github.com/evalgate/evalgate-go/v3@v3.15.0
+go get github.com/evalgate/evalgate-go/v3@v3.17.0
 ```
 
 ```go
