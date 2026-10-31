@@ -64,9 +64,13 @@ type DeleteApiLogsCohortsCohortIdResponse200ApplicationJson = DeleteApiEvaluatio
 type DeleteApiLogsViewsViewIdResponse200ApplicationJson = DeleteApiEvaluationsIdScheduleResponse200ApplicationJsonModel
 type DeleteApiMcpResponse200ApplicationJson = json.RawMessage
 type DeleteApiMetricDefinitionsIdResponse200ApplicationJson = DeleteApiMetricDefinitionsIdResponse200ApplicationJsonModel
+type DeleteApiOrganizationsIdentityDomainsDomainIdResponse200ApplicationJson = DeleteApiOrganizationsIdentityDomainsDomainIdResponse200ApplicationJsonModel
+type DeleteApiOrganizationsIdentitySsoProvidersProviderIdResponse200ApplicationJson = DeleteApiEvaluationsIdScheduleResponse200ApplicationJsonModel
 type DeleteApiOrganizationsInvitationsInvitationIdResponse200ApplicationJson = DeleteApiEvaluationsIdPlaygroundVariantsVariantIdResponse200ApplicationJsonModel
 type DeleteApiOrganizationsMembersMemberIdResponse200ApplicationJson = DeleteApiOrganizationsMembersMemberIdResponse200ApplicationJsonModel
 type DeleteApiOrganizationsResponse200ApplicationJson = DeleteApiAnnotationsTasksResponse200ApplicationJsonModel
+type DeleteApiOrgCredentialVaultsInfisicalBindingsBindingIdResponse200ApplicationJson = DeleteApiOrganizationsIdentityDomainsDomainIdResponse200ApplicationJsonModel
+type DeleteApiOrgCredentialVaultsInfisicalResponse200ApplicationJson = DeleteApiOrgCredentialVaultsInfisicalResponse200ApplicationJsonModel
 type DeleteApiOrgKeysKeyIdResponse200ApplicationJson = DeleteApiAnnotationsTasksResponse200ApplicationJsonModel
 type DeleteApiPortableQualityChecksExecutionIdResponse200ApplicationJson = DeleteApiPortableQualityChecksExecutionIdResponse200ApplicationJsonModel
 type DeleteApiPortableQualityGrantsGrantIdResponse200ApplicationJson = DeleteApiPortableQualityGrantsGrantIdResponse200ApplicationJsonModel
@@ -80,6 +84,7 @@ type DeployableAssetHealthEvidenceRequest = json.RawMessage
 type EvaluationExecutionReadiness = EvaluationExecutionReadinessModel
 type EvaluatorValidationReport = EvaluatorValidationReportModel
 type GetApiAdjudicationItemsIdAmendmentsResponse200ApplicationJson = GetApiAdjudicationItemsIdAmendmentsResponse200ApplicationJsonModel
+type GetApiAdjudicationItemsIdCommentsResponse200ApplicationJson = GetApiAdjudicationItemsIdCommentsResponse200ApplicationJsonModel
 type GetApiAdjudicationItemsIdResponse200ApplicationJson = GetApiAdjudicationItemsIdResponse200ApplicationJsonModel
 type GetApiAdjudicationItemsResponse200ApplicationJson = GetApiAdjudicationItemsResponse200ApplicationJsonModel
 type GetApiAdjudicationQueueSummaryResponse200ApplicationJson = GetApiAdjudicationQueueSummaryResponse200ApplicationJsonModel
@@ -98,6 +103,9 @@ type GetApiArenaLeaderboardResponse200ApplicationJson = GetApiArenaLeaderboardRe
 type GetApiArenaMatchesIdResponse200ApplicationJson = GetApiArenaMatchesIdResponse200ApplicationJsonModel
 type GetApiArenaMatchesLeaderboardResponse200ApplicationJson = []GetApiArenaLeaderboardResponse200ApplicationJsonModelLeaderboardItem
 type GetApiArenaMatchesResponse200ApplicationJson = []GetApiArenaMatchesIdResponse200ApplicationJsonModel
+type GetApiArenaReviewsIdResponse200ApplicationJson = GetApiArenaReviewsIdResponse200ApplicationJsonModel
+type GetApiAssessmentsIdResponse200ApplicationJson = GetApiAssessmentsIdResponse200ApplicationJsonModel
+type GetApiAssessmentsIdRuntimeEvidenceResponse200ApplicationJson = GetApiAssessmentsIdResponse200ApplicationJsonModelRuntimeEvidence
 type GetApiAuditEngagementsIdResponse200ApplicationJson = GetApiAuditEngagementsIdResponse200ApplicationJsonModel
 type GetApiAuditEngagementsResponse200ApplicationJson = GetApiAuditEngagementsResponse200ApplicationJsonModel
 type GetApiAuditLogsExportResponse200ApplicationJson = GetApiAuditLogsExportResponse200ApplicationJsonModel
@@ -123,9 +131,12 @@ type GetApiChangeAssessmentsIdResponse200ApplicationJson = GetApiChangeAssessmen
 type GetApiChangeAssessmentsResponse200ApplicationJson = GetApiChangeAssessmentsResponse200ApplicationJsonModel
 type GetApiCommandSearchResponse200ApplicationJson = GetApiCommandSearchResponse200ApplicationJsonModel
 type GetApiConnectionsCatalogResponse200ApplicationJson = GetApiConnectionsCatalogResponse200ApplicationJsonModel
+type GetApiConnectionsGraphIdOperationsOperationIdResponse200ApplicationJson = GetApiConnectionsGraphIdOperationsOperationIdResponse200ApplicationJsonModel
 type GetApiConnectionsGraphIdResponse200ApplicationJson = GetApiConnectionsGraphIdResponse200ApplicationJsonModel
+type GetApiConnectionsGraphIdRuntimeResponse200ApplicationJson = GetApiConnectionsGraphIdRuntimeResponse200ApplicationJsonModel
 type GetApiConnectionsGraphResponse200ApplicationJson = GetApiConnectionsGraphResponse200ApplicationJsonModel
 type GetApiConnectionsResponse200ApplicationJson = GetApiConnectionsResponse200ApplicationJsonModel
+type GetApiConnectionsRuntimeEnvironmentsResponse200ApplicationJson = GetApiConnectionsRuntimeEnvironmentsResponse200ApplicationJsonModel
 type GetApiCopilotProposalsIdResponse200ApplicationJson = GetApiCopilotProposalsIdResponse200ApplicationJsonModel
 type GetApiCopilotProposalsResponse200ApplicationJson = []GetApiCopilotProposalsIdResponse200ApplicationJsonModelProposal
 type GetApiCopilotThreadsIdMessagesResponse200ApplicationJson = []GetApiCopilotThreadsIdMessagesResponse200ApplicationJsonModelItem
@@ -134,6 +145,7 @@ type GetApiCopilotThreadsResponse200ApplicationJson = []GetApiCopilotThreadsResp
 type GetApiCostsAlertsResponse200ApplicationJson = GetApiCostsAlertsResponse200ApplicationJsonModel
 type GetApiCostsPricingResponse200ApplicationJson = GetApiCostsPricingResponse200ApplicationJsonModel
 type GetApiCostsResponse200ApplicationJson = json.RawMessage
+type GetApiCostsResultBudgetResponse200ApplicationJson = GetApiCostsResultBudgetResponse200ApplicationJsonModel
 type GetApiCostsTrendsResponse200ApplicationJson = GetApiCostsTrendsResponse200ApplicationJsonModel
 type GetApiDashboardAlertRulesIdEventsResponse200ApplicationJson = GetApiDashboardAlertRulesIdEventsResponse200ApplicationJsonModel
 type GetApiDashboardAlertRulesIdResponse200ApplicationJson = GetApiDashboardAlertRulesIdResponse200ApplicationJsonModel
@@ -150,6 +162,7 @@ type GetApiDatasetsIdVersionsVersionIdDiffResponse200ApplicationJson = GetApiDat
 type GetApiDatasetsResponse200ApplicationJson = GetApiDatasetsResponse200ApplicationJsonModel
 type GetApiDecisionsResponse200ApplicationJson = json.RawMessage
 type GetApiDecisionsStatsResponse200ApplicationJson = json.RawMessage
+type GetApiDemoCustomEvalResponse200ApplicationJson = GetApiDemoCustomEvalResponse200ApplicationJsonModel
 type GetApiDeployableAssetsResponse200ApplicationJson = GetApiDeployableAssetsResponse200ApplicationJsonModel
 type GetApiDeveloperApiKeysIdUsageResponse200ApplicationJson = GetApiDeveloperApiKeysIdUsageResponse200ApplicationJsonModel
 type GetApiDeveloperApiKeysResponse200ApplicationJson = []GetApiDeveloperApiKeysResponse200ApplicationJsonModelItem
@@ -217,7 +230,7 @@ type GetApiEvaluationsIdRunsRunIdDatasetSnapshotsResponse200ApplicationJson = Ge
 type GetApiEvaluationsIdRunsRunIdDiffCompareRunIdResponse200ApplicationJson = GetApiEvaluationsIdPlaygroundRunsResponse200ApplicationJsonModel
 type GetApiEvaluationsIdRunsRunIdExportResponse200ApplicationJson = map[string]JsonValue
 type GetApiEvaluationsIdRunsRunIdProgressResponse200ApplicationJson = GetApiEvaluationsIdRunsRunIdProgressResponse200ApplicationJsonModel
-type GetApiEvaluationsIdRunsRunIdResponse200ApplicationJson = map[string]JsonValue
+type GetApiEvaluationsIdRunsRunIdResponse200ApplicationJson = GetApiEvaluationsIdRunsRunIdResponse200ApplicationJsonModel
 type GetApiEvaluationsIdScheduleResponse200ApplicationJson = GetApiEvaluationsIdScheduleResponse200ApplicationJsonModel
 type GetApiEvaluationsIdSyntheticCandidatesResponse200ApplicationJson = GetApiEvaluationsIdSyntheticCandidatesResponse200ApplicationJsonModel
 type GetApiEvaluationsIdTestCasesResponse200ApplicationJson = GetApiEvaluationsIdTestCasesResponse200ApplicationJsonModel
@@ -249,6 +262,7 @@ type GetApiGoldenReleaseConfigResponse200ApplicationJson = GetApiGoldenReleaseCo
 type GetApiGoldenReleaseSummaryResponse200ApplicationJson = json.RawMessage
 type GetApiHarnessBaselinesResponse200ApplicationJson = GetApiHarnessBaselinesResponse200ApplicationJsonModel
 type GetApiHarnessSchedulesResponse200ApplicationJson = GetApiHarnessSchedulesResponse200ApplicationJsonModel
+type GetApiIdentityMeResponse200ApplicationJson = GetApiIdentityMeResponse200ApplicationJsonModel
 type GetApiImprovementCandidatesCandidateIdAttemptsResponse200ApplicationJson = GetApiImprovementCandidatesCandidateIdAttemptsResponse200ApplicationJsonModel
 type GetApiImprovementCandidatesCandidateIdDiffResponse200ApplicationJson = map[string]JsonValue
 type GetApiImprovementConfirmationRunsRunIdResponse200ApplicationJson = GetApiImprovementConfirmationRunsRunIdResponse200ApplicationJsonModel
@@ -330,9 +344,13 @@ type GetApiOnlineEvalsSamplesResponse200ApplicationJson = GetApiOnlineEvalsSampl
 type GetApiOpsHealthResponse200ApplicationJson = GetApiOpsHealthResponse200ApplicationJsonModel
 type GetApiOpsReconciliationResponse200ApplicationJson = GetApiOpsReconciliationResponse200ApplicationJsonModel
 type GetApiOpsSloResponse200ApplicationJson = GetApiOpsSloResponse200ApplicationJsonModel
+type GetApiOrchestrationEvalsRunsIdResponse200ApplicationJson = GetApiOrchestrationEvalsRunsIdResponse200ApplicationJsonModel
 type GetApiOrganizationsCurrentResponse200ApplicationJson = GetApiOrganizationsCurrentResponse200ApplicationJsonModel
+type GetApiOrganizationsIdentityResponse200ApplicationJson = GetApiOrganizationsIdentityResponse200ApplicationJsonModel
 type GetApiOrganizationsMembersResponse200ApplicationJson = GetApiOrganizationsMembersResponse200ApplicationJsonModel
 type GetApiOrganizationsResponse200ApplicationJson = json.RawMessage
+type GetApiOrgCredentialVaultsInfisicalResponse200ApplicationJson = GetApiOrgCredentialVaultsInfisicalResponse200ApplicationJsonModel
+type GetApiOrgCredentialVaultsInfisicalSecretsResponse200ApplicationJson = GetApiOrgCredentialVaultsInfisicalSecretsResponse200ApplicationJsonModel
 type GetApiOrgKeysAvailabilityResponse200ApplicationJson = GetApiOrgKeysAvailabilityResponse200ApplicationJsonModel
 type GetApiOrgKeysKeyIdResponse200ApplicationJson = GetApiOrgKeysKeyIdResponse200ApplicationJsonModel
 type GetApiOrgKeysResponse200ApplicationJson = GetApiOrgKeysResponse200ApplicationJsonModel
@@ -352,7 +370,7 @@ type GetApiPortableQualityPlansResponse200ApplicationJson = GetApiPortableQualit
 type GetApiPortableQualityResourcesResourceIdRevisionsResponse200ApplicationJson = GetApiPortableQualityResourcesResourceIdRevisionsResponse200ApplicationJsonModel
 type GetApiPortableQualityResourcesResourceIdRevisionsRevisionIdQueryExecutionsExecutionIdResponse200ApplicationJson = GetApiPortableQualityResourcesResourceIdRevisionsRevisionIdQueryExecutionsExecutionIdResponse200ApplicationJsonModel
 type GetApiProductionInsightsSummaryResponse200ApplicationJson = GetApiProductionInsightsSummaryResponse200ApplicationJsonModel
-type GetApiProductionInsightsTopicsResponse200ApplicationJson = GetApiProductionInsightsTopicsResponse200ApplicationJsonModel
+type GetApiProductionInsightsTopicsResponse200ApplicationJson = json.RawMessage
 type GetApiProductionInsightsTopicsTopicIdResponse200ApplicationJson = GetApiProductionInsightsTopicsTopicIdResponse200ApplicationJsonModel
 type GetApiProjectsProjectKeyResponse200ApplicationJson = GetApiProjectsProjectKeyResponse200ApplicationJsonModel
 type GetApiPromptsPromptIdPerformanceResponse200ApplicationJson = GetApiPromptsPromptIdPerformanceResponse200ApplicationJsonModel
@@ -418,7 +436,7 @@ type GetApiSyncStatusEvaluationIdResponse200ApplicationJson = GetApiSyncStatusEv
 type GetApiSystemControlsResponse200ApplicationJson = GetApiSystemControlsResponse200ApplicationJsonModel
 type GetApiTelemetrySetupResponse200ApplicationJson = GetApiTelemetrySetupResponse200ApplicationJsonModel
 type GetApiTracesIdResponse200ApplicationJson = GetApiTracesIdResponse200ApplicationJsonModel
-type GetApiTracesIdSpansResponse200ApplicationJson = []GetApiTracesIdResponse200ApplicationJsonModelSpansItem
+type GetApiTracesIdSpansResponse200ApplicationJson = []GetApiTracesIdSpansResponse200ApplicationJsonModelItem
 type GetApiTracesResponse200ApplicationJson = GetApiTracesResponse200ApplicationJsonModel
 type GetApiTrajectoryAnalysisCompareResponse200ApplicationJson = GetApiTrajectoryAnalysisCompareResponse200ApplicationJsonModel
 type GetApiTrajectoryAnalysisResponse200ApplicationJson = GetApiTrajectoryAnalysisResponse200ApplicationJsonModel
@@ -434,9 +452,12 @@ type IngestTrajectoryAnalysisRequest = IngestTrajectoryAnalysisRequestModel
 type IntegrationEventBatchRequest = IntegrationEventBatchRequestModel
 type InviteOrganizationMemberRequest = InviteOrganizationMemberRequestModel
 type JsonValue = json.RawMessage
+type JudgeCostEstimateRequest = JudgeCostEstimateRequestModel
+type JudgeCostEstimateResponse = JudgeCostEstimateResponseModel
 type LaunchEvaluatorValidationRequest = LaunchEvaluatorValidationRequestModel
 type LegacyUpdateEvaluationRequest = LegacyUpdateEvaluationRequestModel
 type MeasurementRevision = MeasurementRevisionModel
+type NlWebAskFailure = NlWebAskFailureModel
 type NlWebAskRequest = NlWebAskRequestModel
 type NlWebAskResponse = NlWebAskResponseModel
 type NlWebResult = NlWebResultModel
@@ -505,6 +526,10 @@ type PatchApiModelGatewayRoutingProfilesIdResponse200ApplicationJson = GetApiMod
 type PatchApiOnboardingSetupRequest = PatchApiOnboardingSetupRequestModel
 type PatchApiOnlineEvalsMonitorsIdRequest = PatchApiOnlineEvalsMonitorsIdRequestModel
 type PatchApiOnlineEvalsMonitorsIdResponse200ApplicationJson = GetApiOnlineEvalsMonitorsIdResponse200ApplicationJsonModel
+type PatchApiOrganizationsIdentityPolicyRequest = PatchApiOrganizationsIdentityPolicyRequestModel
+type PatchApiOrganizationsIdentityPolicyResponse200ApplicationJson = PatchApiOrganizationsIdentityPolicyResponse200ApplicationJsonModel
+type PatchApiOrganizationsIdentitySsoProvidersProviderIdRequest = PatchApiOrganizationsIdentitySsoProvidersProviderIdRequestModel
+type PatchApiOrganizationsIdentitySsoProvidersProviderIdResponse200ApplicationJson = PatchApiOrganizationsIdentitySsoProvidersProviderIdResponse200ApplicationJsonModel
 type PatchApiOrganizationsMembersMemberIdRequest = PatchApiOrganizationsMembersMemberIdRequestModel
 type PatchApiOrganizationsMembersMemberIdResponse200ApplicationJson = PatchApiOrganizationsMembersMemberIdResponse200ApplicationJsonModel
 type PatchApiOrgKeysKeyIdRequest = PatchApiOrgKeysKeyIdRequestModel
@@ -547,9 +572,11 @@ type PostApiAdjudicationItemsIdAmendmentsRequest = PostApiAdjudicationItemsIdAme
 type PostApiAdjudicationItemsIdAmendmentsResponse201ApplicationJson = GetApiAdjudicationItemsIdAmendmentsResponse200ApplicationJsonModelAmendmentsItem
 type PostApiAdjudicationItemsIdAssignRequest = PostApiAdjudicationItemsIdAssignRequestModel
 type PostApiAdjudicationItemsIdAssignResponse200ApplicationJson = GetApiAdjudicationItemsResponse200ApplicationJsonModelItemsItem
+type PostApiAdjudicationItemsIdCommentsRequest = json.RawMessage
+type PostApiAdjudicationItemsIdCommentsResponse200ApplicationJson = PostApiAdjudicationItemsIdCommentsResponse200ApplicationJsonModel
 type PostApiAdjudicationItemsIdDecisionRequest = PostApiAdjudicationItemsIdDecisionRequestModel
 type PostApiAdjudicationItemsIdDecisionResponse200ApplicationJson = PostApiAdjudicationItemsIdDecisionResponse200ApplicationJsonModel
-type PostApiAdjudicationItemsIdGroundTruthRequest = PostApiAdjudicationItemsIdDecisionRequestModelGroundTruth
+type PostApiAdjudicationItemsIdGroundTruthRequest = PostApiAdjudicationItemsIdGroundTruthRequestModel
 type PostApiAdjudicationItemsIdGroundTruthResponse201ApplicationJson = GetApiAdjudicationItemsIdResponse200ApplicationJsonModelLatestGroundTruth
 type PostApiAdjudicationItemsIdPrepareRequest = PostApiAdjudicationItemsIdPrepareRequestModel
 type PostApiAdjudicationItemsIdPrepareResponse200ApplicationJson = PostApiAdjudicationItemsIdPrepareResponse200ApplicationJsonModel
@@ -602,9 +629,14 @@ type PostApiAnnotationsTasksIdItemsResponse201ApplicationJson = PostApiAnnotatio
 type PostApiAnnotationsTasksRequest = PostApiAnnotationsTasksRequestModel
 type PostApiAnnotationsTasksResponse201ApplicationJson = PostApiAnnotationsTasksResponse201ApplicationJsonModel
 type PostApiArenaCompareRequest = PostApiArenaCompareRequestModel
-type PostApiArenaCompareResponse201ApplicationJson = PostApiArenaCompareResponse201ApplicationJsonModel
+type PostApiArenaCompareResponse201ApplicationJson = json.RawMessage
 type PostApiArenaMatchesRequest = PostApiArenaMatchesRequestModel
 type PostApiArenaMatchesResponse201ApplicationJson = GetApiArenaMatchesIdResponse200ApplicationJsonModel
+type PostApiArenaReviewsIdRequest = PostApiArenaReviewsIdRequestModel
+type PostApiArenaReviewsIdResponse200ApplicationJson = PostApiArenaReviewsIdResponse200ApplicationJsonModel
+type PostApiAssessmentsIdRuntimeEvidenceRequest = PostApiAssessmentsIdRuntimeEvidenceRequestModel
+type PostApiAssessmentsIdRuntimeEvidenceResponse200ApplicationJson = PostApiAssessmentsIdRuntimeEvidenceResponse200ApplicationJsonModel
+type PostApiAssessmentsIdRuntimeEvidenceResponse201ApplicationJson = PostApiAssessmentsIdRuntimeEvidenceResponse200ApplicationJsonModel
 type PostApiAuditCorrectiveActionsRequest = PostApiAuditCorrectiveActionsRequestModel
 type PostApiAuditCorrectiveActionsResponse201ApplicationJson = PatchApiAuditCorrectiveActionsResponse200ApplicationJsonModel
 type PostApiAuditEngagementsIdResponse200ApplicationJson = PostApiAuditEngagementsIdResponse200ApplicationJsonModel
@@ -625,6 +657,10 @@ type PostApiBenchmarksIdRunRequest = PostApiBenchmarksIdRunRequestModel
 type PostApiBenchmarksIdRunResponse201ApplicationJson = PostApiBenchmarksIdResultsResponse201ApplicationJsonModel
 type PostApiBenchmarksRequest = PostApiBenchmarksRequestModel
 type PostApiBenchmarksResponse201ApplicationJson = PostApiBenchmarksResponse201ApplicationJsonModel
+type PostApiBillingAgentPaymentsTopUpsRequest = PostApiBillingAgentPaymentsTopUpsRequestModel
+type PostApiBillingAgentPaymentsTopUpsResponse201ApplicationJson = PostApiBillingAgentPaymentsTopUpsResponse201ApplicationJsonModel
+type PostApiBillingAgentPaymentsTopUpsTopUpIdPayResponse200ApplicationJson = PostApiBillingAgentPaymentsTopUpsResponse201ApplicationJsonModel
+type PostApiBillingAgentPaymentsTopUpsTopUpIdPayResponse200TextPlain = any
 type PostApiBillingPortalResponse200ApplicationJson = PostApiBillingPortalResponse200ApplicationJsonModel
 type PostApiCalibrationMappingsMappingVersionIdDriftRequest = PostApiCalibrationMappingsMappingVersionIdDriftRequestModel
 type PostApiCalibrationMappingsMappingVersionIdDriftResponse201ApplicationJson = PostApiCalibrationMappingsMappingVersionIdDriftResponse201ApplicationJsonModel
@@ -666,6 +702,12 @@ type PostApiCollectorRequest = PostApiCollectorBatchRequestModelTracesItem
 type PostApiCollectorResponse201ApplicationJson = PostApiCollectorResponse201ApplicationJsonModel
 type PostApiConnectionsGraphBackfillRequest = PostApiConnectionsGraphBackfillRequestModel
 type PostApiConnectionsGraphBackfillResponse200ApplicationJson = PostApiConnectionsGraphBackfillResponse200ApplicationJsonModel
+type PostApiConnectionsGraphIdDiscoverRequest = PostApiConnectionsGraphIdDiscoverRequestModel
+type PostApiConnectionsGraphIdDiscoverResponse200ApplicationJson = GetApiConnectionsGraphIdOperationsOperationIdResponse200ApplicationJsonModel
+type PostApiConnectionsGraphIdExecuteRequest = PostApiConnectionsGraphIdExecuteRequestModel
+type PostApiConnectionsGraphIdExecuteResponse200ApplicationJson = GetApiConnectionsGraphIdOperationsOperationIdResponse200ApplicationJsonModel
+type PostApiConnectionsGraphIdGrantsRequest = PostApiConnectionsGraphIdGrantsRequestModel
+type PostApiConnectionsGraphIdGrantsResponse200ApplicationJson = PostApiConnectionsGraphIdGrantsResponse200ApplicationJsonModel
 type PostApiConnectionsGraphIdLifecycleRequest = PostApiConnectionsGraphIdLifecycleRequestModel
 type PostApiConnectionsGraphIdLifecycleResponse200ApplicationJson = PostApiConnectionsGraphIdLifecycleResponse200ApplicationJsonModel
 type PostApiConnectionsGraphIdSelectionRequest = PostApiConnectionsGraphIdSelectionRequestModel
@@ -679,7 +721,7 @@ type PostApiCopilotProposalsIdApplyResponse200ApplicationJson = json.RawMessage
 type PostApiCopilotProposalsIdRejectRequest = PostApiCopilotProposalsIdAcceptRequestModel
 type PostApiCopilotProposalsIdRejectResponse200ApplicationJson = PostApiCopilotProposalsIdRejectResponse200ApplicationJsonModel
 type PostApiCopilotThreadsIdActionsRequest = PostApiCopilotThreadsIdActionsRequestModel
-type PostApiCopilotThreadsIdActionsResponse200ApplicationJson = PostApiCopilotThreadsIdActionsResponse200ApplicationJsonModel
+type PostApiCopilotThreadsIdActionsResponse200ApplicationJson = json.RawMessage
 type PostApiCopilotThreadsIdMessagesRequest = PostApiCopilotThreadsIdMessagesRequestModel
 type PostApiCopilotThreadsIdMessagesResponse201ApplicationJson = PostApiCopilotThreadsIdMessagesResponse201ApplicationJsonModel
 type PostApiCopilotThreadsRequest = PostApiCopilotThreadsRequestModel
@@ -731,6 +773,8 @@ type PostApiDatasetsRequest = PostApiDatasetsRequestModel
 type PostApiDatasetsResponse201ApplicationJson = PostApiDatasetsResponse201ApplicationJsonModel
 type PostApiDecisionsRequest = PostApiDecisionsRequestModel
 type PostApiDecisionsResponse201ApplicationJson = PostApiDecisionsResponse201ApplicationJsonModel
+type PostApiDemoCustomEvalRequest = PostApiDemoCustomEvalRequestModel
+type PostApiDemoCustomEvalResponse200ApplicationJson = PostApiDemoCustomEvalResponse200ApplicationJsonModel
 type PostApiDeployableAssetsApprovalsRequest = PostApiDeployableAssetsApprovalsRequestModel
 type PostApiDeployableAssetsApprovalsResponse201ApplicationJson = PostApiDeployableAssetsApprovalsResponse201ApplicationJsonModel
 type PostApiDeployableAssetsIdHealthRequest = json.RawMessage
@@ -941,6 +985,8 @@ type PostApiHarnessOutcomesResponse200ApplicationJson = PostApiHarnessOutcomesRe
 type PostApiHarnessOutcomesResponse201ApplicationJson = PostApiHarnessOutcomesResponse200ApplicationJsonModel
 type PostApiHarnessSchedulesRequest = PostApiHarnessSchedulesRequestModel
 type PostApiHarnessSchedulesResponse201ApplicationJson = PostApiHarnessSchedulesResponse201ApplicationJsonModel
+type PostApiIdentityMfaBackupCodeRequest = PostApiIdentityMfaBackupCodeRequestModel
+type PostApiIdentityMfaBackupCodeResponse200ApplicationJson = PostApiIdentityMfaBackupCodeResponse200ApplicationJsonModel
 type PostApiImprovementCandidatesCandidateIdAuthorizeRequest = PostApiImprovementCandidatesCandidateIdAuthorizeRequestModel
 type PostApiImprovementCandidatesCandidateIdAuthorizeResponse200ApplicationJson = PostApiImprovementCandidatesCandidateIdAuthorizeResponse200ApplicationJsonModel
 type PostApiImprovementCandidatesCandidateIdAuthorizeResponse201ApplicationJson = PostApiImprovementCandidatesCandidateIdAuthorizeResponse201ApplicationJsonModel
@@ -985,6 +1031,8 @@ type PostApiLlmJudgeCompareRequest = PostApiLlmJudgeCompareRequestModel
 type PostApiLlmJudgeCompareResponse201ApplicationJson = PostApiLlmJudgeCompareResponse201ApplicationJsonModel
 type PostApiLlmJudgeConfigsRequest = PostApiLlmJudgeConfigsRequestModel
 type PostApiLlmJudgeConfigsResponse201ApplicationJson = GetApiLlmJudgeConfigsResponse200ApplicationJsonModel
+type PostApiLlmJudgeEstimateRequest = PostApiLlmJudgeEstimateRequestModel
+type PostApiLlmJudgeEstimateResponse200ApplicationJson = PostApiLlmJudgeEstimateResponse200ApplicationJsonModel
 type PostApiLlmJudgeEvaluateRequest = PostApiLlmJudgeEvaluateRequestModel
 type PostApiLlmJudgeEvaluateResponse201ApplicationJson = PostApiLlmJudgeEvaluateResponse201ApplicationJsonModel
 type PostApiLlmJudgeTestRequest = PostApiLlmJudgeTestRequestModel
@@ -1073,6 +1121,12 @@ type PostApiOnlineEvalsMonitorsResponse201ApplicationJson = GetApiOnlineEvalsMon
 type PostApiOrchestrationEvalsRunsRequest = PostApiOrchestrationEvalsRunsRequestModel
 type PostApiOrchestrationEvalsRunsResponse200ApplicationJson = PostApiOrchestrationEvalsRunsResponse200ApplicationJsonModel
 type PostApiOrchestrationEvalsRunsResponse202ApplicationJson = json.RawMessage
+type PostApiOrganizationsIdentityDomainsDomainIdVerifyResponse200ApplicationJson = PostApiOrganizationsIdentityDomainsDomainIdVerifyResponse200ApplicationJsonModel
+type PostApiOrganizationsIdentityDomainsRequest = PostApiOrganizationsIdentityDomainsRequestModel
+type PostApiOrganizationsIdentityDomainsResponse201ApplicationJson = PostApiOrganizationsIdentityDomainsDomainIdVerifyResponse200ApplicationJsonModel
+type PostApiOrganizationsIdentityMembersUserIdMfaResetResponse200ApplicationJson = PostApiOrganizationsIdentityMembersUserIdMfaResetResponse200ApplicationJsonModel
+type PostApiOrganizationsIdentitySsoProvidersRequest = json.RawMessage
+type PostApiOrganizationsIdentitySsoProvidersResponse201ApplicationJson = PatchApiOrganizationsIdentitySsoProvidersProviderIdResponse200ApplicationJsonModel
 type PostApiOrganizationsInvitationsAcceptRequest = PostApiOrganizationsInvitationsAcceptRequestModel
 type PostApiOrganizationsInvitationsAcceptResponse200ApplicationJson = PostApiOrganizationsInvitationsAcceptResponse200ApplicationJsonModel
 type PostApiOrganizationsInvitationsInvitationIdResendResponse200ApplicationJson = GetApiOrganizationsMembersResponse200ApplicationJsonModelInvitationsItem
@@ -1080,6 +1134,11 @@ type PostApiOrganizationsMembersRequest = PostApiOrganizationsMembersRequestMode
 type PostApiOrganizationsMembersResponse201ApplicationJson = PostApiOrganizationsMembersResponse201ApplicationJsonModel
 type PostApiOrganizationsRequest = PostApiOrganizationsRequestModel
 type PostApiOrganizationsResponse201ApplicationJson = GetApiOrganizationsResponse200ApplicationJsonModel
+type PostApiOrgCredentialVaultsInfisicalBindingsBindingIdCheckResponse200ApplicationJson = PostApiOrgCredentialVaultsInfisicalBindingsBindingIdCheckResponse200ApplicationJsonModel
+type PostApiOrgCredentialVaultsInfisicalBindingsRequest = PostApiOrgCredentialVaultsInfisicalBindingsRequestModel
+type PostApiOrgCredentialVaultsInfisicalBindingsResponse201ApplicationJson = PostApiOrgCredentialVaultsInfisicalBindingsResponse201ApplicationJsonModel
+type PostApiOrgCredentialVaultsInfisicalRequest = PostApiOrgCredentialVaultsInfisicalRequestModel
+type PostApiOrgCredentialVaultsInfisicalResponse201ApplicationJson = PostApiOrgCredentialVaultsInfisicalResponse201ApplicationJsonModel
 type PostApiOrgKeysKeyIdRotateRequest = PostApiOrgKeysKeyIdRotateRequestModel
 type PostApiOrgKeysKeyIdRotateResponse200ApplicationJson = PostApiOrgKeysKeyIdRotateResponse200ApplicationJsonModel
 type PostApiOrgKeysRequest = PostApiOrgKeysRequestModel
@@ -1338,7 +1397,7 @@ type PostApiScorersScorerIdCalibrationResponse201ApplicationJson = PostApiScorer
 type PostApiScorersScorerIdExamplesRequest = PostApiScorersScorerIdExamplesRequestModel
 type PostApiScorersScorerIdExamplesResponse201ApplicationJson = PostApiScorersScorerIdExamplesResponse201ApplicationJsonModel
 type PostApiScorersScorerIdTestRequest = PostApiScorersScorerIdTestRequestModel
-type PostApiScorersScorerIdTestResponse200ApplicationJson = json.RawMessage
+type PostApiScorersScorerIdTestResponse200ApplicationJson = PostApiScorersScorerIdTestResponse200ApplicationJsonModel
 type PostApiScorersScorerIdVersionsRequest = PostApiScorersScorerIdVersionsRequestModel
 type PostApiScorersScorerIdVersionsResponse201ApplicationJson = GetApiScorersScorerIdResponse200ApplicationJsonModelVersionsItem
 type PostApiScorersScorerIdVersionsVersionIdApproveRequest = PostApiPromptsPromptIdVersionsVersionIdApproveRequestModel
@@ -1397,6 +1456,8 @@ type PutApiAnnotationsTasksRequest = PutApiAnnotationsTasksRequestModel
 type PutApiAnnotationsTasksResponse200ApplicationJson = GetApiAnnotationsTasksIdResponse200ApplicationJsonModelTask
 type PutApiCostsAlertsRequest = PutApiCostsAlertsRequestModel
 type PutApiCostsAlertsResponse200ApplicationJson = GetApiCostsAlertsResponse200ApplicationJsonModel
+type PutApiCostsResultBudgetRequest = PutApiCostsResultBudgetRequestModel
+type PutApiCostsResultBudgetResponse200ApplicationJson = PutApiCostsResultBudgetResponse200ApplicationJsonModel
 type PutApiEvaluationsIdProgramRequest = PostApiCopilotThreadsIdMessagesRequestModel
 type PutApiEvaluationsIdProgramResponse200ApplicationJson = GetApiEvaluationsIdProgramResponse200ApplicationJsonModel
 type PutApiEvaluationsIdRegressionRequest = PutApiEvaluationsIdRegressionRequestModel
@@ -1420,6 +1481,7 @@ type PutApiWorkflowsIdRunsRunIdResponse200ApplicationJson = PutApiWorkflowsIdRun
 type RecomputeQualityRequest = PublishRunRequestModel
 type RepositoryActivationRunResponse = RepositoryActivationRunResponseModel
 type ResendOrganizationInvitationResponse = ResendOrganizationInvitationResponseModel
+type ResultBudgetResponse = ResultBudgetResponseModel
 type ScoreTrajectoryAnalysisRequest = ScoreTrajectoryAnalysisRequestModel
 type TraceFeedbackRequest = TraceFeedbackRequestModel
 type TrajectoryAnalysisComparisonResponse = TrajectoryAnalysisComparisonResponseModel
@@ -1434,6 +1496,7 @@ type TrajectoryAnalysisScoreResponse = TrajectoryAnalysisDetailResponseModelScor
 type UpdateCostAlertsRequest = UpdateCostAlertsRequestModel
 type UpdateEvaluationRequest = UpdateEvaluationRequestModel
 type UpdateOrganizationMemberRequest = UpdateOrganizationMemberRequestModel
+type UpdateResultBudgetRequest = UpdateResultBudgetRequestModel
 type UpdateWebhookRequest = UpdateWebhookRequestModel
 
 type AcceptOrganizationInvitationRequestModel struct {
@@ -2380,9 +2443,17 @@ type DeleteApiMetricDefinitionsIdResponse200ApplicationJsonModelCalibrationBound
 	State  string `json:"state"`
 }
 
+type DeleteApiOrganizationsIdentityDomainsDomainIdResponse200ApplicationJsonModel struct {
+	Removed bool `json:"removed"`
+}
+
 type DeleteApiOrganizationsMembersMemberIdResponse200ApplicationJsonModel struct {
 	Ok       bool    `json:"ok"`
 	MemberId float64 `json:"memberId"`
+}
+
+type DeleteApiOrgCredentialVaultsInfisicalResponse200ApplicationJsonModel struct {
+	RemovedBindings float64 `json:"removedBindings"`
 }
 
 type DeleteApiPortableQualityChecksExecutionIdResponse200ApplicationJsonModel struct {
@@ -2658,6 +2729,24 @@ type GetApiAdjudicationItemsIdAmendmentsResponse200ApplicationJsonModelAmendment
 	AmendedBy  string  `json:"amendedBy"`
 	Reason     string  `json:"reason"`
 	CreatedAt  string  `json:"createdAt"`
+}
+
+type GetApiAdjudicationItemsIdCommentsResponse200ApplicationJsonModel struct {
+	Comments    []GetApiAdjudicationItemsIdCommentsResponse200ApplicationJsonModelCommentsItem `json:"comments"`
+	NextAfterId *float64                                                                       `json:"nextAfterId"`
+}
+
+type GetApiAdjudicationItemsIdCommentsResponse200ApplicationJsonModelCommentsItem struct {
+	Id               float64  `json:"id"`
+	ItemId           float64  `json:"itemId"`
+	MaterialRevision string   `json:"materialRevision"`
+	ParentId         *float64 `json:"parentId"`
+	Body             string   `json:"body"`
+	AuthorId         string   `json:"authorId"`
+	AuthorKind       string   `json:"authorKind"`
+	ResolvedAt       *string  `json:"resolvedAt"`
+	ResolvedBy       *string  `json:"resolvedBy"`
+	CreatedAt        string   `json:"createdAt"`
 }
 
 type GetApiAdjudicationItemsIdResponse200ApplicationJsonModel struct {
@@ -3393,6 +3482,266 @@ type GetApiArenaMatchesIdResponse200ApplicationJsonModelResultsItem struct {
 	CostRecordId   *float64 `json:"costRecordId,omitempty"`
 	CostSource     *string  `json:"costSource,omitempty"`
 	ModelCallId    *string  `json:"modelCallId,omitempty"`
+}
+
+type GetApiArenaReviewsIdResponse200ApplicationJsonModel struct {
+	Review GetApiArenaReviewsIdResponse200ApplicationJsonModelReview `json:"review"`
+}
+
+type GetApiArenaReviewsIdResponse200ApplicationJsonModelReview struct {
+	Id           string                                                                   `json:"id"`
+	MatchId      float64                                                                  `json:"matchId"`
+	ReviewerId   string                                                                   `json:"reviewerId"`
+	ReviewerKind string                                                                   `json:"reviewerKind"`
+	Choice       *string                                                                  `json:"choice"`
+	DecidedAt    *string                                                                  `json:"decidedAt"`
+	Responses    []GetApiArenaReviewsIdResponse200ApplicationJsonModelReviewResponsesItem `json:"responses"`
+	Revealed     *GetApiArenaReviewsIdResponse200ApplicationJsonModelReviewRevealed       `json:"revealed"`
+}
+
+type GetApiArenaReviewsIdResponse200ApplicationJsonModelReviewResponsesItem struct {
+	Label  string  `json:"label"`
+	Output *string `json:"output"`
+}
+
+type GetApiArenaReviewsIdResponse200ApplicationJsonModelReviewRevealed struct {
+	Assignments    []GetApiArenaReviewsIdResponse200ApplicationJsonModelReviewRevealedAssignmentsItem `json:"assignments"`
+	Results        []GetApiArenaReviewsIdResponse200ApplicationJsonModelReviewRevealedResultsItem     `json:"results"`
+	WinnerId       string                                                                             `json:"winnerId"`
+	Scores         *map[string]float64                                                                `json:"scores"`
+	JudgeReasoning *string                                                                            `json:"judgeReasoning"`
+}
+
+type GetApiArenaReviewsIdResponse200ApplicationJsonModelReviewRevealedAssignmentsItem struct {
+	Label   string `json:"label"`
+	ModelId string `json:"modelId"`
+}
+
+type GetApiArenaReviewsIdResponse200ApplicationJsonModelReviewRevealedResultsItem struct {
+	ModelId        string   `json:"modelId"`
+	ModelLabel     string   `json:"modelLabel"`
+	Score          float64  `json:"score"`
+	Output         string   `json:"output"`
+	ResponseTime   float64  `json:"responseTime"`
+	TokenCount     float64  `json:"tokenCount"`
+	Cost           *float64 `json:"cost"`
+	CostConfidence string   `json:"costConfidence"`
+	CostRecordId   *float64 `json:"costRecordId,omitempty"`
+	CostSource     *string  `json:"costSource,omitempty"`
+	ModelCallId    *string  `json:"modelCallId,omitempty"`
+}
+
+type GetApiAssessmentsIdResponse200ApplicationJsonModel struct {
+	Id                       float64                                                                          `json:"id"`
+	Title                    string                                                                           `json:"title"`
+	Goal                     *string                                                                          `json:"goal"`
+	DecisionToInform         *string                                                                          `json:"decisionToInform"`
+	Stage                    string                                                                           `json:"stage"`
+	Status                   string                                                                           `json:"status"`
+	Currency                 string                                                                           `json:"currency"`
+	SystemBinding            json.RawMessage                                                                  `json:"systemBinding"`
+	UpdatedAt                string                                                                           `json:"updatedAt"`
+	Claims                   []GetApiAssessmentsIdResponse200ApplicationJsonModelClaimsItem                   `json:"claims"`
+	Measurements             []GetApiAssessmentsIdResponse200ApplicationJsonModelMeasurementsItem             `json:"measurements"`
+	Evidence                 []GetApiAssessmentsIdResponse200ApplicationJsonModelEvidenceItem                 `json:"evidence"`
+	Decisions                []GetApiAssessmentsIdResponse200ApplicationJsonModelDecisionsItem                `json:"decisions"`
+	RuntimeEvidence          *GetApiAssessmentsIdResponse200ApplicationJsonModelRuntimeEvidence               `json:"runtimeEvidence,omitempty"`
+	ReviewContextHash        *string                                                                          `json:"reviewContextHash,omitempty"`
+	Snapshots                []GetApiAssessmentsIdResponse200ApplicationJsonModelSnapshotsItem                `json:"snapshots"`
+	OpenReassessmentTriggers []GetApiAssessmentsIdResponse200ApplicationJsonModelOpenReassessmentTriggersItem `json:"openReassessmentTriggers"`
+	Syntheses                []GetApiAssessmentsIdResponse200ApplicationJsonModelSynthesesItem                `json:"syntheses"`
+}
+
+type GetApiAssessmentsIdResponse200ApplicationJsonModelSystemBinding struct {
+	State      string  `json:"state"`
+	AiSystemId float64 `json:"aiSystemId"`
+	Name       string  `json:"name"`
+}
+
+type GetApiAssessmentsIdResponse200ApplicationJsonModelSystemBindingValue struct {
+	State      string  `json:"state"`
+	AiSystemId float64 `json:"aiSystemId"`
+}
+
+type GetApiAssessmentsIdResponse200ApplicationJsonModelClaimsItem struct {
+	Id                                 float64 `json:"id"`
+	Statement                          string  `json:"statement"`
+	Status                             string  `json:"status"`
+	Limitations                        *string `json:"limitations"`
+	SupportingEvidenceCount            float64 `json:"supportingEvidenceCount"`
+	ContradictingEvidenceCount         float64 `json:"contradictingEvidenceCount"`
+	ExcludedSupportingEvidenceCount    float64 `json:"excludedSupportingEvidenceCount"`
+	ExcludedContradictingEvidenceCount float64 `json:"excludedContradictingEvidenceCount"`
+	DanglingSupportingEvidenceCount    float64 `json:"danglingSupportingEvidenceCount"`
+	DanglingContradictingEvidenceCount float64 `json:"danglingContradictingEvidenceCount"`
+	StatusBasis                        string  `json:"statusBasis"`
+}
+
+type GetApiAssessmentsIdResponse200ApplicationJsonModelMeasurementsItem struct {
+	DefinitionId            float64                                                                              `json:"definitionId"`
+	Name                    string                                                                               `json:"name"`
+	Kind                    *string                                                                              `json:"kind"`
+	Value                   *string                                                                              `json:"value"`
+	Unit                    *string                                                                              `json:"unit"`
+	Summary                 *string                                                                              `json:"summary"`
+	MeasuredAt              *string                                                                              `json:"measuredAt"`
+	ValidationStatus        string                                                                               `json:"validationStatus"`
+	ValidationNotes         *string                                                                              `json:"validationNotes"`
+	ValidatedAt             *string                                                                              `json:"validatedAt"`
+	EvidenceItemCount       float64                                                                              `json:"evidenceItemCount"`
+	Requirements            []GetApiAssessmentsIdResponse200ApplicationJsonModelMeasurementsItemRequirementsItem `json:"requirements"`
+	UnresolvedEvidenceCount float64                                                                              `json:"unresolvedEvidenceCount"`
+}
+
+type GetApiAssessmentsIdResponse200ApplicationJsonModelMeasurementsItemRequirementsItem struct {
+	EvidenceKind   string  `json:"evidenceKind"`
+	Necessity      string  `json:"necessity"`
+	SatisfiedCount float64 `json:"satisfiedCount"`
+}
+
+type GetApiAssessmentsIdResponse200ApplicationJsonModelEvidenceItem struct {
+	LinkId                  float64  `json:"linkId"`
+	EvidenceItemId          *float64 `json:"evidenceItemId"`
+	EventName               *string  `json:"eventName"`
+	SourceType              string   `json:"sourceType"`
+	SourceId                string   `json:"sourceId"`
+	ExposureClass           *string  `json:"exposureClass"`
+	Applicable              bool     `json:"applicable"`
+	ApplicabilityMismatches []string `json:"applicabilityMismatches"`
+	ExposureCount           float64  `json:"exposureCount"`
+	CollectedAt             *string  `json:"collectedAt"`
+}
+
+type GetApiAssessmentsIdResponse200ApplicationJsonModelDecisionsItem struct {
+	DecisionId             float64                                                                         `json:"decisionId"`
+	DecisionType           string                                                                          `json:"decisionType"`
+	Rationale              string                                                                          `json:"rationale"`
+	DecidedBy              *string                                                                         `json:"decidedBy"`
+	Authority              *string                                                                         `json:"authority"`
+	DecidedAt              string                                                                          `json:"decidedAt"`
+	EffectiveFrom          *string                                                                         `json:"effectiveFrom"`
+	ExpiresAt              *string                                                                         `json:"expiresAt"`
+	Conditions             []GetApiAssessmentsIdResponse200ApplicationJsonModelDecisionsItemConditionsItem `json:"conditions"`
+	ReassessmentConditions *string                                                                         `json:"reassessmentConditions"`
+	DecisionValidity       string                                                                          `json:"decisionValidity"`
+	SnapshotId             float64                                                                         `json:"snapshotId"`
+	EnforcementStatus      string                                                                          `json:"enforcementStatus"`
+	Receipts               []GetApiAssessmentsIdResponse200ApplicationJsonModelDecisionsItemReceiptsItem   `json:"receipts"`
+	Exceptions             []GetApiAssessmentsIdResponse200ApplicationJsonModelDecisionsItemExceptionsItem `json:"exceptions"`
+}
+
+type GetApiAssessmentsIdResponse200ApplicationJsonModelDecisionsItemConditionsItem struct {
+	Statement string  `json:"statement"`
+	DueBy     *string `json:"dueBy,omitempty"`
+	Owner     *string `json:"owner,omitempty"`
+	Satisfied *bool   `json:"satisfied,omitempty"`
+}
+
+type GetApiAssessmentsIdResponse200ApplicationJsonModelDecisionsItemReceiptsItem struct {
+	Id                float64    `json:"id"`
+	Target            string     `json:"target"`
+	Result            string     `json:"result"`
+	ObservedAt        string     `json:"observedAt"`
+	ExternalReference *string    `json:"externalReference"`
+	PolicyVersion     **string   `json:"policyVersion,omitempty"`
+	DeploymentVersion **string   `json:"deploymentVersion,omitempty"`
+	Proof             *JsonValue `json:"proof,omitempty"`
+	ProofHash         *string    `json:"proofHash,omitempty"`
+}
+
+type GetApiAssessmentsIdResponse200ApplicationJsonModelDecisionsItemExceptionsItem struct {
+	Id                   float64 `json:"id"`
+	WaivedSourceType     string  `json:"waivedSourceType"`
+	WaivedSourceId       string  `json:"waivedSourceId"`
+	Authority            string  `json:"authority"`
+	Reason               string  `json:"reason"`
+	CompensatingControls *string `json:"compensatingControls"`
+	ExpiresAt            *string `json:"expiresAt"`
+	Expired              bool    `json:"expired"`
+}
+
+type GetApiAssessmentsIdResponse200ApplicationJsonModelRuntimeEvidence struct {
+	Items        []GetApiAssessmentsIdResponse200ApplicationJsonModelRuntimeEvidenceItemsItem `json:"items"`
+	NextBeforeId *float64                                                                     `json:"nextBeforeId"`
+}
+
+type GetApiAssessmentsIdResponse200ApplicationJsonModelRuntimeEvidenceItemsItem struct {
+	SnapshotId         float64                                                                           `json:"snapshotId"`
+	SnapshotHash       string                                                                            `json:"snapshotHash"`
+	Integrity          string                                                                            `json:"integrity"`
+	Review             *GetApiAssessmentsIdResponse200ApplicationJsonModelRuntimeEvidenceItemsItemReview `json:"review"`
+	CurrentState       string                                                                            `json:"currentState"`
+	CurrentReceiptHash *string                                                                           `json:"currentReceiptHash"`
+}
+
+type GetApiAssessmentsIdResponse200ApplicationJsonModelRuntimeEvidenceItemsItemReview struct {
+	SchemaVersion          string                                                                                      `json:"schemaVersion"`
+	OrganizationId         OrganizationId                                                                              `json:"organizationId"`
+	AssessmentId           float64                                                                                     `json:"assessmentId"`
+	EventId                float64                                                                                     `json:"eventId"`
+	Reference              json.RawMessage                                                                             `json:"reference"`
+	Observation            GetApiAssessmentsIdResponse200ApplicationJsonModelRuntimeEvidenceItemsItemReviewObservation `json:"observation"`
+	ReviewedBy             GetApiAssessmentsIdResponse200ApplicationJsonModelRuntimeEvidenceItemsItemReviewReviewedBy  `json:"reviewedBy"`
+	ReviewedAt             string                                                                                      `json:"reviewedAt"`
+	Rationale              string                                                                                      `json:"rationale"`
+	ExpectedAssessmentHash string                                                                                      `json:"expectedAssessmentHash"`
+	RequestHash            string                                                                                      `json:"requestHash"`
+	Assessment             map[string]JsonValue                                                                        `json:"assessment"`
+}
+
+type GetApiAssessmentsIdResponse200ApplicationJsonModelRuntimeEvidenceItemsItemReviewReference struct {
+	Source      string `json:"source"`
+	ModelCallId string `json:"modelCallId"`
+}
+
+type GetApiAssessmentsIdResponse200ApplicationJsonModelRuntimeEvidenceItemsItemReviewReferenceValue struct {
+	Source    string `json:"source"`
+	RunId     string `json:"runId"`
+	ReceiptId string `json:"receiptId"`
+}
+
+type GetApiAssessmentsIdResponse200ApplicationJsonModelRuntimeEvidenceItemsItemReviewReferenceValueValue struct {
+	Source       string  `json:"source"`
+	EvaluationId float64 `json:"evaluationId"`
+	RunId        float64 `json:"runId"`
+}
+
+type GetApiAssessmentsIdResponse200ApplicationJsonModelRuntimeEvidenceItemsItemReviewObservation struct {
+	Reference     json.RawMessage      `json:"reference"`
+	Target        string               `json:"target"`
+	Boundary      string               `json:"boundary"`
+	Outcome       string               `json:"outcome"`
+	Timing        string               `json:"timing"`
+	ScopeComplete bool                 `json:"scopeComplete"`
+	ReceiptHash   string               `json:"receiptHash"`
+	Receipt       map[string]JsonValue `json:"receipt"`
+}
+
+type GetApiAssessmentsIdResponse200ApplicationJsonModelRuntimeEvidenceItemsItemReviewReviewedBy struct {
+	UserId   string `json:"userId"`
+	AuthType string `json:"authType"`
+	Role     string `json:"role"`
+}
+
+type GetApiAssessmentsIdResponse200ApplicationJsonModelSnapshotsItem struct {
+	Id          float64 `json:"id"`
+	SnapshotKey string  `json:"snapshotKey"`
+	CreatedAt   string  `json:"createdAt"`
+}
+
+type GetApiAssessmentsIdResponse200ApplicationJsonModelOpenReassessmentTriggersItem struct {
+	Id               float64 `json:"id"`
+	DependencyKind   string  `json:"dependencyKind"`
+	DependencyRef    string  `json:"dependencyRef"`
+	ObservedChange   string  `json:"observedChange"`
+	ProposedCurrency string  `json:"proposedCurrency"`
+	Reason           string  `json:"reason"`
+	CreatedAt        string  `json:"createdAt"`
+}
+
+type GetApiAssessmentsIdResponse200ApplicationJsonModelSynthesesItem struct {
+	Id        float64 `json:"id"`
+	CreatedAt string  `json:"createdAt"`
 }
 
 type GetApiAuditEngagementsIdResponse200ApplicationJsonModel struct {
@@ -4845,22 +5194,15 @@ type GetApiChangeAssessmentsIdResponse200ApplicationJsonModelComparisonsItemDime
 }
 
 type GetApiChangeAssessmentsIdResponse200ApplicationJsonModelDecisionsItem struct {
-	Id                  float64                                                                               `json:"id"`
-	DecisionType        string                                                                                `json:"decisionType"`
-	Conditions          []GetApiChangeAssessmentsIdResponse200ApplicationJsonModelDecisionsItemConditionsItem `json:"conditions"`
-	PermittedPopulation string                                                                                `json:"permittedPopulation"`
-	AuthorityUserId     string                                                                                `json:"authorityUserId"`
-	EvidenceLimitations string                                                                                `json:"evidenceLimitations"`
-	ImpliesFullApproval bool                                                                                  `json:"impliesFullApproval"`
-	Rationale           string                                                                                `json:"rationale"`
-	DecidedAt           *string                                                                               `json:"decidedAt"`
-}
-
-type GetApiChangeAssessmentsIdResponse200ApplicationJsonModelDecisionsItemConditionsItem struct {
-	Statement string  `json:"statement"`
-	DueBy     *string `json:"dueBy,omitempty"`
-	Owner     *string `json:"owner,omitempty"`
-	Satisfied *bool   `json:"satisfied,omitempty"`
+	Id                  float64                                                                         `json:"id"`
+	DecisionType        string                                                                          `json:"decisionType"`
+	Conditions          []GetApiAssessmentsIdResponse200ApplicationJsonModelDecisionsItemConditionsItem `json:"conditions"`
+	PermittedPopulation string                                                                          `json:"permittedPopulation"`
+	AuthorityUserId     string                                                                          `json:"authorityUserId"`
+	EvidenceLimitations string                                                                          `json:"evidenceLimitations"`
+	ImpliesFullApproval bool                                                                            `json:"impliesFullApproval"`
+	Rationale           string                                                                          `json:"rationale"`
+	DecidedAt           *string                                                                         `json:"decidedAt"`
 }
 
 type GetApiChangeAssessmentsIdResponse200ApplicationJsonModelWorkItemsItem struct {
@@ -4924,26 +5266,33 @@ type GetApiConnectionsCatalogResponse200ApplicationJsonModel struct {
 }
 
 type GetApiConnectionsCatalogResponse200ApplicationJsonModelConnectorsItem struct {
+	Id             string                                                                            `json:"id"`
+	Name           string                                                                            `json:"name"`
+	Vendor         string                                                                            `json:"vendor"`
+	Categories     []string                                                                          `json:"categories"`
+	Description    string                                                                            `json:"description"`
+	Mark           string                                                                            `json:"mark"`
+	AuthMethods    []string                                                                          `json:"authMethods"`
+	ResourceKinds  []string                                                                          `json:"resourceKinds"`
+	Management     string                                                                            `json:"management"`
+	NetworkOptions []string                                                                          `json:"networkOptions"`
+	Implementation string                                                                            `json:"implementation"`
+	Verification   string                                                                            `json:"verification"`
+	Docs           string                                                                            `json:"docs"`
+	Use            string                                                                            `json:"use"`
+	Fields         []GetApiConnectionsCatalogResponse200ApplicationJsonModelConnectorsItemFieldsItem `json:"fields"`
+	Limitations    []string                                                                          `json:"limitations"`
 	Setup          json.RawMessage                                                                   `json:"setup"`
 	Availability   string                                                                            `json:"availability"`
 	LiveVerified   bool                                                                              `json:"liveVerified"`
 	SetupScope     string                                                                            `json:"setupScope"`
-	Id             string                                                                            `json:"id"`
-	Name           string                                                                            `json:"name"`
-	Description    string                                                                            `json:"description"`
-	Limitations    []string                                                                          `json:"limitations"`
-	Vendor         string                                                                            `json:"vendor"`
-	Verification   string                                                                            `json:"verification"`
-	Management     string                                                                            `json:"management"`
-	Implementation string                                                                            `json:"implementation"`
-	Categories     []string                                                                          `json:"categories"`
-	Fields         []GetApiConnectionsCatalogResponse200ApplicationJsonModelConnectorsItemFieldsItem `json:"fields"`
-	Mark           string                                                                            `json:"mark"`
-	AuthMethods    []string                                                                          `json:"authMethods"`
-	ResourceKinds  []string                                                                          `json:"resourceKinds"`
-	NetworkOptions []string                                                                          `json:"networkOptions"`
-	Docs           string                                                                            `json:"docs"`
-	Use            string                                                                            `json:"use"`
+}
+
+type GetApiConnectionsCatalogResponse200ApplicationJsonModelConnectorsItemFieldsItem struct {
+	Key      string  `json:"key"`
+	Label    string  `json:"label"`
+	Required bool    `json:"required"`
+	Hint     *string `json:"hint,omitempty"`
 }
 
 type GetApiConnectionsCatalogResponse200ApplicationJsonModelConnectorsItemSetup struct {
@@ -4963,44 +5312,83 @@ type GetApiConnectionsCatalogResponse200ApplicationJsonModelConnectorsItemSetupV
 }
 
 type GetApiConnectionsCatalogResponse200ApplicationJsonModelConnectorsItemSetupValueValueValue struct {
+	Kind string `json:"kind"`
+	Href string `json:"href"`
+}
+
+type GetApiConnectionsCatalogResponse200ApplicationJsonModelConnectorsItemSetupValueValueValueValue struct {
 	Kind   string `json:"kind"`
 	Reason string `json:"reason"`
 }
 
-type GetApiConnectionsCatalogResponse200ApplicationJsonModelConnectorsItemFieldsItem struct {
-	Label    string  `json:"label"`
-	Required bool    `json:"required"`
-	Key      string  `json:"key"`
-	Hint     *string `json:"hint,omitempty"`
+type GetApiConnectionsGraphIdOperationsOperationIdResponse200ApplicationJsonModel struct {
+	ReceiptId  string                                                                              `json:"receiptId"`
+	State      string                                                                              `json:"state"`
+	Replayed   bool                                                                                `json:"replayed"`
+	Result     *GetApiConnectionsGraphIdOperationsOperationIdResponse200ApplicationJsonModelResult `json:"result"`
+	SnapshotId *string                                                                             `json:"snapshotId"`
+	NextCursor *string                                                                             `json:"nextCursor"`
+	ObservedAt string                                                                              `json:"observedAt"`
+	ExpiresAt  string                                                                              `json:"expiresAt"`
+}
+
+type GetApiConnectionsGraphIdOperationsOperationIdResponse200ApplicationJsonModelResult struct {
+	Resources  []GetApiConnectionsGraphIdOperationsOperationIdResponse200ApplicationJsonModelResultResourcesItem `json:"resources"`
+	Documents  []GetApiConnectionsGraphIdOperationsOperationIdResponse200ApplicationJsonModelResultDocumentsItem `json:"documents"`
+	NextCursor *string                                                                                           `json:"nextCursor"`
+	Complete   bool                                                                                              `json:"complete"`
+	Task       *GetApiConnectionsGraphIdOperationsOperationIdResponse200ApplicationJsonModelResultTask           `json:"task,omitempty"`
+}
+
+type GetApiConnectionsGraphIdOperationsOperationIdResponse200ApplicationJsonModelResultResourcesItem struct {
+	Kind       string  `json:"kind"`
+	NativeId   string  `json:"nativeId"`
+	Name       string  `json:"name"`
+	Version    *string `json:"version"`
+	Provenance string  `json:"provenance"`
+}
+
+type GetApiConnectionsGraphIdOperationsOperationIdResponse200ApplicationJsonModelResultDocumentsItem struct {
+	NativeId string    `json:"nativeId"`
+	Title    string    `json:"title"`
+	Text     string    `json:"text"`
+	MimeType string    `json:"mimeType"`
+	Version  *string   `json:"version"`
+	Score    **float64 `json:"score,omitempty"`
+}
+
+type GetApiConnectionsGraphIdOperationsOperationIdResponse200ApplicationJsonModelResultTask struct {
+	Id    string `json:"id"`
+	State string `json:"state"`
 }
 
 type GetApiConnectionsGraphIdResponse200ApplicationJsonModel struct {
 	Id                          string                                                                 `json:"id"`
-	Name                        string                                                                 `json:"name"`
 	Source                      *GetApiConnectionsGraphIdResponse200ApplicationJsonModelSource         `json:"source"`
+	Configuration               *GetApiConnectionsGraphIdResponse200ApplicationJsonModelConfiguration  `json:"configuration"`
+	DriverId                    string                                                                 `json:"driverId"`
+	Name                        string                                                                 `json:"name"`
+	LifecycleState              string                                                                 `json:"lifecycleState"`
 	RevokedAt                   *string                                                                `json:"revokedAt"`
 	Revision                    float64                                                                `json:"revision"`
-	Configuration               *GetApiConnectionsGraphIdResponse200ApplicationJsonModelConfiguration  `json:"configuration"`
-	LifecycleState              string                                                                 `json:"lifecycleState"`
-	DriverId                    string                                                                 `json:"driverId"`
 	AuthorityEpoch              float64                                                                `json:"authorityEpoch"`
 	SelectionEpoch              float64                                                                `json:"selectionEpoch"`
-	DispatchEnabled             bool                                                                   `json:"dispatchEnabled"`
 	Endpoints                   []GetApiConnectionsGraphIdResponse200ApplicationJsonModelEndpointsItem `json:"endpoints"`
 	SelectedResourceRevisionIds []string                                                               `json:"selectedResourceRevisionIds"`
 	SelectionVisibility         string                                                                 `json:"selectionVisibility"`
+	DispatchEnabled             bool                                                                   `json:"dispatchEnabled"`
 }
 
 type GetApiConnectionsGraphIdResponse200ApplicationJsonModelSource struct {
-	SourceId float64 `json:"sourceId"`
 	Source   string  `json:"source"`
+	SourceId float64 `json:"sourceId"`
 }
 
 type GetApiConnectionsGraphIdResponse200ApplicationJsonModelConfiguration struct {
 	SchemaVersion float64           `json:"schemaVersion"`
-	Fields        map[string]string `json:"fields"`
 	AccountScope  string            `json:"accountScope"`
 	Placement     json.RawMessage   `json:"placement"`
+	Fields        map[string]string `json:"fields"`
 }
 
 type GetApiConnectionsGraphIdResponse200ApplicationJsonModelConfigurationPlacement struct {
@@ -5008,9 +5396,15 @@ type GetApiConnectionsGraphIdResponse200ApplicationJsonModelConfigurationPlaceme
 }
 
 type GetApiConnectionsGraphIdResponse200ApplicationJsonModelConfigurationPlacementValue struct {
+	Kind        string `json:"kind"`
+	SecretRef   string `json:"secretRef"`
 	Environment string `json:"environment"`
+}
+
+type GetApiConnectionsGraphIdResponse200ApplicationJsonModelConfigurationPlacementValueValue struct {
 	Kind        string `json:"kind"`
 	RunnerId    string `json:"runnerId"`
+	Environment string `json:"environment"`
 }
 
 type GetApiConnectionsGraphIdResponse200ApplicationJsonModelEndpointsItem struct {
@@ -5018,15 +5412,34 @@ type GetApiConnectionsGraphIdResponse200ApplicationJsonModelEndpointsItem struct
 	Purpose      string                                                                         `json:"purpose"`
 	BindingKey   string                                                                         `json:"bindingKey"`
 	NativeScope  *string                                                                        `json:"nativeScope"`
-	Current      bool                                                                           `json:"current"`
 	EgressStatus string                                                                         `json:"egressStatus"`
 	Credential   GetApiConnectionsGraphIdResponse200ApplicationJsonModelEndpointsItemCredential `json:"credential"`
+	Current      bool                                                                           `json:"current"`
 }
 
 type GetApiConnectionsGraphIdResponse200ApplicationJsonModelEndpointsItemCredential struct {
+	Store   string  `json:"store"`
 	Id      float64 `json:"id"`
 	Version float64 `json:"version"`
-	Store   string  `json:"store"`
+}
+
+type GetApiConnectionsGraphIdRuntimeResponse200ApplicationJsonModel struct {
+	ConnectionId   string                                                                     `json:"connectionId"`
+	Operations     []string                                                                   `json:"operations"`
+	Available      bool                                                                       `json:"available"`
+	Reason         *string                                                                    `json:"reason"`
+	Grants         []GetApiConnectionsGraphIdRuntimeResponse200ApplicationJsonModelGrantsItem `json:"grants"`
+	Revision       float64                                                                    `json:"revision"`
+	AuthorityEpoch float64                                                                    `json:"authorityEpoch"`
+	SelectionEpoch float64                                                                    `json:"selectionEpoch"`
+}
+
+type GetApiConnectionsGraphIdRuntimeResponse200ApplicationJsonModelGrantsItem struct {
+	Id         string                                                                                          `json:"id"`
+	Resource   GetApiConnectionsGraphIdOperationsOperationIdResponse200ApplicationJsonModelResultResourcesItem `json:"resource"`
+	EndpointId *string                                                                                         `json:"endpointId"`
+	GrantedAt  string                                                                                          `json:"grantedAt"`
+	Current    bool                                                                                            `json:"current"`
 }
 
 type GetApiConnectionsGraphResponse200ApplicationJsonModel struct {
@@ -5081,6 +5494,17 @@ type GetApiConnectionsResponse200ApplicationJsonModelItemsItemHealth struct {
 type GetApiConnectionsResponse200ApplicationJsonModelSources struct {
 	Direct  string `json:"direct"`
 	Gateway string `json:"gateway"`
+}
+
+type GetApiConnectionsRuntimeEnvironmentsResponse200ApplicationJsonModel struct {
+	Environments []GetApiConnectionsRuntimeEnvironmentsResponse200ApplicationJsonModelEnvironmentsItem `json:"environments"`
+}
+
+type GetApiConnectionsRuntimeEnvironmentsResponse200ApplicationJsonModelEnvironmentsItem struct {
+	SecretRef    string `json:"secretRef"`
+	DriverId     string `json:"driverId"`
+	AccountScope string `json:"accountScope"`
+	Environment  string `json:"environment"`
 }
 
 type GetApiCopilotProposalsIdResponse200ApplicationJsonModel struct {
@@ -5392,6 +5816,20 @@ type GetApiCostsResponse200ApplicationJsonModelValueCostConfidence struct {
 	EstimatedCount   float64 `json:"estimatedCount"`
 	UnknownCount     float64 `json:"unknownCount"`
 	VerifiedFraction float64 `json:"verifiedFraction"`
+}
+
+type GetApiCostsResultBudgetResponse200ApplicationJsonModel struct {
+	MonthlyResultLimit            float64 `json:"monthlyResultLimit"`
+	Revision                      float64 `json:"revision"`
+	PeriodStart                   string  `json:"periodStart"`
+	CommittedResults              float64 `json:"committedResults"`
+	ReservedResults               float64 `json:"reservedResults"`
+	RemainingResults              float64 `json:"remainingResults"`
+	Period                        string  `json:"period"`
+	EvalgateUsdPerThousandResults float64 `json:"evalgateUsdPerThousandResults"`
+	ProviderCostsIncluded         bool    `json:"providerCostsIncluded"`
+	CanManage                     bool    `json:"canManage"`
+	Enforced                      bool    `json:"enforced"`
 }
 
 type GetApiCostsTrendsResponse200ApplicationJsonModel struct {
@@ -5786,6 +6224,28 @@ type GetApiDecisionsStatsResponse200ApplicationJsonModelValueValueValueValueDeci
 	Confidence     *float64                                                                 `json:"confidence"`
 	InputContext   *GetApiDecisionsResponse200ApplicationJsonModelDecisionInputContext      `json:"inputContext"`
 	CreatedAt      string                                                                   `json:"createdAt"`
+}
+
+type GetApiDemoCustomEvalResponse200ApplicationJsonModel struct {
+	Mode              string                                                     `json:"mode"`
+	Name              string                                                     `json:"name"`
+	Endpoint          string                                                     `json:"endpoint"`
+	Method            string                                                     `json:"method"`
+	Authentication    string                                                     `json:"authentication"`
+	ResultPersistence string                                                     `json:"resultPersistence"`
+	ProviderCalls     bool                                                       `json:"providerCalls"`
+	Billable          bool                                                       `json:"billable"`
+	MaxBodyBytes      float64                                                    `json:"maxBodyBytes"`
+	MaxAssertions     float64                                                    `json:"maxAssertions"`
+	Assertions        []string                                                   `json:"assertions"`
+	Example           GetApiDemoCustomEvalResponse200ApplicationJsonModelExample `json:"example"`
+	Documentation     string                                                     `json:"documentation"`
+	Limitations       string                                                     `json:"limitations"`
+}
+
+type GetApiDemoCustomEvalResponse200ApplicationJsonModelExample struct {
+	Output     string   `json:"output"`
+	Assertions []string `json:"assertions"`
 }
 
 type GetApiDeployableAssetsResponse200ApplicationJsonModel struct {
@@ -8720,11 +9180,12 @@ type GetApiEvaluationsIdRunsResponse200ApplicationJsonModelItemRunManifestDatase
 }
 
 type GetApiEvaluationsIdRunsResponse200ApplicationJsonModelItemRunManifestDatasetCasesItemSnapshot struct {
-	Name                  string  `json:"name"`
-	Input                 string  `json:"input"`
-	ExpectedOutput        *string `json:"expectedOutput"`
-	DatasetVersionId      *string `json:"datasetVersionId"`
-	DatasetRowContentHash *string `json:"datasetRowContentHash"`
+	Name                  string                 `json:"name"`
+	Input                 string                 `json:"input"`
+	ExpectedOutput        *string                `json:"expectedOutput"`
+	DatasetVersionId      *string                `json:"datasetVersionId"`
+	DatasetRowContentHash *string                `json:"datasetRowContentHash"`
+	Metadata              **map[string]JsonValue `json:"metadata,omitempty"`
 }
 
 type GetApiEvaluationsIdRunsResponse200ApplicationJsonModelItemRunManifestExecution struct {
@@ -9092,6 +9553,223 @@ type GetApiEvaluationsIdRunsRunIdProgressResponse200ApplicationJsonModelHeartbea
 	Entries     []JsonValue `json:"entries"`
 }
 
+type GetApiEvaluationsIdRunsRunIdResponse200ApplicationJsonModel struct {
+	EnforcementReceipt *GetApiEvaluationsIdRunsRunIdResponse200ApplicationJsonModelEnforcementReceipt    `json:"enforcementReceipt"`
+	Run                GetApiEvaluationsIdRunsRunIdResponse200ApplicationJsonModelRun                    `json:"run"`
+	Results            []GetApiEvaluationsIdRunsRunIdResponse200ApplicationJsonModelResultsItem          `json:"results"`
+	BaselineResults    *[]GetApiEvaluationsIdRunsRunIdResponse200ApplicationJsonModelBaselineResultsItem `json:"baselineResults,omitempty"`
+	CompareRunId       *float64                                                                          `json:"compareRunId,omitempty"`
+}
+
+type GetApiEvaluationsIdRunsRunIdResponse200ApplicationJsonModelEnforcementReceipt struct {
+	SchemaVersion      float64                                                                                      `json:"schemaVersion"`
+	Id                 string                                                                                       `json:"id"`
+	Source             string                                                                                       `json:"source"`
+	OrganizationId     OrganizationId                                                                               `json:"organizationId"`
+	Target             string                                                                                       `json:"target"`
+	Boundary           string                                                                                       `json:"boundary"`
+	Action             GetApiEvaluationsIdRunsRunIdResponse200ApplicationJsonModelEnforcementReceiptAction          `json:"action"`
+	Environment        *string                                                                                      `json:"environment"`
+	Policy             GetApiEvaluationsIdRunsRunIdResponse200ApplicationJsonModelEnforcementReceiptPolicy          `json:"policy"`
+	Timing             string                                                                                       `json:"timing"`
+	Status             string                                                                                       `json:"status"`
+	Outcome            string                                                                                       `json:"outcome"`
+	ScopeComplete      bool                                                                                         `json:"scopeComplete"`
+	AttemptEvidence    GetApiEvaluationsIdRunsRunIdResponse200ApplicationJsonModelEnforcementReceiptAttemptEvidence `json:"attemptEvidence"`
+	ReconciliationHash *string                                                                                      `json:"reconciliationHash"`
+	ObservedAt         string                                                                                       `json:"observedAt"`
+	Coverage           string                                                                                       `json:"coverage"`
+	ReceiptHash        string                                                                                       `json:"receiptHash"`
+}
+
+type GetApiEvaluationsIdRunsRunIdResponse200ApplicationJsonModelEnforcementReceiptAction struct {
+	EvaluationId float64 `json:"evaluationId"`
+	RunId        float64 `json:"runId"`
+	ManifestHash *string `json:"manifestHash"`
+}
+
+type GetApiEvaluationsIdRunsRunIdResponse200ApplicationJsonModelEnforcementReceiptPolicy struct {
+	GateDecision          *string `json:"gateDecision"`
+	GateEnforcementAction *string `json:"gateEnforcementAction"`
+	ManifestHash          *string `json:"manifestHash"`
+}
+
+type GetApiEvaluationsIdRunsRunIdResponse200ApplicationJsonModelEnforcementReceiptAttemptEvidence struct {
+	Complete bool     `json:"complete"`
+	Count    *float64 `json:"count"`
+	Digest   *string  `json:"digest"`
+}
+
+type GetApiEvaluationsIdRunsRunIdResponse200ApplicationJsonModelRun struct {
+	Id                          float64                                                                                                 `json:"id"`
+	EvaluationId                float64                                                                                                 `json:"evaluationId"`
+	OrganizationId              OrganizationId                                                                                          `json:"organizationId"`
+	IdempotencyKey              *string                                                                                                 `json:"idempotencyKey"`
+	Status                      string                                                                                                  `json:"status"`
+	RunManifest                 *GetApiEvaluationsIdRunsResponse200ApplicationJsonModelItemRunManifest                                  `json:"runManifest"`
+	RunManifestHash             *string                                                                                                 `json:"runManifestHash"`
+	ReconciliationSummary       *GetApiEvaluationsIdRunsResponse200ApplicationJsonModelItemReconciliationSummary                        `json:"reconciliationSummary"`
+	TerminalState               *string                                                                                                 `json:"terminalState"`
+	GateDecision                *string                                                                                                 `json:"gateDecision"`
+	GateEnforcementAction       *string                                                                                                 `json:"gateEnforcementAction"`
+	TotalCases                  *float64                                                                                                `json:"totalCases"`
+	PassedCases                 *float64                                                                                                `json:"passedCases"`
+	FailedCases                 *float64                                                                                                `json:"failedCases"`
+	ProcessedCount              *float64                                                                                                `json:"processedCount"`
+	TraceLog                    *GetApiEvaluationsIdRunsResponse200ApplicationJsonModelItemTraceLog                                     `json:"traceLog"`
+	Trajectory                  GetApiEvaluationsIdRunsResponse200ApplicationJsonModelItemTrajectory                                    `json:"trajectory"`
+	TrajectoryMetrics           *GetApiEvaluationsIdRunsResponse200ApplicationJsonModelItemTrajectoryMetrics                            `json:"trajectoryMetrics"`
+	BaselineVersion             *string                                                                                                 `json:"baselineVersion"`
+	ScoreProvenance             *GetApiEvaluationsIdPlaygroundRunsResponse200ApplicationJsonModelValueGridValueCellsItemScoreProvenance `json:"scoreProvenance"`
+	MeasurementStatus           *string                                                                                                 `json:"measurementStatus"`
+	MeasurementSummary          *GetApiEvaluationsIdRunsResponse200ApplicationJsonModelItemMeasurementSummary                           `json:"measurementSummary"`
+	MeasurementCompletedAt      *string                                                                                                 `json:"measurementCompletedAt"`
+	ActiveMeasurementRevisionId *string                                                                                                 `json:"activeMeasurementRevisionId"`
+	QualitySummary              *GetApiEvaluationsIdRunsResponse200ApplicationJsonModelItemMeasurementSummary                           `json:"qualitySummary"`
+	QualitySummaryCompletedAt   *string                                                                                                 `json:"qualitySummaryCompletedAt"`
+	OrchestrationGraph          *GetApiEvaluationsIdRunsResponse200ApplicationJsonModelItemOrchestrationGraph                           `json:"orchestrationGraph"`
+	StartedAt                   *string                                                                                                 `json:"startedAt"`
+	CompletedAt                 *string                                                                                                 `json:"completedAt"`
+	Environment                 *string                                                                                                 `json:"environment"`
+	PlaygroundId                *float64                                                                                                `json:"playgroundId"`
+	VariantId                   *float64                                                                                                `json:"variantId"`
+	PromptVersionId             *string                                                                                                 `json:"promptVersionId"`
+	BaselineVariantId           *float64                                                                                                `json:"baselineVariantId"`
+	TriggerSource               *string                                                                                                 `json:"triggerSource"`
+	CreatedAt                   string                                                                                                  `json:"createdAt"`
+	QualityScore                float64                                                                                                 `json:"qualityScore"`
+	QualityFlags                GetApiEvaluationsIdRunsRunIdResponse200ApplicationJsonModelRunQualityFlags                              `json:"qualityFlags"`
+}
+
+type GetApiEvaluationsIdRunsRunIdResponse200ApplicationJsonModelRunQualityFlags struct {
+	LowSampleSize *bool `json:"lowSampleSize,omitempty"`
+	HighVariance  *bool `json:"highVariance,omitempty"`
+}
+
+type GetApiEvaluationsIdRunsRunIdResponse200ApplicationJsonModelResultsItem struct {
+	Id                     float64                                                                                                 `json:"id"`
+	EvaluationRunId        float64                                                                                                 `json:"evaluationRunId"`
+	AttemptId              *string                                                                                                 `json:"attemptId"`
+	TestCaseId             float64                                                                                                 `json:"testCaseId"`
+	OrganizationId         OrganizationId                                                                                          `json:"organizationId"`
+	LogicalTrialIndex      float64                                                                                                 `json:"logicalTrialIndex"`
+	PhysicalAttemptIndex   float64                                                                                                 `json:"physicalAttemptIndex"`
+	Status                 string                                                                                                  `json:"status"`
+	RemoteGradingState     *GetApiEvaluationsIdRunsRunIdResponse200ApplicationJsonModelResultsItemRemoteGradingState               `json:"remoteGradingState"`
+	Output                 *string                                                                                                 `json:"output"`
+	Score                  *float64                                                                                                `json:"score"`
+	Error                  *string                                                                                                 `json:"error"`
+	AssertionsJson         json.RawMessage                                                                                         `json:"assertionsJson"`
+	TraceLinkedMatched     *bool                                                                                                   `json:"traceLinkedMatched"`
+	HasProvenance          *bool                                                                                                   `json:"hasProvenance"`
+	ScoreProvenance        *GetApiEvaluationsIdPlaygroundRunsResponse200ApplicationJsonModelValueGridValueCellsItemScoreProvenance `json:"scoreProvenance"`
+	DurationMs             *float64                                                                                                `json:"durationMs"`
+	Messages               *[]GetApiEvaluationsIdRunsResponse200ApplicationJsonModelItemTraceLogMessagesItem                       `json:"messages"`
+	ToolCalls              *[]GetApiEvaluationsIdRunsRunIdResponse200ApplicationJsonModelResultsItemToolCallsItem                  `json:"toolCalls"`
+	CreatedAt              string                                                                                                  `json:"createdAt"`
+	TestCases              *GetApiEvaluationsIdRunsResponse200ApplicationJsonModelItemRunManifestDatasetCasesItemSnapshot          `json:"test_cases"`
+	RegressionPreparation  json.RawMessage                                                                                         `json:"regressionPreparation"`
+	Trajectory             GetApiEvaluationsIdRunsResponse200ApplicationJsonModelItemTrajectoryEntriesItem                         `json:"trajectory"`
+	TrajectoryMetrics      GetApiEvaluationsIdRunsResponse200ApplicationJsonModelItemTrajectoryMetricsByTestCaseItem               `json:"trajectoryMetrics"`
+	RegressionCandidateId  *float64                                                                                                `json:"regressionCandidateId"`
+	RegressionReviewItemId *float64                                                                                                `json:"regressionReviewItemId"`
+}
+
+type GetApiEvaluationsIdRunsRunIdResponse200ApplicationJsonModelResultsItemRemoteGradingState struct {
+	SchemaVersion       float64                                                                                         `json:"schemaVersion"`
+	Key                 string                                                                                          `json:"key"`
+	JobId               string                                                                                          `json:"jobId"`
+	ClaimId             string                                                                                          `json:"claimId"`
+	RunnerId            string                                                                                          `json:"runnerId"`
+	DispatchAttempt     float64                                                                                         `json:"dispatchAttempt"`
+	FinalStreamChecksum *string                                                                                         `json:"finalStreamChecksum"`
+	State               string                                                                                          `json:"state"`
+	StartedAt           string                                                                                          `json:"startedAt"`
+	CompletedAt         *string                                                                                         `json:"completedAt,omitempty"`
+	Result              *GetApiEvaluationsIdRunsRunIdResponse200ApplicationJsonModelResultsItemRemoteGradingStateResult `json:"result,omitempty"`
+}
+
+type GetApiEvaluationsIdRunsRunIdResponse200ApplicationJsonModelResultsItemRemoteGradingStateResult struct {
+	Outcome        *string               `json:"outcome"`
+	Score          *float64              `json:"score"`
+	Error          *string               `json:"error"`
+	ErrorCode      *string               `json:"errorCode"`
+	AssertionsJson *map[string]JsonValue `json:"assertionsJson"`
+}
+
+type GetApiEvaluationsIdRunsRunIdResponse200ApplicationJsonModelResultsItemAssertionsJson struct {
+	Version         string                                                                                               `json:"version"`
+	TaxonomyVersion *string                                                                                              `json:"taxonomyVersion,omitempty"`
+	Assertions      []GetApiEvaluationsIdRunsRunIdResponse200ApplicationJsonModelResultsItemAssertionsJsonAssertionsItem `json:"assertions"`
+}
+
+type GetApiEvaluationsIdRunsRunIdResponse200ApplicationJsonModelResultsItemAssertionsJsonAssertionsItem struct {
+	Key             string    `json:"key"`
+	Category        string    `json:"category"`
+	Passed          bool      `json:"passed"`
+	Score           *float64  `json:"score,omitempty"`
+	Severity        *string   `json:"severity,omitempty"`
+	Details         *string   `json:"details,omitempty"`
+	Applicable      *bool     `json:"applicable,omitempty"`
+	EvidenceSources *[]string `json:"evidenceSources,omitempty"`
+}
+
+type GetApiEvaluationsIdRunsRunIdResponse200ApplicationJsonModelResultsItemAssertionsJsonValue struct {
+	Pii      *bool `json:"pii,omitempty"`
+	Toxicity *bool `json:"toxicity,omitempty"`
+	Harmful  *bool `json:"harmful,omitempty"`
+}
+
+type GetApiEvaluationsIdRunsRunIdResponse200ApplicationJsonModelResultsItemToolCallsItem struct {
+	Name      string               `json:"name"`
+	Arguments map[string]JsonValue `json:"arguments"`
+	Output    *string              `json:"output,omitempty"`
+	Timestamp *string              `json:"timestamp,omitempty"`
+	Success   **bool               `json:"success,omitempty"`
+	ToolClass *string              `json:"toolClass,omitempty"`
+	CallId    *string              `json:"callId,omitempty"`
+	Target    *string              `json:"target,omitempty"`
+}
+
+type GetApiEvaluationsIdRunsRunIdResponse200ApplicationJsonModelResultsItemRegressionPreparation struct {
+	Available bool   `json:"available"`
+	Code      string `json:"code"`
+	Reason    string `json:"reason"`
+}
+
+type GetApiEvaluationsIdRunsRunIdResponse200ApplicationJsonModelResultsItemRegressionPreparationValue struct {
+	Available         bool   `json:"available"`
+	SourceFingerprint string `json:"sourceFingerprint"`
+	Reason            string `json:"reason"`
+}
+
+type GetApiEvaluationsIdRunsRunIdResponse200ApplicationJsonModelBaselineResultsItem struct {
+	Id                    float64                                                                                                 `json:"id"`
+	EvaluationRunId       float64                                                                                                 `json:"evaluationRunId"`
+	AttemptId             *string                                                                                                 `json:"attemptId"`
+	TestCaseId            float64                                                                                                 `json:"testCaseId"`
+	OrganizationId        OrganizationId                                                                                          `json:"organizationId"`
+	LogicalTrialIndex     float64                                                                                                 `json:"logicalTrialIndex"`
+	PhysicalAttemptIndex  float64                                                                                                 `json:"physicalAttemptIndex"`
+	Status                string                                                                                                  `json:"status"`
+	RemoteGradingState    *GetApiEvaluationsIdRunsRunIdResponse200ApplicationJsonModelResultsItemRemoteGradingState               `json:"remoteGradingState"`
+	Output                *string                                                                                                 `json:"output"`
+	Score                 *float64                                                                                                `json:"score"`
+	Error                 *string                                                                                                 `json:"error"`
+	AssertionsJson        json.RawMessage                                                                                         `json:"assertionsJson"`
+	TraceLinkedMatched    *bool                                                                                                   `json:"traceLinkedMatched"`
+	HasProvenance         *bool                                                                                                   `json:"hasProvenance"`
+	ScoreProvenance       *GetApiEvaluationsIdPlaygroundRunsResponse200ApplicationJsonModelValueGridValueCellsItemScoreProvenance `json:"scoreProvenance"`
+	DurationMs            *float64                                                                                                `json:"durationMs"`
+	Messages              *[]GetApiEvaluationsIdRunsResponse200ApplicationJsonModelItemTraceLogMessagesItem                       `json:"messages"`
+	ToolCalls             *[]GetApiEvaluationsIdRunsRunIdResponse200ApplicationJsonModelResultsItemToolCallsItem                  `json:"toolCalls"`
+	CreatedAt             string                                                                                                  `json:"createdAt"`
+	TestCases             *GetApiEvaluationsIdRunsResponse200ApplicationJsonModelItemRunManifestDatasetCasesItemSnapshot          `json:"test_cases"`
+	RegressionPreparation json.RawMessage                                                                                         `json:"regressionPreparation"`
+	Trajectory            GetApiEvaluationsIdRunsResponse200ApplicationJsonModelItemTrajectoryEntriesItem                         `json:"trajectory"`
+	TrajectoryMetrics     GetApiEvaluationsIdRunsResponse200ApplicationJsonModelItemTrajectoryMetricsByTestCaseItem               `json:"trajectoryMetrics"`
+}
+
 type GetApiEvaluationsIdScheduleResponse200ApplicationJsonModel struct {
 	Id             string  `json:"id"`
 	EvaluationId   float64 `json:"evaluationId"`
@@ -9099,6 +9777,9 @@ type GetApiEvaluationsIdScheduleResponse200ApplicationJsonModel struct {
 	CronExpression string  `json:"cronExpression"`
 	Enabled        bool    `json:"enabled"`
 	NextRunAt      *string `json:"nextRunAt"`
+	LastRunAt      *string `json:"lastRunAt"`
+	Timezone       string  `json:"timezone"`
+	CatchUpPolicy  string  `json:"catchUpPolicy"`
 }
 
 type GetApiEvaluationsIdSyntheticCandidatesResponse200ApplicationJsonModel struct {
@@ -9330,14 +10011,16 @@ type GetApiEvaluatorValidationReleasesIdResponse200ApplicationJsonModelRelease s
 }
 
 type GetApiEvaluatorValidationReleasesIdResponse200ApplicationJsonModelReleaseIdentity struct {
-	Provider         string  `json:"provider"`
-	Model            string  `json:"model"`
-	ModelSnapshot    *string `json:"modelSnapshot,omitempty"`
-	JudgeConfigHash  string  `json:"judgeConfigHash"`
-	PromptHash       *string `json:"promptHash,omitempty"`
-	RubricHash       *string `json:"rubricHash,omitempty"`
-	ParserHash       *string `json:"parserHash,omitempty"`
-	OutputSchemaHash *string `json:"outputSchemaHash,omitempty"`
+	Provider                    string   `json:"provider"`
+	Model                       string   `json:"model"`
+	ModelSnapshot               *string  `json:"modelSnapshot,omitempty"`
+	JudgeConfigHash             string   `json:"judgeConfigHash"`
+	PromptHash                  *string  `json:"promptHash,omitempty"`
+	RubricHash                  *string  `json:"rubricHash,omitempty"`
+	ParserHash                  *string  `json:"parserHash,omitempty"`
+	OutputSchemaHash            *string  `json:"outputSchemaHash,omitempty"`
+	RuntimeConfigHash           *string  `json:"runtimeConfigHash,omitempty"`
+	CalibrationMappingVersionId **string `json:"calibrationMappingVersionId,omitempty"`
 }
 
 type GetApiEvaluatorValidationReleasesIdResponse200ApplicationJsonModelReleaseProtocol struct {
@@ -9402,31 +10085,34 @@ type GetApiEvaluatorValidationRunsIdObservationsResponse200ApplicationJsonModel 
 }
 
 type GetApiEvaluatorValidationRunsIdObservationsResponse200ApplicationJsonModelObservationsItem struct {
-	Id                   string                      `json:"id"`
-	OrganizationId       OrganizationId              `json:"organizationId"`
-	ValidationRunId      string                      `json:"validationRunId"`
-	ObservationKey       string                      `json:"observationKey"`
-	Ordinal              float64                     `json:"ordinal"`
-	TestCaseId           *float64                    `json:"testCaseId"`
-	TestResultId         *float64                    `json:"testResultId"`
-	JudgeResultId        *float64                    `json:"judgeResultId"`
-	HumanAnnotationId    *float64                    `json:"humanAnnotationId"`
-	LogicalPairId        *string                     `json:"logicalPairId"`
-	CandidateKey         *string                     `json:"candidateKey"`
-	PresentationOrder    *string                     `json:"presentationOrder"`
-	RepeatIndex          *float64                    `json:"repeatIndex"`
-	RawScore             *float64                    `json:"rawScore"`
-	NormalizedScore      *float64                    `json:"normalizedScore"`
-	PredictedConfidence  *float64                    `json:"predictedConfidence"`
-	PredictedLabel       *string                     `json:"predictedLabel"`
-	GroundTruthLabel     *string                     `json:"groundTruthLabel"`
-	Correct              *bool                       `json:"correct"`
-	Stratum              *map[string]json.RawMessage `json:"stratum"`
-	InclusionProbability *float64                    `json:"inclusionProbability"`
-	SamplingWeight       *float64                    `json:"samplingWeight"`
-	OutcomeValue         *float64                    `json:"outcomeValue"`
-	Metadata             map[string]JsonValue        `json:"metadata"`
-	CreatedAt            string                      `json:"createdAt"`
+	Id                     string                      `json:"id"`
+	OrganizationId         OrganizationId              `json:"organizationId"`
+	ValidationRunId        string                      `json:"validationRunId"`
+	ObservationKey         string                      `json:"observationKey"`
+	Ordinal                float64                     `json:"ordinal"`
+	TestCaseId             *float64                    `json:"testCaseId"`
+	TestResultId           *float64                    `json:"testResultId"`
+	JudgeResultId          *float64                    `json:"judgeResultId"`
+	ScorerResultId         *string                     `json:"scorerResultId"`
+	AdjudicationDecisionId *float64                    `json:"adjudicationDecisionId"`
+	SourceObservationId    *string                     `json:"sourceObservationId"`
+	HumanAnnotationId      *float64                    `json:"humanAnnotationId"`
+	LogicalPairId          *string                     `json:"logicalPairId"`
+	CandidateKey           *string                     `json:"candidateKey"`
+	PresentationOrder      *string                     `json:"presentationOrder"`
+	RepeatIndex            *float64                    `json:"repeatIndex"`
+	RawScore               *float64                    `json:"rawScore"`
+	NormalizedScore        *float64                    `json:"normalizedScore"`
+	PredictedConfidence    *float64                    `json:"predictedConfidence"`
+	PredictedLabel         *string                     `json:"predictedLabel"`
+	GroundTruthLabel       *string                     `json:"groundTruthLabel"`
+	Correct                *bool                       `json:"correct"`
+	Stratum                *map[string]json.RawMessage `json:"stratum"`
+	InclusionProbability   *float64                    `json:"inclusionProbability"`
+	SamplingWeight         *float64                    `json:"samplingWeight"`
+	OutcomeValue           *float64                    `json:"outcomeValue"`
+	Metadata               map[string]JsonValue        `json:"metadata"`
+	CreatedAt              string                      `json:"createdAt"`
 }
 
 type GetApiEvaluatorValidationRunsIdResponse200ApplicationJsonModel struct {
@@ -10435,6 +11121,13 @@ type GetApiHarnessSchedulesResponse200ApplicationJsonModelSchedulesItemConfigDes
 	DetailsUrl   *string `json:"detailsUrl,omitempty"`
 }
 
+type GetApiIdentityMeResponse200ApplicationJsonModel struct {
+	TwoFactorEnabled        bool    `json:"twoFactorEnabled"`
+	AuthMethod              *string `json:"authMethod"`
+	SessionMfaVerified      bool    `json:"sessionMfaVerified"`
+	OrganizationRequirement *string `json:"organizationRequirement"`
+}
+
 type GetApiImprovementCandidatesCandidateIdAttemptsResponse200ApplicationJsonModel struct {
 	Attempts []map[string]JsonValue `json:"attempts"`
 }
@@ -11201,7 +11894,8 @@ type GetApiKnowledgeNetworkPackagesResponse200ApplicationJsonModel struct {
 }
 
 type GetApiKnowledgeSearchResponse200ApplicationJsonModel struct {
-	Results []GetApiKnowledgeSearchResponse200ApplicationJsonModelResultsItem `json:"results"`
+	Results        []GetApiKnowledgeSearchResponse200ApplicationJsonModelResultsItem  `json:"results"`
+	SemanticSearch GetApiKnowledgeSearchResponse200ApplicationJsonModelSemanticSearch `json:"semanticSearch"`
 }
 
 type GetApiKnowledgeSearchResponse200ApplicationJsonModelResultsItem struct {
@@ -11213,8 +11907,13 @@ type GetApiKnowledgeSearchResponse200ApplicationJsonModelResultsItem struct {
 	SearchMethod  string  `json:"searchMethod"`
 }
 
+type GetApiKnowledgeSearchResponse200ApplicationJsonModelSemanticSearch struct {
+	Status string `json:"status"`
+}
+
 type GetApiKnowledgeSearchResponse200ApplicationJsonModelValue struct {
-	Results []GetApiKnowledgeSearchResponse200ApplicationJsonModelValueResultsItem `json:"results"`
+	Results        []GetApiKnowledgeSearchResponse200ApplicationJsonModelValueResultsItem  `json:"results"`
+	SemanticSearch GetApiKnowledgeSearchResponse200ApplicationJsonModelValueSemanticSearch `json:"semanticSearch"`
 }
 
 type GetApiKnowledgeSearchResponse200ApplicationJsonModelValueResultsItem struct {
@@ -11224,6 +11923,11 @@ type GetApiKnowledgeSearchResponse200ApplicationJsonModelValueResultsItem struct
 	ChunkContent  string  `json:"chunkContent"`
 	Similarity    float64 `json:"similarity"`
 	SearchMethod  string  `json:"searchMethod"`
+}
+
+type GetApiKnowledgeSearchResponse200ApplicationJsonModelValueSemanticSearch struct {
+	Status string  `json:"status"`
+	Reason *string `json:"reason,omitempty"`
 }
 
 type GetApiLineageResponse200ApplicationJsonModel struct {
@@ -12083,9 +12787,14 @@ type GetApiMcpToolsResponse200ApplicationJsonModelToolsItemInputSchemaProperties
 }
 
 type GetApiMeResponse200ApplicationJsonModel struct {
+	Identity     *GetApiMeResponse200ApplicationJsonModelIdentity                     `json:"identity"`
 	User         GetApiAnnotationsResponse200ApplicationJsonModelAnnotationsItemUsers `json:"user"`
 	Organization *GetApiMeResponse200ApplicationJsonModelOrganization                 `json:"organization"`
 	Credential   GetApiMeResponse200ApplicationJsonModelCredential                    `json:"credential"`
+}
+
+type GetApiMeResponse200ApplicationJsonModelIdentity struct {
+	Requirement *string `json:"requirement"`
 }
 
 type GetApiMeResponse200ApplicationJsonModelOrganization struct {
@@ -12095,12 +12804,23 @@ type GetApiMeResponse200ApplicationJsonModelOrganization struct {
 }
 
 type GetApiMeResponse200ApplicationJsonModelCredential struct {
-	Type           string                                                                   `json:"type"`
-	Scopes         []string                                                                 `json:"scopes"`
-	ExpiresAt      *string                                                                  `json:"expiresAt"`
-	Purpose        *string                                                                  `json:"purpose"`
-	RepositoryId   *float64                                                                 `json:"repositoryId"`
-	ExecutionScope *GetApiDeveloperApiKeysResponse200ApplicationJsonModelItemExecutionScope `json:"executionScope"`
+	Type           string                                                           `json:"type"`
+	Scopes         []string                                                         `json:"scopes"`
+	ExpiresAt      *string                                                          `json:"expiresAt"`
+	Purpose        *string                                                          `json:"purpose"`
+	RepositoryId   *float64                                                         `json:"repositoryId"`
+	ExecutionScope *GetApiMeResponse200ApplicationJsonModelCredentialExecutionScope `json:"executionScope"`
+}
+
+type GetApiMeResponse200ApplicationJsonModelCredentialExecutionScope struct {
+	SchemaVersion    float64                                                                       `json:"schemaVersion"`
+	Audience         string                                                                        `json:"audience"`
+	RepositoryId     float64                                                                       `json:"repositoryId"`
+	RootPath         string                                                                        `json:"rootPath"`
+	TargetSha        string                                                                        `json:"targetSha"`
+	PermittedActions []any                                                                         `json:"permittedActions"`
+	Budget           GetApiDeveloperApiKeysResponse200ApplicationJsonModelItemExecutionScopeBudget `json:"budget"`
+	ParentKeyId      *float64                                                                      `json:"parentKeyId"`
 }
 
 type GetApiMetricDefinitionsResponse200ApplicationJsonModel struct {
@@ -12710,66 +13430,100 @@ type GetApiOnlineEvalsMonitorsIdBackfillsResponse200ApplicationJsonModel struct 
 }
 
 type GetApiOnlineEvalsMonitorsIdBackfillsResponse200ApplicationJsonModelBackfillsItem struct {
-	Id                         string                                                                                             `json:"id"`
-	OrganizationId             OrganizationId                                                                                     `json:"organizationId"`
-	MonitorId                  float64                                                                                            `json:"monitorId"`
-	MonitorVersionId           string                                                                                             `json:"monitorVersionId"`
-	RunType                    string                                                                                             `json:"runType"`
-	Status                     string                                                                                             `json:"status"`
-	IdempotencyKey             string                                                                                             `json:"idempotencyKey"`
-	RequestHash                string                                                                                             `json:"requestHash"`
-	ClaimToken                 *string                                                                                            `json:"claimToken"`
-	ClaimedBy                  *string                                                                                            `json:"claimedBy"`
-	Attempt                    float64                                                                                            `json:"attempt"`
-	WindowStart                *string                                                                                            `json:"windowStart"`
-	WindowEnd                  *string                                                                                            `json:"windowEnd"`
-	MatchedTraces              float64                                                                                            `json:"matchedTraces"`
-	SampledTraces              float64                                                                                            `json:"sampledTraces"`
-	ProcessedSamples           float64                                                                                            `json:"processedSamples"`
-	FailedSamples              float64                                                                                            `json:"failedSamples"`
-	AlertCount                 float64                                                                                            `json:"alertCount"`
-	EstimatedCostUsd           *string                                                                                            `json:"estimatedCostUsd"`
-	ActualCostUsd              *string                                                                                            `json:"actualCostUsd"`
-	SimulationResult           *GetApiOnlineEvalsMonitorsIdBackfillsResponse200ApplicationJsonModelBackfillsItemSimulationResult  `json:"simulationResult"`
-	EvidenceJson               GetApiOnlineEvalsMonitorsIdBackfillsResponse200ApplicationJsonModelBackfillsItemEvidenceJson       `json:"evidenceJson"`
-	MissingEvidence            []string                                                                                           `json:"missingEvidence"`
-	RetryHistory               []GetApiOnlineEvalsAlertsIdDeliveriesResponse200ApplicationJsonModelDeliveriesItemRetryHistoryItem `json:"retryHistory"`
-	AlertsEnabled              bool                                                                                               `json:"alertsEnabled"`
-	CandidateGenerationEnabled bool                                                                                               `json:"candidateGenerationEnabled"`
-	CreatedBy                  string                                                                                             `json:"createdBy"`
-	CreatedAt                  string                                                                                             `json:"createdAt"`
-	StartedAt                  *string                                                                                            `json:"startedAt"`
-	CompletedAt                *string                                                                                            `json:"completedAt"`
-	CancelRequestedAt          *string                                                                                            `json:"cancelRequestedAt"`
-	CancelledAt                *string                                                                                            `json:"cancelledAt"`
+	Id                         string                                                                                                         `json:"id"`
+	OrganizationId             OrganizationId                                                                                                 `json:"organizationId"`
+	MonitorId                  float64                                                                                                        `json:"monitorId"`
+	MonitorVersionId           string                                                                                                         `json:"monitorVersionId"`
+	RunType                    string                                                                                                         `json:"runType"`
+	Status                     string                                                                                                         `json:"status"`
+	IdempotencyKey             string                                                                                                         `json:"idempotencyKey"`
+	RequestHash                string                                                                                                         `json:"requestHash"`
+	ClaimToken                 *string                                                                                                        `json:"claimToken"`
+	ClaimedBy                  *string                                                                                                        `json:"claimedBy"`
+	Attempt                    float64                                                                                                        `json:"attempt"`
+	WindowStart                *string                                                                                                        `json:"windowStart"`
+	WindowEnd                  *string                                                                                                        `json:"windowEnd"`
+	MatchedTraces              float64                                                                                                        `json:"matchedTraces"`
+	SampledTraces              float64                                                                                                        `json:"sampledTraces"`
+	ProcessedSamples           float64                                                                                                        `json:"processedSamples"`
+	FailedSamples              float64                                                                                                        `json:"failedSamples"`
+	AlertCount                 float64                                                                                                        `json:"alertCount"`
+	EstimatedCostUsd           *string                                                                                                        `json:"estimatedCostUsd"`
+	ActualCostUsd              *string                                                                                                        `json:"actualCostUsd"`
+	SimulationResult           *GetApiOnlineEvalsMonitorsIdBackfillsResponse200ApplicationJsonModelBackfillsItemSimulationResult              `json:"simulationResult"`
+	EvidenceJson               GetApiOnlineEvalsMonitorsIdBackfillsResponse200ApplicationJsonModelBackfillsItemEvidenceJson                   `json:"evidenceJson"`
+	MissingEvidence            []string                                                                                                       `json:"missingEvidence"`
+	RetryHistory               []GetApiOnlineEvalsMonitorsIdBackfillsResponse200ApplicationJsonModelBackfillsItemEvidenceJsonRetryHistoryItem `json:"retryHistory"`
+	AlertsEnabled              bool                                                                                                           `json:"alertsEnabled"`
+	CandidateGenerationEnabled bool                                                                                                           `json:"candidateGenerationEnabled"`
+	CreatedBy                  string                                                                                                         `json:"createdBy"`
+	CreatedAt                  string                                                                                                         `json:"createdAt"`
+	StartedAt                  *string                                                                                                        `json:"startedAt"`
+	CompletedAt                *string                                                                                                        `json:"completedAt"`
+	CancelRequestedAt          *string                                                                                                        `json:"cancelRequestedAt"`
+	CancelledAt                *string                                                                                                        `json:"cancelledAt"`
 }
 
 type GetApiOnlineEvalsMonitorsIdBackfillsResponse200ApplicationJsonModelBackfillsItemSimulationResult struct {
-	MatchedTraceIds             []float64          `json:"matchedTraceIds"`
-	SampledTraceIds             []float64          `json:"sampledTraceIds"`
-	Excluded                    map[string]float64 `json:"excluded"`
-	EstimatedModelCalls         float64            `json:"estimatedModelCalls"`
-	EstimatedCostUsd            *float64           `json:"estimatedCostUsd"`
-	ExpectedAlertCount          float64            `json:"expectedAlertCount"`
-	HistoricalFailureCount      float64            `json:"historicalFailureCount"`
-	FalsePositiveReviewTraceIds []float64          `json:"falsePositiveReviewTraceIds"`
-	Warnings                    []string           `json:"warnings"`
+	ObservationFrame            *GetApiOnlineEvalsMonitorsIdBackfillsResponse200ApplicationJsonModelBackfillsItemSimulationResultObservationFrame `json:"observationFrame,omitempty"`
+	MatchedTraceIds             []float64                                                                                                         `json:"matchedTraceIds"`
+	SampledTraceIds             []float64                                                                                                         `json:"sampledTraceIds"`
+	Excluded                    map[string]float64                                                                                                `json:"excluded"`
+	EstimatedModelCalls         float64                                                                                                           `json:"estimatedModelCalls"`
+	EstimatedCostUsd            *float64                                                                                                          `json:"estimatedCostUsd"`
+	ExpectedAlertCount          float64                                                                                                           `json:"expectedAlertCount"`
+	HistoricalFailureCount      float64                                                                                                           `json:"historicalFailureCount"`
+	FalsePositiveReviewTraceIds []float64                                                                                                         `json:"falsePositiveReviewTraceIds"`
+	Warnings                    []string                                                                                                          `json:"warnings"`
+}
+
+type GetApiOnlineEvalsMonitorsIdBackfillsResponse200ApplicationJsonModelBackfillsItemSimulationResultObservationFrame struct {
+	Version                    string                                                                                                                      `json:"version"`
+	FrameHash                  string                                                                                                                      `json:"frameHash"`
+	OrganizationId             OrganizationId                                                                                                              `json:"organizationId"`
+	Scope                      string                                                                                                                      `json:"scope"`
+	PredicateHash              string                                                                                                                      `json:"predicateHash"`
+	WindowStart                string                                                                                                                      `json:"windowStart"`
+	WindowEnd                  string                                                                                                                      `json:"windowEnd"`
+	CapturedAt                 string                                                                                                                      `json:"capturedAt"`
+	State                      string                                                                                                                      `json:"state"`
+	Selection                  string                                                                                                                      `json:"selection"`
+	Limit                      float64                                                                                                                     `json:"limit"`
+	ObservedCount              float64                                                                                                                     `json:"observedCount"`
+	EligibleCount              *float64                                                                                                                    `json:"eligibleCount"`
+	EligibleLowerBound         float64                                                                                                                     `json:"eligibleLowerBound"`
+	UpstreamCaptureProbability any                                                                                                                         `json:"upstreamCaptureProbability"`
+	PopulationFrequency        any                                                                                                                         `json:"populationFrequency"`
+	Units                      []GetApiOnlineEvalsMonitorsIdBackfillsResponse200ApplicationJsonModelBackfillsItemSimulationResultObservationFrameUnitsItem `json:"units"`
+	Uncertainty                []string                                                                                                                    `json:"uncertainty"`
+}
+
+type GetApiOnlineEvalsMonitorsIdBackfillsResponse200ApplicationJsonModelBackfillsItemSimulationResultObservationFrameUnitsItem struct {
+	TraceId              float64  `json:"traceId"`
+	TraceKey             string   `json:"traceKey"`
+	TraceRevisionId      *string  `json:"traceRevisionId"`
+	TraceRevisionHash    *string  `json:"traceRevisionHash"`
+	CreatedAt            string   `json:"createdAt"`
+	Outcome              string   `json:"outcome"`
+	TaskKey              *string  `json:"taskKey"`
+	InclusionProbability *float64 `json:"inclusionProbability"`
 }
 
 type GetApiOnlineEvalsMonitorsIdBackfillsResponse200ApplicationJsonModelBackfillsItemEvidenceJson struct {
-	MonitorVersionId     string                                                                                                           `json:"monitorVersionId"`
-	MonitorVersionNumber float64                                                                                                          `json:"monitorVersionNumber"`
-	ConfigHash           string                                                                                                           `json:"configHash"`
-	PolicySnapshot       map[string]JsonValue                                                                                             `json:"policySnapshot"`
-	SampledTraceIds      []float64                                                                                                        `json:"sampledTraceIds"`
-	ScorerVersions       []GetApiOnlineEvalsMonitorsIdBackfillsResponse200ApplicationJsonModelBackfillsItemEvidenceJsonScorerVersionsItem `json:"scorerVersions"`
-	Prompt               *GetApiOnlineEvalsMonitorsIdBackfillsResponse200ApplicationJsonModelBackfillsItemEvidenceJsonPrompt              `json:"prompt"`
-	Dataset              *GetApiOnlineEvalsMonitorsIdBackfillsResponse200ApplicationJsonModelBackfillsItemEvidenceJsonDataset             `json:"dataset"`
-	ModelCallIds         []string                                                                                                         `json:"modelCallIds"`
-	CostRecordIds        []float64                                                                                                        `json:"costRecordIds"`
-	JudgeResultIds       []float64                                                                                                        `json:"judgeResultIds"`
-	MissingEvidence      []string                                                                                                         `json:"missingEvidence"`
-	RetryHistory         []GetApiOnlineEvalsAlertsIdDeliveriesResponse200ApplicationJsonModelDeliveriesItemRetryHistoryItem               `json:"retryHistory"`
+	ObservationFrame     *GetApiOnlineEvalsMonitorsIdBackfillsResponse200ApplicationJsonModelBackfillsItemSimulationResultObservationFrame `json:"observationFrame,omitempty"`
+	MonitorVersionId     string                                                                                                            `json:"monitorVersionId"`
+	MonitorVersionNumber float64                                                                                                           `json:"monitorVersionNumber"`
+	ConfigHash           string                                                                                                            `json:"configHash"`
+	PolicySnapshot       map[string]JsonValue                                                                                              `json:"policySnapshot"`
+	SampledTraceIds      []float64                                                                                                         `json:"sampledTraceIds"`
+	ScorerVersions       []GetApiOnlineEvalsMonitorsIdBackfillsResponse200ApplicationJsonModelBackfillsItemEvidenceJsonScorerVersionsItem  `json:"scorerVersions"`
+	Prompt               *GetApiOnlineEvalsMonitorsIdBackfillsResponse200ApplicationJsonModelBackfillsItemEvidenceJsonPrompt               `json:"prompt"`
+	Dataset              *GetApiOnlineEvalsMonitorsIdBackfillsResponse200ApplicationJsonModelBackfillsItemEvidenceJsonDataset              `json:"dataset"`
+	ModelCallIds         []string                                                                                                          `json:"modelCallIds"`
+	CostRecordIds        []float64                                                                                                         `json:"costRecordIds"`
+	JudgeResultIds       []float64                                                                                                         `json:"judgeResultIds"`
+	MissingEvidence      []string                                                                                                          `json:"missingEvidence"`
+	RetryHistory         []GetApiOnlineEvalsMonitorsIdBackfillsResponse200ApplicationJsonModelBackfillsItemEvidenceJsonRetryHistoryItem    `json:"retryHistory"`
 }
 
 type GetApiOnlineEvalsMonitorsIdBackfillsResponse200ApplicationJsonModelBackfillsItemEvidenceJsonScorerVersionsItem struct {
@@ -12800,6 +13554,16 @@ type GetApiOnlineEvalsMonitorsIdBackfillsResponse200ApplicationJsonModelBackfill
 	VersionNumber float64 `json:"versionNumber"`
 	ContentHash   string  `json:"contentHash"`
 	RowCount      float64 `json:"rowCount"`
+}
+
+type GetApiOnlineEvalsMonitorsIdBackfillsResponse200ApplicationJsonModelBackfillsItemEvidenceJsonRetryHistoryItem struct {
+	Attempt         float64 `json:"attempt"`
+	StartedAt       string  `json:"startedAt"`
+	CompletedAt     *string `json:"completedAt"`
+	Status          string  `json:"status"`
+	ErrorCode       *string `json:"errorCode"`
+	ErrorMessage    *string `json:"errorMessage"`
+	ProviderReached bool    `json:"providerReached"`
 }
 
 type GetApiOnlineEvalsMonitorsIdCandidatesResponse200ApplicationJsonModel struct {
@@ -13020,22 +13784,36 @@ type GetApiOnlineEvalsMonitorsIdVersionsResponse200ApplicationJsonModelVersionsI
 }
 
 type GetApiOnlineEvalsMonitorsIdVersionsResponse200ApplicationJsonModelVersionsItemSnapshotJson struct {
-	SchemaVersion   string                                                                                                           `json:"schemaVersion"`
-	MonitorId       float64                                                                                                          `json:"monitorId"`
-	VersionNumber   float64                                                                                                          `json:"versionNumber"`
-	Source          GetApiOnlineEvalsMonitorsIdVersionsResponse200ApplicationJsonModelVersionsItemSourceSnapshot                     `json:"source"`
-	Sampling        GetApiOnlineEvalsMonitorsIdVersionsResponse200ApplicationJsonModelVersionsItemSamplingSnapshot                   `json:"sampling"`
-	Checks          GetApiOnlineEvalsMonitorsIdVersionsResponse200ApplicationJsonModelVersionsItemChecksSnapshot                     `json:"checks"`
-	Budget          GetApiOnlineEvalsMonitorsIdVersionsResponse200ApplicationJsonModelVersionsItemBudgetSnapshot                     `json:"budget"`
-	Alerting        GetApiOnlineEvalsMonitorsIdVersionsResponse200ApplicationJsonModelVersionsItemAlertSnapshot                      `json:"alerting"`
-	Learning        GetApiOnlineEvalsMonitorsIdVersionsResponse200ApplicationJsonModelVersionsItemLearningSnapshot                   `json:"learning"`
-	Scorers         []GetApiOnlineEvalsMonitorsIdBackfillsResponse200ApplicationJsonModelBackfillsItemEvidenceJsonScorerVersionsItem `json:"scorers"`
-	Prompt          *GetApiOnlineEvalsMonitorsIdBackfillsResponse200ApplicationJsonModelBackfillsItemEvidenceJsonPrompt              `json:"prompt"`
-	Dataset         *GetApiOnlineEvalsMonitorsIdBackfillsResponse200ApplicationJsonModelBackfillsItemEvidenceJsonDataset             `json:"dataset"`
-	Policy          map[string]JsonValue                                                                                             `json:"policy"`
-	EvaluatorAction **GetApiOnlineEvalsMonitorsIdVersionsResponse200ApplicationJsonModelVersionsItemSnapshotJsonEvaluatorAction      `json:"evaluatorAction,omitempty"`
-	Environment     string                                                                                                           `json:"environment"`
-	Seed            float64                                                                                                          `json:"seed"`
+	SchemaVersion   string                                                                                                      `json:"schemaVersion"`
+	MonitorId       float64                                                                                                     `json:"monitorId"`
+	VersionNumber   float64                                                                                                     `json:"versionNumber"`
+	Source          GetApiOnlineEvalsMonitorsIdVersionsResponse200ApplicationJsonModelVersionsItemSourceSnapshot                `json:"source"`
+	Sampling        GetApiOnlineEvalsMonitorsIdVersionsResponse200ApplicationJsonModelVersionsItemSamplingSnapshot              `json:"sampling"`
+	Checks          GetApiOnlineEvalsMonitorsIdVersionsResponse200ApplicationJsonModelVersionsItemChecksSnapshot                `json:"checks"`
+	Budget          GetApiOnlineEvalsMonitorsIdVersionsResponse200ApplicationJsonModelVersionsItemBudgetSnapshot                `json:"budget"`
+	Alerting        GetApiOnlineEvalsMonitorsIdVersionsResponse200ApplicationJsonModelVersionsItemAlertSnapshot                 `json:"alerting"`
+	Learning        GetApiOnlineEvalsMonitorsIdVersionsResponse200ApplicationJsonModelVersionsItemLearningSnapshot              `json:"learning"`
+	Scorers         []GetApiOnlineEvalsMonitorsIdVersionsResponse200ApplicationJsonModelVersionsItemSnapshotJsonScorersItem     `json:"scorers"`
+	Prompt          *GetApiOnlineEvalsMonitorsIdBackfillsResponse200ApplicationJsonModelBackfillsItemEvidenceJsonPrompt         `json:"prompt"`
+	Dataset         *GetApiOnlineEvalsMonitorsIdBackfillsResponse200ApplicationJsonModelBackfillsItemEvidenceJsonDataset        `json:"dataset"`
+	Policy          map[string]JsonValue                                                                                        `json:"policy"`
+	EvaluatorAction **GetApiOnlineEvalsMonitorsIdVersionsResponse200ApplicationJsonModelVersionsItemSnapshotJsonEvaluatorAction `json:"evaluatorAction,omitempty"`
+	Environment     string                                                                                                      `json:"environment"`
+	Seed            float64                                                                                                     `json:"seed"`
+}
+
+type GetApiOnlineEvalsMonitorsIdVersionsResponse200ApplicationJsonModelVersionsItemSnapshotJsonScorersItem struct {
+	ArtifactId           float64              `json:"artifactId"`
+	VersionId            float64              `json:"versionId"`
+	ContentHash          string               `json:"contentHash"`
+	Name                 string               `json:"name"`
+	Type                 string               `json:"type"`
+	Definition           map[string]JsonValue `json:"definition"`
+	CalibrationBindingId *string              `json:"calibrationBindingId"`
+	CalibrationSetId     *string              `json:"calibrationSetId"`
+	CalibrationRunId     *string              `json:"calibrationRunId"`
+	ScoreMappingId       *string              `json:"scoreMappingId"`
+	ComparabilityStatus  string               `json:"comparabilityStatus"`
 }
 
 type GetApiOnlineEvalsMonitorsIdVersionsResponse200ApplicationJsonModelVersionsItemSnapshotJsonEvaluatorAction struct {
@@ -13160,18 +13938,162 @@ type GetApiOpsSloResponse200ApplicationJsonModel struct {
 }
 
 type GetApiOpsSloResponse200ApplicationJsonModelMeasurementsItem struct {
-	SloId                string  `json:"sloId"`
-	Name                 string  `json:"name"`
-	Target               float64 `json:"target"`
-	Actual               float64 `json:"actual"`
-	ErrorBudgetRemaining float64 `json:"errorBudgetRemaining"`
-	Status               string  `json:"status"`
-	WindowHours          float64 `json:"windowHours"`
-	SampleCount          float64 `json:"sampleCount"`
+	SloId                string                                                              `json:"sloId"`
+	Name                 string                                                              `json:"name"`
+	Target               float64                                                             `json:"target"`
+	Actual               *float64                                                            `json:"actual"`
+	ErrorBudgetRemaining *float64                                                            `json:"errorBudgetRemaining"`
+	Status               string                                                              `json:"status"`
+	WindowHours          float64                                                             `json:"windowHours"`
+	SampleCount          float64                                                             `json:"sampleCount"`
+	Reason               *string                                                             `json:"reason"`
+	Backlog              *GetApiOpsSloResponse200ApplicationJsonModelMeasurementsItemBacklog `json:"backlog,omitempty"`
+}
+
+type GetApiOpsSloResponse200ApplicationJsonModelMeasurementsItemBacklog struct {
+	PendingCount float64 `json:"pendingCount"`
+	RunningCount float64 `json:"runningCount"`
+	OverdueCount float64 `json:"overdueCount"`
+	Status       string  `json:"status"`
+	DeadlineMs   float64 `json:"deadlineMs"`
+}
+
+type GetApiOrchestrationEvalsRunsIdResponse200ApplicationJsonModel struct {
+	Run               GetApiOrchestrationEvalsRunsIdResponse200ApplicationJsonModelRun            `json:"run"`
+	Receipts          []GetApiOrchestrationEvalsRunsIdResponse200ApplicationJsonModelReceiptsItem `json:"receipts"`
+	NextAfterSequence *float64                                                                    `json:"nextAfterSequence"`
+	Coverage          string                                                                      `json:"coverage"`
+}
+
+type GetApiOrchestrationEvalsRunsIdResponse200ApplicationJsonModelRun struct {
+	Id                          string         `json:"id"`
+	OrganizationId              OrganizationId `json:"organizationId"`
+	TaskAttemptId               string         `json:"taskAttemptId"`
+	ExecutionStateSessionId     string         `json:"executionStateSessionId"`
+	ProgramVersionId            string         `json:"programVersionId"`
+	InterpreterProfileVersionId string         `json:"interpreterProfileVersionId"`
+	CapabilityLeaseId           string         `json:"capabilityLeaseId"`
+	State                       string         `json:"state"`
+	StartedAt                   *string        `json:"startedAt"`
+	CompletedAt                 *string        `json:"completedAt"`
+}
+
+type GetApiOrchestrationEvalsRunsIdResponse200ApplicationJsonModelReceiptsItem struct {
+	SchemaVersion       float64                                                                                         `json:"schemaVersion"`
+	Id                  string                                                                                          `json:"id"`
+	Source              string                                                                                          `json:"source"`
+	OrganizationId      OrganizationId                                                                                  `json:"organizationId"`
+	Target              string                                                                                          `json:"target"`
+	Boundary            string                                                                                          `json:"boundary"`
+	Action              GetApiOrchestrationEvalsRunsIdResponse200ApplicationJsonModelReceiptsItemAction                 `json:"action"`
+	Environment         *GetApiOrchestrationEvalsRunsIdResponse200ApplicationJsonModelReceiptsItemActionToolContractRef `json:"environment"`
+	Policy              *GetApiOrchestrationEvalsRunsIdResponse200ApplicationJsonModelReceiptsItemPolicy                `json:"policy"`
+	Timing              string                                                                                          `json:"timing"`
+	Status              string                                                                                          `json:"status"`
+	Outcome             string                                                                                          `json:"outcome"`
+	ScopeComplete       bool                                                                                            `json:"scopeComplete"`
+	ErrorCode           *string                                                                                         `json:"errorCode"`
+	StartedAt           *string                                                                                         `json:"startedAt"`
+	CompletedAt         *string                                                                                         `json:"completedAt"`
+	ResultHash          *string                                                                                         `json:"resultHash"`
+	SideEffectLedgerIds []string                                                                                        `json:"sideEffectLedgerIds"`
+	EvidenceItemIds     []float64                                                                                       `json:"evidenceItemIds"`
+	ReceiptHash         string                                                                                          `json:"receiptHash"`
+}
+
+type GetApiOrchestrationEvalsRunsIdResponse200ApplicationJsonModelReceiptsItemAction struct {
+	ToolKey         string                                                                                          `json:"toolKey"`
+	ToolContractRef *GetApiOrchestrationEvalsRunsIdResponse200ApplicationJsonModelReceiptsItemActionToolContractRef `json:"toolContractRef"`
+	ArgumentsHash   string                                                                                          `json:"argumentsHash"`
+}
+
+type GetApiOrchestrationEvalsRunsIdResponse200ApplicationJsonModelReceiptsItemActionToolContractRef struct {
+	SchemaVersion          float64                                                                                                      `json:"schemaVersion"`
+	OrganizationId         OrganizationId                                                                                               `json:"organizationId"`
+	Kind                   string                                                                                                       `json:"kind"`
+	ArtifactId             string                                                                                                       `json:"artifactId"`
+	VersionId              string                                                                                                       `json:"versionId"`
+	ContentHash            string                                                                                                       `json:"contentHash"`
+	Environment            *string                                                                                                      `json:"environment,omitempty"`
+	SourceControl          *GetApiOrchestrationEvalsRunsIdResponse200ApplicationJsonModelReceiptsItemActionToolContractRefSourceControl `json:"sourceControl,omitempty"`
+	DependencySnapshotHash *string                                                                                                      `json:"dependencySnapshotHash,omitempty"`
+}
+
+type GetApiOrchestrationEvalsRunsIdResponse200ApplicationJsonModelReceiptsItemActionToolContractRefSourceControl struct {
+	Provider     string  `json:"provider"`
+	RepositoryId string  `json:"repositoryId"`
+	CommitSha    string  `json:"commitSha"`
+	Path         *string `json:"path,omitempty"`
+}
+
+type GetApiOrchestrationEvalsRunsIdResponse200ApplicationJsonModelReceiptsItemPolicy struct {
+	LeaseId          string `json:"leaseId"`
+	PolicyId         string `json:"policyId"`
+	PolicyHash       string `json:"policyHash"`
+	LeaseContentHash string `json:"leaseContentHash"`
+	DecisionId       string `json:"decisionId"`
 }
 
 type GetApiOrganizationsCurrentResponse200ApplicationJsonModel struct {
 	Organization GetApiMeResponse200ApplicationJsonModelOrganization `json:"organization"`
+}
+
+type GetApiOrganizationsIdentityResponse200ApplicationJsonModel struct {
+	AuthEndpointBase string                                                                    `json:"authEndpointBase"`
+	Policy           GetApiOrganizationsIdentityResponse200ApplicationJsonModelPolicy          `json:"policy"`
+	Domains          []GetApiOrganizationsIdentityResponse200ApplicationJsonModelDomainsItem   `json:"domains"`
+	Providers        []GetApiOrganizationsIdentityResponse200ApplicationJsonModelProvidersItem `json:"providers"`
+}
+
+type GetApiOrganizationsIdentityResponse200ApplicationJsonModelPolicy struct {
+	SsoRequired         bool    `json:"ssoRequired"`
+	MfaRequired         bool    `json:"mfaRequired"`
+	TrustIdpMfa         bool    `json:"trustIdpMfa"`
+	JitDefaultRole      string  `json:"jitDefaultRole"`
+	RecoveryAdminUserId *string `json:"recoveryAdminUserId"`
+}
+
+type GetApiOrganizationsIdentityResponse200ApplicationJsonModelDomainsItem struct {
+	Id            string  `json:"id"`
+	Domain        string  `json:"domain"`
+	Status        string  `json:"status"`
+	RecordName    string  `json:"recordName"`
+	RecordValue   string  `json:"recordValue"`
+	VerifiedAt    *string `json:"verifiedAt"`
+	LastCheckedAt *string `json:"lastCheckedAt"`
+}
+
+type GetApiOrganizationsIdentityResponse200ApplicationJsonModelProvidersItem struct {
+	ProviderId      string                                                                                 `json:"providerId"`
+	Protocol        string                                                                                 `json:"protocol"`
+	DisplayName     string                                                                                 `json:"displayName"`
+	Domain          string                                                                                 `json:"domain"`
+	DomainVerified  bool                                                                                   `json:"domainVerified"`
+	Issuer          string                                                                                 `json:"issuer"`
+	Oidc            *GetApiOrganizationsIdentityResponse200ApplicationJsonModelProvidersItemOidc           `json:"oidc"`
+	Saml            *GetApiOrganizationsIdentityResponse200ApplicationJsonModelProvidersItemSaml           `json:"saml"`
+	ServiceProvider GetApiOrganizationsIdentityResponse200ApplicationJsonModelProvidersItemServiceProvider `json:"serviceProvider"`
+	CreatedAt       string                                                                                 `json:"createdAt"`
+	UpdatedAt       string                                                                                 `json:"updatedAt"`
+}
+
+type GetApiOrganizationsIdentityResponse200ApplicationJsonModelProvidersItemOidc struct {
+	ClientId               string   `json:"clientId"`
+	HasClientSecret        bool     `json:"hasClientSecret"`
+	ClientSecretKeyVersion *float64 `json:"clientSecretKeyVersion"`
+}
+
+type GetApiOrganizationsIdentityResponse200ApplicationJsonModelProvidersItemSaml struct {
+	EntryPoint                *string `json:"entryPoint"`
+	UsesIdpMetadata           bool    `json:"usesIdpMetadata"`
+	CertificateFingerprint256 *string `json:"certificateFingerprint256"`
+}
+
+type GetApiOrganizationsIdentityResponse200ApplicationJsonModelProvidersItemServiceProvider struct {
+	RedirectUrl *string `json:"redirectUrl"`
+	AcsUrl      *string `json:"acsUrl"`
+	EntityId    *string `json:"entityId"`
+	MetadataUrl *string `json:"metadataUrl"`
 }
 
 type GetApiOrganizationsMembersResponse200ApplicationJsonModel struct {
@@ -13223,6 +14145,51 @@ type GetApiOrganizationsResponse200ApplicationJsonModelOnboardingStateRepository
 	SelectedHarnessPresetKey   *string `json:"selectedHarnessPresetKey"`
 	IntakeManifestHash         string  `json:"intakeManifestHash"`
 	ActivationCompleted        bool    `json:"activationCompleted"`
+}
+
+type GetApiOrgCredentialVaultsInfisicalResponse200ApplicationJsonModel struct {
+	Connection      *GetApiOrgCredentialVaultsInfisicalResponse200ApplicationJsonModelConnection    `json:"connection"`
+	ConnectionError *string                                                                         `json:"connectionError"`
+	Bindings        []GetApiOrgCredentialVaultsInfisicalResponse200ApplicationJsonModelBindingsItem `json:"bindings"`
+}
+
+type GetApiOrgCredentialVaultsInfisicalResponse200ApplicationJsonModelConnection struct {
+	ConnectionId       float64 `json:"connectionId"`
+	Vault              string  `json:"vault"`
+	Region             string  `json:"region"`
+	ProjectId          string  `json:"projectId"`
+	ClientId           string  `json:"clientId"`
+	DefaultEnvironment string  `json:"defaultEnvironment"`
+	CredentialVersion  float64 `json:"credentialVersion"`
+	ConnectedAt        string  `json:"connectedAt"`
+}
+
+type GetApiOrgCredentialVaultsInfisicalResponse200ApplicationJsonModelBindingsItem struct {
+	Id               float64  `json:"id"`
+	Provider         string   `json:"provider"`
+	Environment      string   `json:"environment"`
+	SecretPath       string   `json:"secretPath"`
+	SecretName       string   `json:"secretName"`
+	Status           string   `json:"status"`
+	ErrorCode        *string  `json:"errorCode"`
+	ErrorMessage     *string  `json:"errorMessage"`
+	LastCheckedAt    *string  `json:"lastCheckedAt"`
+	ValueFingerprint *string  `json:"valueFingerprint"`
+	SecretVersion    *float64 `json:"secretVersion"`
+	ValueChangedAt   *string  `json:"valueChangedAt"`
+	ShadowsStoredKey bool     `json:"shadowsStoredKey"`
+	CreatedAt        string   `json:"createdAt"`
+}
+
+type GetApiOrgCredentialVaultsInfisicalSecretsResponse200ApplicationJsonModel struct {
+	Secrets []GetApiOrgCredentialVaultsInfisicalSecretsResponse200ApplicationJsonModelSecretsItem `json:"secrets"`
+}
+
+type GetApiOrgCredentialVaultsInfisicalSecretsResponse200ApplicationJsonModelSecretsItem struct {
+	SecretName string   `json:"secretName"`
+	SecretPath string   `json:"secretPath"`
+	Version    *float64 `json:"version"`
+	UpdatedAt  *string  `json:"updatedAt"`
 }
 
 type GetApiOrgKeysAvailabilityResponse200ApplicationJsonModel struct {
@@ -13973,53 +14940,148 @@ type GetApiProductionInsightsSummaryResponse200ApplicationJsonModel struct {
 }
 
 type GetApiProductionInsightsTopicsResponse200ApplicationJsonModel struct {
-	Items   []GetApiProductionInsightsTopicsResponse200ApplicationJsonModelItemsItem `json:"items"`
-	HasMore bool                                                                     `json:"hasMore"`
+	Items      []JsonValue                                                          `json:"items"`
+	HasMore    bool                                                                 `json:"hasMore"`
+	NextCursor any                                                                  `json:"nextCursor"`
+	Ranking    GetApiProductionInsightsTopicsResponse200ApplicationJsonModelRanking `json:"ranking"`
 }
 
-type GetApiProductionInsightsTopicsResponse200ApplicationJsonModelItemsItem struct {
-	ProposalState        string                                                                        `json:"proposalState"`
-	ProposalSource       string                                                                        `json:"proposalSource"`
-	Metrics              GetApiProductionInsightsTopicsResponse200ApplicationJsonModelItemsItemMetrics `json:"metrics"`
-	Trend                GetApiProductionInsightsTopicsResponse200ApplicationJsonModelItemsItemTrend   `json:"trend"`
-	Id                   string                                                                        `json:"id"`
-	OrganizationId       OrganizationId                                                                `json:"organizationId"`
-	Fingerprint          string                                                                        `json:"fingerprint"`
-	Name                 string                                                                        `json:"name"`
-	Description          *string                                                                       `json:"description"`
-	Status               string                                                                        `json:"status"`
-	Severity             string                                                                        `json:"severity"`
-	CohortKinds          []string                                                                      `json:"cohortKinds"`
-	Confidence           float64                                                                       `json:"confidence"`
-	CurrentVersionNumber float64                                                                       `json:"currentVersionNumber"`
-	FirstSeenAt          string                                                                        `json:"firstSeenAt"`
-	LastSeenAt           string                                                                        `json:"lastSeenAt"`
-	ContinuityStartedAt  string                                                                        `json:"continuityStartedAt"`
-	OwnerId              *string                                                                       `json:"ownerId"`
-	CreatedBy            string                                                                        `json:"createdBy"`
-	SuppressedAt         *string                                                                       `json:"suppressedAt"`
-	SuppressionReason    *string                                                                       `json:"suppressionReason"`
-	ResolvedAt           *string                                                                       `json:"resolvedAt"`
-	CreatedAt            string                                                                        `json:"createdAt"`
-	UpdatedAt            string                                                                        `json:"updatedAt"`
+type GetApiProductionInsightsTopicsResponse200ApplicationJsonModelRanking struct {
+	Kind                  string   `json:"kind"`
+	State                 string   `json:"state"`
+	ExecutionId           any      `json:"executionId"`
+	FrameHash             any      `json:"frameHash"`
+	ReconciledTopics      float64  `json:"reconciledTopics"`
+	PopulationFrequency   any      `json:"populationFrequency"`
+	Uncertainty           []string `json:"uncertainty"`
+	Scope                 *any     `json:"scope,omitempty"`
+	CapturedUnits         *any     `json:"capturedUnits,omitempty"`
+	AttributedUnits       *any     `json:"attributedUnits,omitempty"`
+	UnassignedUnits       *any     `json:"unassignedUnits,omitempty"`
+	OmittedFailureReports *any     `json:"omittedFailureReports,omitempty"`
 }
 
-type GetApiProductionInsightsTopicsResponse200ApplicationJsonModelItemsItemMetrics struct {
-	TraceCount              float64            `json:"traceCount"`
-	ReportCount             float64            `json:"reportCount"`
-	AffectedUsers           float64            `json:"affectedUsers"`
-	AffectedWorkflows       float64            `json:"affectedWorkflows"`
-	TotalCostUsd            *string            `json:"totalCostUsd"`
-	KnownCostRecords        float64            `json:"knownCostRecords"`
-	ModelCounts             map[string]float64 `json:"modelCounts"`
-	PromptVersionCounts     map[string]float64 `json:"promptVersionCounts"`
-	DeploymentVersionCounts map[string]float64 `json:"deploymentVersionCounts"`
-	CandidateCount          float64            `json:"candidateCount"`
-	GoldenCoverageCount     float64            `json:"goldenCoverageCount"`
-	ReviewCount             float64            `json:"reviewCount"`
+type GetApiProductionInsightsTopicsResponse200ApplicationJsonModelValue struct {
+	Items      []GetApiProductionInsightsTopicsResponse200ApplicationJsonModelValueItemsItem `json:"items"`
+	HasMore    bool                                                                          `json:"hasMore"`
+	NextCursor *string                                                                       `json:"nextCursor"`
+	Ranking    GetApiProductionInsightsTopicsResponse200ApplicationJsonModelValueRanking     `json:"ranking"`
 }
 
-type GetApiProductionInsightsTopicsResponse200ApplicationJsonModelItemsItemTrend struct {
+type GetApiProductionInsightsTopicsResponse200ApplicationJsonModelValueItemsItem struct {
+	Id                   string                                                                               `json:"id"`
+	OrganizationId       OrganizationId                                                                       `json:"organizationId"`
+	Fingerprint          string                                                                               `json:"fingerprint"`
+	Name                 string                                                                               `json:"name"`
+	Description          *string                                                                              `json:"description"`
+	Status               string                                                                               `json:"status"`
+	Severity             string                                                                               `json:"severity"`
+	CohortKinds          []string                                                                             `json:"cohortKinds"`
+	Confidence           float64                                                                              `json:"confidence"`
+	CurrentVersionNumber float64                                                                              `json:"currentVersionNumber"`
+	FirstSeenAt          string                                                                               `json:"firstSeenAt"`
+	LastSeenAt           string                                                                               `json:"lastSeenAt"`
+	ContinuityStartedAt  string                                                                               `json:"continuityStartedAt"`
+	OwnerId              *string                                                                              `json:"ownerId"`
+	CreatedBy            string                                                                               `json:"createdBy"`
+	SuppressedAt         *string                                                                              `json:"suppressedAt"`
+	SuppressionReason    *string                                                                              `json:"suppressionReason"`
+	ResolvedAt           *string                                                                              `json:"resolvedAt"`
+	CreatedAt            string                                                                               `json:"createdAt"`
+	UpdatedAt            string                                                                               `json:"updatedAt"`
+	ProposalState        string                                                                               `json:"proposalState"`
+	ProposalSource       string                                                                               `json:"proposalSource"`
+	Metrics              GetApiProductionInsightsTopicsResponse200ApplicationJsonModelValueItemsItemMetrics   `json:"metrics"`
+	Lifecycle            GetApiProductionInsightsTopicsResponse200ApplicationJsonModelValueItemsItemLifecycle `json:"lifecycle"`
+	Coverage             GetApiProductionInsightsTopicsResponse200ApplicationJsonModelValueItemsItemCoverage  `json:"coverage"`
+	Priority             GetApiProductionInsightsTopicsResponse200ApplicationJsonModelValueItemsItemPriority  `json:"priority"`
+	Trend                GetApiProductionInsightsTopicsResponse200ApplicationJsonModelValueItemsItemTrend     `json:"trend"`
+}
+
+type GetApiProductionInsightsTopicsResponse200ApplicationJsonModelValueItemsItemMetrics struct {
+	TraceCount              float64                                                                                             `json:"traceCount"`
+	ReportCount             float64                                                                                             `json:"reportCount"`
+	AffectedUsers           float64                                                                                             `json:"affectedUsers"`
+	AffectedWorkflows       float64                                                                                             `json:"affectedWorkflows"`
+	TotalCostUsd            *string                                                                                             `json:"totalCostUsd"`
+	KnownCostRecords        float64                                                                                             `json:"knownCostRecords"`
+	ModelCounts             map[string]float64                                                                                  `json:"modelCounts"`
+	PromptVersionCounts     map[string]float64                                                                                  `json:"promptVersionCounts"`
+	DeploymentVersionCounts map[string]float64                                                                                  `json:"deploymentVersionCounts"`
+	CandidateCount          float64                                                                                             `json:"candidateCount"`
+	GoldenCoverageCount     float64                                                                                             `json:"goldenCoverageCount"`
+	ReviewCount             float64                                                                                             `json:"reviewCount"`
+	ObservationFrame        *GetApiProductionInsightsTopicsResponse200ApplicationJsonModelValueItemsItemMetricsObservationFrame `json:"observationFrame,omitempty"`
+}
+
+type GetApiProductionInsightsTopicsResponse200ApplicationJsonModelValueItemsItemMetricsObservationFrame struct {
+	CanonicalExecutionId  string  `json:"canonicalExecutionId"`
+	Mode                  string  `json:"mode"`
+	Scope                 string  `json:"scope"`
+	TotalEligibleRows     float64 `json:"totalEligibleRows"`
+	SampledRows           float64 `json:"sampledRows"`
+	OmittedRows           float64 `json:"omittedRows"`
+	LookbackBoundary      string  `json:"lookbackBoundary"`
+	SamplingPolicyVersion string  `json:"samplingPolicyVersion"`
+	State                 string  `json:"state"`
+}
+
+type GetApiProductionInsightsTopicsResponse200ApplicationJsonModelValueItemsItemLifecycle struct {
+	CandidateCount      float64 `json:"candidateCount"`
+	GoldenCoverageCount float64 `json:"goldenCoverageCount"`
+	ReviewCount         float64 `json:"reviewCount"`
+}
+
+type GetApiProductionInsightsTopicsResponse200ApplicationJsonModelValueItemsItemCoverage struct {
+	Version                      string                                                                                       `json:"version"`
+	TopicId                      string                                                                                       `json:"topicId"`
+	TopicVersionId               string                                                                                       `json:"topicVersionId"`
+	FrameHash                    *string                                                                                      `json:"frameHash"`
+	FrameState                   string                                                                                       `json:"frameState"`
+	FrameVersionCurrent          bool                                                                                         `json:"frameVersionCurrent"`
+	ObservedUnits                float64                                                                                      `json:"observedUnits"`
+	DeclaredTaskKeys             []string                                                                                     `json:"declaredTaskKeys"`
+	VerifiedProtectedUnits       float64                                                                                      `json:"verifiedProtectedUnits"`
+	UnverifiedUnits              float64                                                                                      `json:"unverifiedUnits"`
+	ObservedCoverage             *float64                                                                                     `json:"observedCoverage"`
+	ObservedTrafficShare         *float64                                                                                     `json:"observedTrafficShare"`
+	ObservedSuccessRate          *float64                                                                                     `json:"observedSuccessRate"`
+	ObservedOutcomeCount         float64                                                                                      `json:"observedOutcomeCount"`
+	EvaluationSuccessRate        *float64                                                                                     `json:"evaluationSuccessRate"`
+	EvaluatedCaseCount           float64                                                                                      `json:"evaluatedCaseCount"`
+	LinkedReviewedSuiteCaseShare *float64                                                                                     `json:"linkedReviewedSuiteCaseShare"`
+	LinkedSuiteCaseCount         float64                                                                                      `json:"linkedSuiteCaseCount"`
+	PopulationFrequency          any                                                                                          `json:"populationFrequency"`
+	PopulationCoverage           any                                                                                          `json:"populationCoverage"`
+	UpstreamCaptureProbability   any                                                                                          `json:"upstreamCaptureProbability"`
+	Freshness                    GetApiProductionInsightsTopicsResponse200ApplicationJsonModelValueItemsItemCoverageFreshness `json:"freshness"`
+	EvidenceComplete             bool                                                                                         `json:"evidenceComplete"`
+	Uncertainty                  []string                                                                                     `json:"uncertainty"`
+	MapHash                      string                                                                                       `json:"mapHash"`
+}
+
+type GetApiProductionInsightsTopicsResponse200ApplicationJsonModelValueItemsItemCoverageFreshness struct {
+	ObservationAgeDays *float64 `json:"observationAgeDays"`
+	LastSeenAt         string   `json:"lastSeenAt"`
+}
+
+type GetApiProductionInsightsTopicsResponse200ApplicationJsonModelValueItemsItemPriority struct {
+	Version             string                                                                                     `json:"version"`
+	Factors             GetApiProductionInsightsTopicsResponse200ApplicationJsonModelValueItemsItemPriorityFactors `json:"factors"`
+	Order               []float64                                                                                  `json:"order"`
+	Rationale           []string                                                                                   `json:"rationale"`
+	PopulationFrequency any                                                                                        `json:"populationFrequency"`
+}
+
+type GetApiProductionInsightsTopicsResponse200ApplicationJsonModelValueItemsItemPriorityFactors struct {
+	SeverityRank            float64  `json:"severityRank"`
+	Unverified              bool     `json:"unverified"`
+	UnverifiedObservedUnits float64  `json:"unverifiedObservedUnits"`
+	ObservedTrafficShare    *float64 `json:"observedTrafficShare"`
+	LastSeenAt              string   `json:"lastSeenAt"`
+}
+
+type GetApiProductionInsightsTopicsResponse200ApplicationJsonModelValueItemsItemTrend struct {
 	CurrentCount  float64  `json:"currentCount"`
 	PreviousCount float64  `json:"previousCount"`
 	ChangePercent *float64 `json:"changePercent"`
@@ -14027,14 +15089,62 @@ type GetApiProductionInsightsTopicsResponse200ApplicationJsonModelItemsItemTrend
 	Continuity    string   `json:"continuity"`
 }
 
+type GetApiProductionInsightsTopicsResponse200ApplicationJsonModelValueRanking struct {
+	Kind                  string   `json:"kind"`
+	Scope                 string   `json:"scope"`
+	State                 string   `json:"state"`
+	ExecutionId           string   `json:"executionId"`
+	FrameHash             *string  `json:"frameHash"`
+	ReconciledTopics      float64  `json:"reconciledTopics"`
+	CapturedUnits         *float64 `json:"capturedUnits"`
+	AttributedUnits       *float64 `json:"attributedUnits"`
+	UnassignedUnits       *float64 `json:"unassignedUnits"`
+	OmittedFailureReports float64  `json:"omittedFailureReports"`
+	PopulationFrequency   any      `json:"populationFrequency"`
+	Uncertainty           []string `json:"uncertainty"`
+}
+
+type GetApiProductionInsightsTopicsResponse200ApplicationJsonModelValueValue struct {
+	Items      []GetApiProductionInsightsTopicsResponse200ApplicationJsonModelValueValueItemsItem `json:"items"`
+	HasMore    bool                                                                               `json:"hasMore"`
+	NextCursor *string                                                                            `json:"nextCursor"`
+}
+
+type GetApiProductionInsightsTopicsResponse200ApplicationJsonModelValueValueItemsItem struct {
+	Id                   string                                                                                   `json:"id"`
+	OrganizationId       OrganizationId                                                                           `json:"organizationId"`
+	Fingerprint          string                                                                                   `json:"fingerprint"`
+	Name                 string                                                                                   `json:"name"`
+	Description          *string                                                                                  `json:"description"`
+	Status               string                                                                                   `json:"status"`
+	Severity             string                                                                                   `json:"severity"`
+	CohortKinds          []string                                                                                 `json:"cohortKinds"`
+	Confidence           float64                                                                                  `json:"confidence"`
+	CurrentVersionNumber float64                                                                                  `json:"currentVersionNumber"`
+	FirstSeenAt          string                                                                                   `json:"firstSeenAt"`
+	LastSeenAt           string                                                                                   `json:"lastSeenAt"`
+	ContinuityStartedAt  string                                                                                   `json:"continuityStartedAt"`
+	OwnerId              *string                                                                                  `json:"ownerId"`
+	CreatedBy            string                                                                                   `json:"createdBy"`
+	SuppressedAt         *string                                                                                  `json:"suppressedAt"`
+	SuppressionReason    *string                                                                                  `json:"suppressionReason"`
+	ResolvedAt           *string                                                                                  `json:"resolvedAt"`
+	CreatedAt            string                                                                                   `json:"createdAt"`
+	UpdatedAt            string                                                                                   `json:"updatedAt"`
+	ProposalState        string                                                                                   `json:"proposalState"`
+	ProposalSource       string                                                                                   `json:"proposalSource"`
+	Metrics              *GetApiProductionInsightsTopicsResponse200ApplicationJsonModelValueItemsItemMetrics      `json:"metrics"`
+	Lifecycle            GetApiProductionInsightsTopicsResponse200ApplicationJsonModelValueItemsItemLifecycle     `json:"lifecycle"`
+	Priority             GetApiProductionInsightsTopicsResponse200ApplicationJsonModelValueValueItemsItemPriority `json:"priority"`
+	Trend                GetApiProductionInsightsTopicsResponse200ApplicationJsonModelValueItemsItemTrend         `json:"trend"`
+}
+
+type GetApiProductionInsightsTopicsResponse200ApplicationJsonModelValueValueItemsItemPriority struct {
+	Rationale           []string `json:"rationale"`
+	PopulationFrequency any      `json:"populationFrequency"`
+}
+
 type GetApiProductionInsightsTopicsTopicIdResponse200ApplicationJsonModel struct {
-	CurrentVersion       GetApiProductionInsightsTopicsTopicIdResponse200ApplicationJsonModelCurrentVersion    `json:"currentVersion"`
-	Versions             []GetApiProductionInsightsTopicsTopicIdResponse200ApplicationJsonModelCurrentVersion  `json:"versions"`
-	Memberships          []GetApiProductionInsightsTopicsTopicIdResponse200ApplicationJsonModelMembershipsItem `json:"memberships"`
-	Snapshots            []GetApiProductionInsightsTopicsTopicIdResponse200ApplicationJsonModelSnapshotsItem   `json:"snapshots"`
-	Decisions            []GetApiProductionInsightsTopicsTopicIdResponse200ApplicationJsonModelDecisionsItem   `json:"decisions"`
-	Links                []GetApiProductionInsightsTopicsTopicIdResponse200ApplicationJsonModelLinksItem       `json:"links"`
-	Trend                GetApiProductionInsightsTopicsResponse200ApplicationJsonModelItemsItemTrend           `json:"trend"`
 	Id                   string                                                                                `json:"id"`
 	OrganizationId       OrganizationId                                                                        `json:"organizationId"`
 	Fingerprint          string                                                                                `json:"fingerprint"`
@@ -14055,6 +15165,20 @@ type GetApiProductionInsightsTopicsTopicIdResponse200ApplicationJsonModel struct
 	ResolvedAt           *string                                                                               `json:"resolvedAt"`
 	CreatedAt            string                                                                                `json:"createdAt"`
 	UpdatedAt            string                                                                                `json:"updatedAt"`
+	CurrentVersion       GetApiProductionInsightsTopicsTopicIdResponse200ApplicationJsonModelCurrentVersion    `json:"currentVersion"`
+	Protection           *GetApiProductionInsightsTopicsTopicIdResponse200ApplicationJsonModelProtection       `json:"protection"`
+	Coverage             *GetApiProductionInsightsTopicsTopicIdResponse200ApplicationJsonModelCoverage         `json:"coverage"`
+	ProposalState        string                                                                                `json:"proposalState"`
+	ProposalSource       string                                                                                `json:"proposalSource"`
+	Metrics              *GetApiProductionInsightsTopicsResponse200ApplicationJsonModelValueItemsItemMetrics   `json:"metrics"`
+	Lifecycle            GetApiProductionInsightsTopicsResponse200ApplicationJsonModelValueItemsItemLifecycle  `json:"lifecycle"`
+	Versions             []GetApiProductionInsightsTopicsTopicIdResponse200ApplicationJsonModelCurrentVersion  `json:"versions"`
+	Memberships          []GetApiProductionInsightsTopicsTopicIdResponse200ApplicationJsonModelMembershipsItem `json:"memberships"`
+	Snapshots            []GetApiProductionInsightsTopicsTopicIdResponse200ApplicationJsonModelSnapshotsItem   `json:"snapshots"`
+	Decisions            []GetApiProductionInsightsTopicsTopicIdResponse200ApplicationJsonModelDecisionsItem   `json:"decisions"`
+	Links                []GetApiProductionInsightsTopicsTopicIdResponse200ApplicationJsonModelLinksItem       `json:"links"`
+	History              GetApiProductionInsightsTopicsTopicIdResponse200ApplicationJsonModelHistory           `json:"history"`
+	Trend                GetApiProductionInsightsTopicsResponse200ApplicationJsonModelValueItemsItemTrend      `json:"trend"`
 }
 
 type GetApiProductionInsightsTopicsTopicIdResponse200ApplicationJsonModelCurrentVersion struct {
@@ -14087,6 +15211,122 @@ type GetApiProductionInsightsTopicsTopicIdResponse200ApplicationJsonModelCurrent
 	SourceVersion     string    `json:"sourceVersion"`
 	MergedFrom        *[]string `json:"mergedFrom,omitempty"`
 	SplitFrom         *string   `json:"splitFrom,omitempty"`
+}
+
+type GetApiProductionInsightsTopicsTopicIdResponse200ApplicationJsonModelProtection struct {
+	Items              []GetApiProductionInsightsTopicsTopicIdResponse200ApplicationJsonModelProtectionItemsItem `json:"items"`
+	HasMore            bool                                                                                      `json:"hasMore"`
+	NextCaseId         *float64                                                                                  `json:"nextCaseId"`
+	PopulationCoverage any                                                                                       `json:"populationCoverage"`
+	Uncertainty        string                                                                                    `json:"uncertainty"`
+}
+
+type GetApiProductionInsightsTopicsTopicIdResponse200ApplicationJsonModelProtectionItemsItem struct {
+	EvaluationId             float64                                                                                                      `json:"evaluationId"`
+	SuiteCaseCount           float64                                                                                                      `json:"suiteCaseCount"`
+	Reviewed                 bool                                                                                                         `json:"reviewed"`
+	TestCaseId               float64                                                                                                      `json:"testCaseId"`
+	CaseHash                 *string                                                                                                      `json:"caseHash"`
+	DatasetVersionId         *string                                                                                                      `json:"datasetVersionId"`
+	DatasetRowContentHash    *string                                                                                                      `json:"datasetRowContentHash"`
+	DatasetId                *string                                                                                                      `json:"datasetId"`
+	DatasetRowId             *string                                                                                                      `json:"datasetRowId"`
+	DatasetSplit             *string                                                                                                      `json:"datasetSplit"`
+	DatasetState             string                                                                                                       `json:"datasetState"`
+	CandidateId              *float64                                                                                                     `json:"candidateId"`
+	ReviewDecisionId         *float64                                                                                                     `json:"reviewDecisionId"`
+	ReviewedBy               *string                                                                                                      `json:"reviewedBy"`
+	SourceTraceId            *float64                                                                                                     `json:"sourceTraceId"`
+	SourceTraceRevisionId    *string                                                                                                      `json:"sourceTraceRevisionId"`
+	SourceTraceRevisionHash  *string                                                                                                      `json:"sourceTraceRevisionHash"`
+	TopicVersionId           string                                                                                                       `json:"topicVersionId"`
+	RunId                    float64                                                                                                      `json:"runId"`
+	RunManifestHash          *string                                                                                                      `json:"runManifestHash"`
+	Environment              *string                                                                                                      `json:"environment"`
+	AssertionSetVersions     []string                                                                                                     `json:"assertionSetVersions"`
+	ApplicableAssertions     []string                                                                                                     `json:"applicableAssertions"`
+	AssertionTrials          []GetApiProductionInsightsTopicsTopicIdResponse200ApplicationJsonModelProtectionItemsItemAssertionTrialsItem `json:"assertionTrials"`
+	CurrentEvaluatorIdentity string                                                                                                       `json:"currentEvaluatorIdentity"`
+	SourceMaterialState      string                                                                                                       `json:"sourceMaterialState"`
+	State                    string                                                                                                       `json:"state"`
+	EvaluationOutcome        string                                                                                                       `json:"evaluationOutcome"`
+	EnforcementScope         string                                                                                                       `json:"enforcementScope"`
+}
+
+type GetApiProductionInsightsTopicsTopicIdResponse200ApplicationJsonModelProtectionItemsItemAssertionTrialsItem struct {
+	LogicalTrialIndex float64  `json:"logicalTrialIndex"`
+	AssertionKeys     []string `json:"assertionKeys"`
+	MissingKeys       []string `json:"missingKeys"`
+	DuplicateKeys     []string `json:"duplicateKeys"`
+	State             string   `json:"state"`
+}
+
+type GetApiProductionInsightsTopicsTopicIdResponse200ApplicationJsonModelCoverage struct {
+	Version                      string                                                                                       `json:"version"`
+	TopicId                      string                                                                                       `json:"topicId"`
+	TopicVersionId               string                                                                                       `json:"topicVersionId"`
+	FrameHash                    *string                                                                                      `json:"frameHash"`
+	FrameState                   string                                                                                       `json:"frameState"`
+	FrameVersionCurrent          bool                                                                                         `json:"frameVersionCurrent"`
+	ObservedUnits                float64                                                                                      `json:"observedUnits"`
+	DeclaredTaskKeys             []string                                                                                     `json:"declaredTaskKeys"`
+	VerifiedProtectedUnits       float64                                                                                      `json:"verifiedProtectedUnits"`
+	UnverifiedUnits              float64                                                                                      `json:"unverifiedUnits"`
+	ObservedCoverage             *float64                                                                                     `json:"observedCoverage"`
+	ObservedTrafficShare         *float64                                                                                     `json:"observedTrafficShare"`
+	ObservedSuccessRate          *float64                                                                                     `json:"observedSuccessRate"`
+	ObservedOutcomeCount         float64                                                                                      `json:"observedOutcomeCount"`
+	EvaluationSuccessRate        *float64                                                                                     `json:"evaluationSuccessRate"`
+	EvaluatedCaseCount           float64                                                                                      `json:"evaluatedCaseCount"`
+	LinkedReviewedSuiteCaseShare *float64                                                                                     `json:"linkedReviewedSuiteCaseShare"`
+	LinkedSuiteCaseCount         float64                                                                                      `json:"linkedSuiteCaseCount"`
+	PopulationFrequency          any                                                                                          `json:"populationFrequency"`
+	PopulationCoverage           any                                                                                          `json:"populationCoverage"`
+	UpstreamCaptureProbability   any                                                                                          `json:"upstreamCaptureProbability"`
+	Freshness                    GetApiProductionInsightsTopicsResponse200ApplicationJsonModelValueItemsItemCoverageFreshness `json:"freshness"`
+	EvidenceComplete             bool                                                                                         `json:"evidenceComplete"`
+	Uncertainty                  []string                                                                                     `json:"uncertainty"`
+	MapHash                      string                                                                                       `json:"mapHash"`
+	Units                        []GetApiProductionInsightsTopicsTopicIdResponse200ApplicationJsonModelCoverageUnitsItem      `json:"units"`
+	HasMoreUnits                 bool                                                                                         `json:"hasMoreUnits"`
+	NextTraceId                  *float64                                                                                     `json:"nextTraceId"`
+}
+
+type GetApiProductionInsightsTopicsTopicIdResponse200ApplicationJsonModelCoverageUnitsItem struct {
+	TraceId              float64                                                                                                 `json:"traceId"`
+	TraceKey             string                                                                                                  `json:"traceKey"`
+	TraceRevisionId      *string                                                                                                 `json:"traceRevisionId"`
+	TraceRevisionHash    *string                                                                                                 `json:"traceRevisionHash"`
+	CreatedAt            string                                                                                                  `json:"createdAt"`
+	Outcome              string                                                                                                  `json:"outcome"`
+	TaskKey              *string                                                                                                 `json:"taskKey"`
+	InclusionProbability *float64                                                                                                `json:"inclusionProbability"`
+	Attribution          string                                                                                                  `json:"attribution"`
+	State                string                                                                                                  `json:"state"`
+	VerifiedCaseIds      []float64                                                                                               `json:"verifiedCaseIds"`
+	LinkedCaseIds        []float64                                                                                               `json:"linkedCaseIds"`
+	CaseEvidence         []GetApiProductionInsightsTopicsTopicIdResponse200ApplicationJsonModelCoverageUnitsItemCaseEvidenceItem `json:"caseEvidence"`
+}
+
+type GetApiProductionInsightsTopicsTopicIdResponse200ApplicationJsonModelCoverageUnitsItemCaseEvidenceItem struct {
+	EvaluationId            float64  `json:"evaluationId"`
+	SuiteCaseCount          float64  `json:"suiteCaseCount"`
+	Reviewed                bool     `json:"reviewed"`
+	TestCaseId              float64  `json:"testCaseId"`
+	CaseHash                *string  `json:"caseHash"`
+	SourceTraceId           *float64 `json:"sourceTraceId"`
+	SourceTraceRevisionId   *string  `json:"sourceTraceRevisionId"`
+	SourceTraceRevisionHash *string  `json:"sourceTraceRevisionHash"`
+	DatasetVersionId        *string  `json:"datasetVersionId"`
+	DatasetId               *string  `json:"datasetId"`
+	DatasetRowId            *string  `json:"datasetRowId"`
+	DatasetSplit            *string  `json:"datasetSplit"`
+	DatasetRowContentHash   *string  `json:"datasetRowContentHash"`
+	RunId                   *float64 `json:"runId"`
+	RunManifestHash         *string  `json:"runManifestHash"`
+	AssertionSetVersions    []string `json:"assertionSetVersions"`
+	State                   string   `json:"state"`
+	EvaluationOutcome       string   `json:"evaluationOutcome"`
 }
 
 type GetApiProductionInsightsTopicsTopicIdResponse200ApplicationJsonModelMembershipsItem struct {
@@ -14131,16 +15371,16 @@ type GetApiProductionInsightsTopicsTopicIdResponse200ApplicationJsonModelMembers
 }
 
 type GetApiProductionInsightsTopicsTopicIdResponse200ApplicationJsonModelSnapshotsItem struct {
-	Id                string                                                                        `json:"id"`
-	OrganizationId    OrganizationId                                                                `json:"organizationId"`
-	TopicId           string                                                                        `json:"topicId"`
-	TopicVersionId    string                                                                        `json:"topicVersionId"`
-	BucketStart       string                                                                        `json:"bucketStart"`
-	BucketGranularity string                                                                        `json:"bucketGranularity"`
-	Metrics           GetApiProductionInsightsTopicsResponse200ApplicationJsonModelItemsItemMetrics `json:"metrics"`
-	ContinuityState   string                                                                        `json:"continuityState"`
-	EvidenceCutoffAt  string                                                                        `json:"evidenceCutoffAt"`
-	ComputedAt        string                                                                        `json:"computedAt"`
+	Id                string                                                                             `json:"id"`
+	OrganizationId    OrganizationId                                                                     `json:"organizationId"`
+	TopicId           string                                                                             `json:"topicId"`
+	TopicVersionId    string                                                                             `json:"topicVersionId"`
+	BucketStart       string                                                                             `json:"bucketStart"`
+	BucketGranularity string                                                                             `json:"bucketGranularity"`
+	Metrics           GetApiProductionInsightsTopicsResponse200ApplicationJsonModelValueItemsItemMetrics `json:"metrics"`
+	ContinuityState   string                                                                             `json:"continuityState"`
+	EvidenceCutoffAt  string                                                                             `json:"evidenceCutoffAt"`
+	ComputedAt        string                                                                             `json:"computedAt"`
 }
 
 type GetApiProductionInsightsTopicsTopicIdResponse200ApplicationJsonModelDecisionsItem struct {
@@ -14166,6 +15406,18 @@ type GetApiProductionInsightsTopicsTopicIdResponse200ApplicationJsonModelLinksIt
 	ResourceId     string         `json:"resourceId"`
 	MembershipId   *string        `json:"membershipId"`
 	CreatedAt      string         `json:"createdAt"`
+}
+
+type GetApiProductionInsightsTopicsTopicIdResponse200ApplicationJsonModelHistory struct {
+	Versions    GetApiProductionInsightsTopicsTopicIdResponse200ApplicationJsonModelHistoryVersions `json:"versions"`
+	Memberships GetApiProductionInsightsTopicsTopicIdResponse200ApplicationJsonModelHistoryVersions `json:"memberships"`
+	Snapshots   GetApiProductionInsightsTopicsTopicIdResponse200ApplicationJsonModelHistoryVersions `json:"snapshots"`
+	Decisions   GetApiProductionInsightsTopicsTopicIdResponse200ApplicationJsonModelHistoryVersions `json:"decisions"`
+	Links       GetApiProductionInsightsTopicsTopicIdResponse200ApplicationJsonModelHistoryVersions `json:"links"`
+}
+
+type GetApiProductionInsightsTopicsTopicIdResponse200ApplicationJsonModelHistoryVersions struct {
+	NextCursor *string `json:"nextCursor"`
 }
 
 type GetApiProjectsProjectKeyResponse200ApplicationJsonModel struct {
@@ -15230,6 +16482,9 @@ type GetApiQualitySpecResponse200ApplicationJsonModel struct {
 
 type GetApiQualitySpecResponse200ApplicationJsonModelSpec struct {
 	Version          string                                                               `json:"version"`
+	MissingData      string                                                               `json:"missingData"`
+	Purpose          string                                                               `json:"purpose"`
+	StrongEvidence   string                                                               `json:"strongEvidence"`
 	Weights          GetApiQualitySpecResponse200ApplicationJsonModelSpecWeights          `json:"weights"`
 	JudgeSchemaSplit GetApiQualitySpecResponse200ApplicationJsonModelSpecJudgeSchemaSplit `json:"judgeSchemaSplit"`
 	LatencyCostSplit GetApiQualitySpecResponse200ApplicationJsonModelSpecLatencyCostSplit `json:"latencyCostSplit"`
@@ -16747,6 +18002,7 @@ type GetApiRepositoryIntelligenceRepositoriesRepositoryIdScansResponse200Applica
 	Status               string                                                                                                            `json:"status"`
 	Completeness         string                                                                                                            `json:"completeness"`
 	IdempotencyKey       string                                                                                                            `json:"idempotencyKey"`
+	EvidenceStorage      string                                                                                                            `json:"evidenceStorage"`
 	DetectorRegistryHash string                                                                                                            `json:"detectorRegistryHash"`
 	ManifestHash         string                                                                                                            `json:"manifestHash"`
 	IntakeIdentityHash   *string                                                                                                           `json:"intakeIdentityHash"`
@@ -16836,6 +18092,7 @@ type GetApiRepositoryIntelligenceRepositoriesRepositoryIdScansScanRunIdResponse2
 	RecommendedBaseline GetApiRepositoryIntelligenceRepositoriesRepositoryIdScansScanRunIdResponse200ApplicationJsonModelRecommendedBaseline `json:"recommendedBaseline"`
 	Analysis            *GetApiRepositoryIntelligenceRepositoriesRepositoryIdScansScanRunIdResponse200ApplicationJsonModelAnalysis           `json:"analysis"`
 	AiStack             []GetApiRepositoryIntelligenceRepositoriesRepositoryIdScansScanRunIdResponse200ApplicationJsonModelAiStackItem       `json:"aiStack"`
+	BinaryEvidence      **GetApiRepositoryIntelligenceRepositoriesRepositoryIdScansScanRunIdResponse200ApplicationJsonModelBinaryEvidence    `json:"binaryEvidence,omitempty"`
 }
 
 type GetApiRepositoryIntelligenceRepositoriesRepositoryIdScansScanRunIdResponse200ApplicationJsonModelDetectorRunsItem struct {
@@ -17053,6 +18310,16 @@ type GetApiRepositoryIntelligenceRepositoriesRepositoryIdScansScanRunIdResponse2
 	Id       string `json:"id"`
 	Label    string `json:"label"`
 	Category string `json:"category"`
+}
+
+type GetApiRepositoryIntelligenceRepositoriesRepositoryIdScansScanRunIdResponse200ApplicationJsonModelBinaryEvidence struct {
+	Codec                string  `json:"codec"`
+	Sha256               string  `json:"sha256"`
+	ValueHash            string  `json:"valueHash"`
+	UncompressedBytes    float64 `json:"uncompressedBytes"`
+	StoredBytes          float64 `json:"storedBytes"`
+	ObservationsCaptured bool    `json:"observationsCaptured"`
+	DataBase64           string  `json:"dataBase64"`
 }
 
 type GetApiRepositoryIntelligenceRepositoriesResponse200ApplicationJsonModel struct {
@@ -17588,6 +18855,7 @@ type GetApiSystemControlsResponse200ApplicationJsonModelPolicyPiiDetection struc
 
 type GetApiSystemControlsResponse200ApplicationJsonModelPolicyExternalProviders struct {
 	AllowExternalLLM bool     `json:"allowExternalLLM"`
+	ProviderMode     *string  `json:"providerMode,omitempty"`
 	AllowedProviders []string `json:"allowedProviders"`
 	LogCalls         bool     `json:"logCalls"`
 }
@@ -17694,6 +18962,7 @@ type GetApiSystemControlsResponse200ApplicationJsonModelDriftRecentAlertsItem st
 
 type GetApiSystemControlsResponse200ApplicationJsonModelProviders struct {
 	AllowExternalLLM   bool                                                                          `json:"allowExternalLLM"`
+	ProviderMode       string                                                                        `json:"providerMode"`
 	AllowedProviders   []string                                                                      `json:"allowedProviders"`
 	RecentCalls        []GetApiSystemControlsResponse200ApplicationJsonModelProvidersRecentCallsItem `json:"recentCalls"`
 	RecentBlockedCalls []GetApiSystemControlsResponse200ApplicationJsonModelProvidersRecentCallsItem `json:"recentBlockedCalls"`
@@ -17758,18 +19027,12 @@ type GetApiTelemetrySetupResponse200ApplicationJsonModelLocalSetup struct {
 }
 
 type GetApiTracesIdResponse200ApplicationJsonModel struct {
-	Trace GetApiTracesIdResponse200ApplicationJsonModelTrace       `json:"trace"`
-	Spans []GetApiTracesIdResponse200ApplicationJsonModelSpansItem `json:"spans"`
+	Trace        GetApiTracesIdResponse200ApplicationJsonModelTrace        `json:"trace"`
+	Spans        []GetApiTracesIdResponse200ApplicationJsonModelSpansItem  `json:"spans"`
+	ToolEvidence GetApiTracesIdResponse200ApplicationJsonModelToolEvidence `json:"toolEvidence"`
 }
 
 type GetApiTracesIdResponse200ApplicationJsonModelTrace struct {
-	CandidateId      float64                                                              `json:"candidateId"`
-	SessionId        *string                                                              `json:"sessionId"`
-	TraceKey         string                                                               `json:"traceKey"`
-	EvaluationRunId  *float64                                                             `json:"evaluationRunId"`
-	EvaluationId     *float64                                                             `json:"evaluationId"`
-	SkipReason       *string                                                              `json:"skipReason"`
-	FailurePatterns  []GetApiOnlineEvalsAlertsIdResponse200ApplicationJsonModelTopicsItem `json:"failurePatterns"`
 	Id               float64                                                              `json:"id"`
 	Name             string                                                               `json:"name"`
 	TraceId          string                                                               `json:"traceId"`
@@ -17784,6 +19047,13 @@ type GetApiTracesIdResponse200ApplicationJsonModelTrace struct {
 	ActiveRevisionId *string                                                              `json:"activeRevisionId"`
 	SealStatus       *string                                                              `json:"sealStatus"`
 	CreatedAt        string                                                               `json:"createdAt"`
+	CandidateId      float64                                                              `json:"candidateId"`
+	SessionId        *string                                                              `json:"sessionId"`
+	TraceKey         string                                                               `json:"traceKey"`
+	EvaluationRunId  *float64                                                             `json:"evaluationRunId"`
+	EvaluationId     *float64                                                             `json:"evaluationId"`
+	SkipReason       *string                                                              `json:"skipReason"`
+	FailurePatterns  []GetApiOnlineEvalsAlertsIdResponse200ApplicationJsonModelTopicsItem `json:"failurePatterns"`
 }
 
 type GetApiTracesIdResponse200ApplicationJsonModelTraceMetadata struct {
@@ -17830,6 +19100,74 @@ type GetApiTracesIdResponse200ApplicationJsonModelSpansItem struct {
 }
 
 type GetApiTracesIdResponse200ApplicationJsonModelSpansItemMetadata struct {
+	Model          *string  `json:"model,omitempty"`
+	Provider       *string  `json:"provider,omitempty"`
+	TokenCount     *float64 `json:"tokenCount,omitempty"`
+	Cost           *float64 `json:"cost,omitempty"`
+	Temperature    *float64 `json:"temperature,omitempty"`
+	Tokens         *float64 `json:"tokens,omitempty"`
+	LatencyMs      *float64 `json:"latencyMs,omitempty"`
+	Language       *string  `json:"language,omitempty"`
+	DocumentLength *float64 `json:"documentLength,omitempty"`
+	CacheHit       *bool    `json:"cacheHit,omitempty"`
+}
+
+type GetApiTracesIdResponse200ApplicationJsonModelToolEvidence struct {
+	Revision         *GetApiTracesIdResponse200ApplicationJsonModelToolEvidenceRevision   `json:"revision"`
+	Calls            []GetApiTracesIdResponse200ApplicationJsonModelToolEvidenceCallsItem `json:"calls"`
+	NextAfterOrdinal *float64                                                             `json:"nextAfterOrdinal"`
+}
+
+type GetApiTracesIdResponse200ApplicationJsonModelToolEvidenceRevision struct {
+	Id            string  `json:"id"`
+	Revision      float64 `json:"revision"`
+	Status        string  `json:"status"`
+	ContentHash   string  `json:"contentHash"`
+	ToolCallCount float64 `json:"toolCallCount"`
+}
+
+type GetApiTracesIdResponse200ApplicationJsonModelToolEvidenceCallsItem struct {
+	CallId                string                `json:"callId"`
+	ParentCallId          *string               `json:"parentCallId"`
+	SubagentId            **string              `json:"subagentId,omitempty"`
+	ParallelGroup         **string              `json:"parallelGroup,omitempty"`
+	Ordinal               float64               `json:"ordinal"`
+	ToolName              string                `json:"toolName"`
+	SideEffectClass       string                `json:"sideEffectClass"`
+	Success               *bool                 `json:"success"`
+	Authorized            *bool                 `json:"authorized"`
+	ConfirmationRequired  *bool                 `json:"confirmationRequired"`
+	Confirmed             *bool                 `json:"confirmed"`
+	Arguments             *map[string]JsonValue `json:"arguments"`
+	Result                JsonValue             `json:"result"`
+	ErrorCode             *string               `json:"errorCode"`
+	CanonicalEvidenceHash *string               `json:"canonicalEvidenceHash"`
+	StartedAt             *string               `json:"startedAt"`
+	CompletedAt           *string               `json:"completedAt"`
+}
+
+type GetApiTracesIdSpansResponse200ApplicationJsonModelItem struct {
+	Id              float64                                                         `json:"id"`
+	TraceId         float64                                                         `json:"traceId"`
+	SpanId          string                                                          `json:"spanId"`
+	ParentSpanId    *string                                                         `json:"parentSpanId"`
+	Name            string                                                          `json:"name"`
+	Type            string                                                          `json:"type"`
+	StartTime       *string                                                         `json:"startTime"`
+	EndTime         *string                                                         `json:"endTime"`
+	DurationMs      *float64                                                        `json:"durationMs"`
+	Input           *string                                                         `json:"input"`
+	InputHash       *string                                                         `json:"inputHash"`
+	Output          *string                                                         `json:"output"`
+	EvaluationRunId *float64                                                        `json:"evaluationRunId"`
+	Metadata        *GetApiTracesIdSpansResponse200ApplicationJsonModelItemMetadata `json:"metadata"`
+	Model           *string                                                         `json:"model"`
+	Provider        *string                                                         `json:"provider"`
+	TokenCount      *float64                                                        `json:"tokenCount"`
+	CreatedAt       string                                                          `json:"createdAt"`
+}
+
+type GetApiTracesIdSpansResponse200ApplicationJsonModelItemMetadata struct {
 	Model          *string  `json:"model,omitempty"`
 	Provider       *string  `json:"provider,omitempty"`
 	TokenCount     *float64 `json:"tokenCount,omitempty"`
@@ -18326,20 +19664,41 @@ type InviteOrganizationMemberRequestModel struct {
 	Role  *string `json:"role,omitempty"`
 }
 
+type JudgeCostEstimateRequestModel struct {
+	ConfigId  int64 `json:"configId"`
+	CaseCount int64 `json:"caseCount"`
+}
+
+type JudgeCostEstimateResponseModel struct {
+	ConfigId                        int64   `json:"configId"`
+	CaseCount                       int64   `json:"caseCount"`
+	ProviderCostUpperBoundUsd       float64 `json:"providerCostUpperBoundUsd"`
+	EvalgateResultCostUpperBoundUsd float64 `json:"evalgateResultCostUpperBoundUsd"`
+	ProviderChargesSeparate         bool    `json:"providerChargesSeparate"`
+	MaxProviderCalls                int64   `json:"maxProviderCalls"`
+	PricingIds                      []int64 `json:"pricingIds"`
+	ExpiresAt                       string  `json:"expiresAt"`
+	RemainingProviderBudgetUsd      float64 `json:"remainingProviderBudgetUsd"`
+	FitsCurrentProviderBudget       bool    `json:"fitsCurrentProviderBudget"`
+	ReservesBudget                  bool    `json:"reservesBudget"`
+	AuthorizesExecution             bool    `json:"authorizesExecution"`
+}
+
 type LaunchEvaluatorValidationRequestModel struct {
-	EvaluatorReleaseId string                                                `json:"evaluatorReleaseId"`
-	EvaluationRunId    *int64                                                `json:"evaluationRunId,omitempty"`
-	DatasetVersionId   *string                                               `json:"datasetVersionId,omitempty"`
-	ValidationType     string                                                `json:"validationType"`
-	RequestedMetrics   []string                                              `json:"requestedMetrics"`
-	SamplingManifest   LaunchEvaluatorValidationRequestModelSamplingManifest `json:"samplingManifest"`
-	IdempotencyKey     *string                                               `json:"idempotencyKey,omitempty"`
-	Comparison         *LaunchEvaluatorValidationRequestModelComparison      `json:"comparison,omitempty"`
-	Qualification      *LaunchEvaluatorValidationRequestModelQualification   `json:"qualification,omitempty"`
-	Workflow           *json.RawMessage                                      `json:"workflow,omitempty"`
-	ExecutionBudget    *LaunchEvaluatorValidationRequestModelExecutionBudget `json:"executionBudget,omitempty"`
-	Source             *LaunchEvaluatorValidationRequestModelSource          `json:"source,omitempty"`
-	PlanHash           *string                                               `json:"planHash,omitempty"`
+	EvaluatorReleaseId string                                                 `json:"evaluatorReleaseId"`
+	EvaluationRunId    *int64                                                 `json:"evaluationRunId,omitempty"`
+	DatasetVersionId   *string                                                `json:"datasetVersionId,omitempty"`
+	ValidationType     string                                                 `json:"validationType"`
+	RequestedMetrics   []string                                               `json:"requestedMetrics"`
+	SamplingManifest   LaunchEvaluatorValidationRequestModelSamplingManifest  `json:"samplingManifest"`
+	IdempotencyKey     *string                                                `json:"idempotencyKey,omitempty"`
+	Comparison         *LaunchEvaluatorValidationRequestModelComparison       `json:"comparison,omitempty"`
+	Qualification      *LaunchEvaluatorValidationRequestModelQualification    `json:"qualification,omitempty"`
+	EvidenceAnalysis   *LaunchEvaluatorValidationRequestModelEvidenceAnalysis `json:"evidenceAnalysis,omitempty"`
+	Workflow           *json.RawMessage                                       `json:"workflow,omitempty"`
+	ExecutionBudget    *LaunchEvaluatorValidationRequestModelExecutionBudget  `json:"executionBudget,omitempty"`
+	Source             *LaunchEvaluatorValidationRequestModelSource           `json:"source,omitempty"`
+	PlanHash           *string                                                `json:"planHash,omitempty"`
 }
 
 type LaunchEvaluatorValidationRequestModelSamplingManifest struct {
@@ -18357,18 +19716,32 @@ type LaunchEvaluatorValidationRequestModelSamplingManifestExclusionsItem struct 
 }
 
 type LaunchEvaluatorValidationRequestModelComparison struct {
-	BaselineValidationRunId string  `json:"baselineValidationRunId"`
-	Purpose                 string  `json:"purpose"`
-	TaskId                  string  `json:"taskId"`
-	MinimumReleaseSupport   int64   `json:"minimumReleaseSupport"`
-	RecallFloor             float64 `json:"recallFloor"`
-	UnsafeAutoPassCeiling   float64 `json:"unsafeAutoPassCeiling"`
-	RequiredApprovalStage   *string `json:"requiredApprovalStage,omitempty"`
+	BaselineValidationRunId string                                                               `json:"baselineValidationRunId"`
+	Purpose                 string                                                               `json:"purpose"`
+	TaskId                  string                                                               `json:"taskId"`
+	MinimumReleaseSupport   int64                                                                `json:"minimumReleaseSupport"`
+	RecallFloor             float64                                                              `json:"recallFloor"`
+	UnsafeAutoPassCeiling   float64                                                              `json:"unsafeAutoPassCeiling"`
+	CriticalSlices          *[]LaunchEvaluatorValidationRequestModelComparisonCriticalSlicesItem `json:"criticalSlices,omitempty"`
+	RequiredApprovalStage   *string                                                              `json:"requiredApprovalStage,omitempty"`
+}
+
+type LaunchEvaluatorValidationRequestModelComparisonCriticalSlicesItem struct {
+	SliceId                string  `json:"sliceId"`
+	MinimumSupport         int64   `json:"minimumSupport"`
+	RecallFloor            float64 `json:"recallFloor"`
+	UnsafeAutoPassCeiling  float64 `json:"unsafeAutoPassCeiling"`
+	BadCaseAutoPassCeiling float64 `json:"badCaseAutoPassCeiling"`
 }
 
 type LaunchEvaluatorValidationRequestModelQualification struct {
 	PartitionId  string `json:"partitionId"`
 	ReviewItemId int64  `json:"reviewItemId"`
+}
+
+type LaunchEvaluatorValidationRequestModelEvidenceAnalysis struct {
+	Kind        string  `json:"kind"`
+	DecisionIds []int64 `json:"decisionIds"`
 }
 
 type LaunchEvaluatorValidationRequestModelWorkflow struct {
@@ -18418,6 +19791,22 @@ type MeasurementRevisionModel struct {
 	Summary            map[string]any `json:"summary"`
 }
 
+type NlWebAskFailureModel struct {
+	QueryId *string                   `json:"query_id,omitempty"`
+	Error   NlWebAskFailureModelError `json:"error"`
+	Meta    NlWebAskFailureModelMeta  `json:"_meta"`
+}
+
+type NlWebAskFailureModelError struct {
+	Code    string `json:"code"`
+	Message string `json:"message"`
+}
+
+type NlWebAskFailureModelMeta struct {
+	ResponseType string `json:"response_type"`
+	Version      string `json:"version"`
+}
+
 type NlWebAskRequestModel struct {
 	Query     json.RawMessage             `json:"query"`
 	Streaming *bool                       `json:"streaming,omitempty"`
@@ -18431,7 +19820,9 @@ type NlWebAskRequestModelQuery struct {
 }
 
 type NlWebAskRequestModelPrefer struct {
-	Streaming *bool `json:"streaming,omitempty"`
+	Streaming      *bool   `json:"streaming,omitempty"`
+	Mode           *string `json:"mode,omitempty"`
+	ResponseFormat *string `json:"response_format,omitempty"`
 }
 
 type NlWebAskResponseModel struct {
@@ -18442,11 +19833,13 @@ type NlWebAskResponseModel struct {
 }
 
 type NlWebAskResponseModelMeta struct {
-	ResponseType string `json:"response_type"`
-	Version      string `json:"version"`
+	ResponseType   string  `json:"response_type"`
+	Version        string  `json:"version"`
+	ResponseFormat *string `json:"response_format,omitempty"`
 }
 
 type NlWebResultModel struct {
+	Type         string         `json:"@type"`
 	Name         string         `json:"name"`
 	Identifier   string         `json:"identifier"`
 	Title        string         `json:"title"`
@@ -18625,10 +20018,16 @@ type PatchApiConnectionsGraphIdRequestModel struct {
 }
 
 type PatchApiConnectionsGraphIdRequestModelEndpointsItem struct {
-	Id          string                                                                         `json:"id"`
-	Purpose     string                                                                         `json:"purpose"`
-	NativeScope string                                                                         `json:"nativeScope"`
-	Credential  GetApiConnectionsGraphIdResponse200ApplicationJsonModelEndpointsItemCredential `json:"credential"`
+	Id          string                                                        `json:"id"`
+	Purpose     string                                                        `json:"purpose"`
+	NativeScope string                                                        `json:"nativeScope"`
+	Credential  PatchApiConnectionsGraphIdRequestModelEndpointsItemCredential `json:"credential"`
+}
+
+type PatchApiConnectionsGraphIdRequestModelEndpointsItemCredential struct {
+	Id      float64 `json:"id"`
+	Version float64 `json:"version"`
+	Store   string  `json:"store"`
 }
 
 type PatchApiConnectionsGraphIdResponse200ApplicationJsonModel struct {
@@ -19008,9 +20407,10 @@ type PatchApiEvaluationsIdResponse200ApplicationJsonModelEvaluation struct {
 }
 
 type PatchApiEvaluationsIdScheduleRequestModel struct {
-	CronExpression string `json:"cronExpression"`
-	Frequency      string `json:"frequency"`
-	Enabled        *bool  `json:"enabled,omitempty"`
+	Frequency      string  `json:"frequency"`
+	CronExpression string  `json:"cronExpression"`
+	Timezone       *string `json:"timezone,omitempty"`
+	Enabled        *bool   `json:"enabled,omitempty"`
 }
 
 type PatchApiEvaluatorValidationReleasesIdRequestModel struct {
@@ -19257,6 +20657,32 @@ type PatchApiOnlineEvalsMonitorsIdRequestModelSampling struct {
 	SeverityMultiplier *float64  `json:"severityMultiplier,omitempty"`
 	UncertaintyBoost   *float64  `json:"uncertaintyBoost,omitempty"`
 	AdaptiveTargetRate **float64 `json:"adaptiveTargetRate,omitempty"`
+}
+
+type PatchApiOrganizationsIdentityPolicyRequestModel struct {
+	SsoRequired         *bool    `json:"ssoRequired,omitempty"`
+	MfaRequired         *bool    `json:"mfaRequired,omitempty"`
+	TrustIdpMfa         *bool    `json:"trustIdpMfa,omitempty"`
+	JitDefaultRole      *string  `json:"jitDefaultRole,omitempty"`
+	RecoveryAdminUserId **string `json:"recoveryAdminUserId,omitempty"`
+}
+
+type PatchApiOrganizationsIdentityPolicyResponse200ApplicationJsonModel struct {
+	Policy GetApiOrganizationsIdentityResponse200ApplicationJsonModelPolicy `json:"policy"`
+}
+
+type PatchApiOrganizationsIdentitySsoProvidersProviderIdRequestModel struct {
+	DisplayName        *string `json:"displayName,omitempty"`
+	ClientId           *string `json:"clientId,omitempty"`
+	ClientSecret       *string `json:"clientSecret,omitempty"`
+	IdpMetadataXml     *string `json:"idpMetadataXml,omitempty"`
+	EntityId           *string `json:"entityId,omitempty"`
+	SsoUrl             *string `json:"ssoUrl,omitempty"`
+	SigningCertificate *string `json:"signingCertificate,omitempty"`
+}
+
+type PatchApiOrganizationsIdentitySsoProvidersProviderIdResponse200ApplicationJsonModel struct {
+	Provider GetApiOrganizationsIdentityResponse200ApplicationJsonModelProvidersItem `json:"provider"`
 }
 
 type PatchApiOrganizationsMembersMemberIdRequestModel struct {
@@ -19606,26 +21032,54 @@ type PostApiAdjudicationItemsIdAssignRequestModel struct {
 	AssigneeId string `json:"assigneeId"`
 }
 
-type PostApiAdjudicationItemsIdDecisionRequestModel struct {
-	Decision             string                                                          `json:"decision"`
-	SeenMaterialRevision *string                                                         `json:"seenMaterialRevision,omitempty"`
-	Rationale            *string                                                         `json:"rationale,omitempty"`
-	EditedFields         *map[string]JsonValue                                           `json:"editedFields,omitempty"`
-	GroundTruth          *PostApiAdjudicationItemsIdDecisionRequestModelGroundTruth      `json:"groundTruth,omitempty"`
-	AutoAdjudication     *PostApiAdjudicationItemsIdDecisionRequestModelAutoAdjudication `json:"autoAdjudication,omitempty"`
+type PostApiAdjudicationItemsIdCommentsRequestModel struct {
+	Action           string   `json:"action"`
+	Body             string   `json:"body"`
+	ParentId         *float64 `json:"parentId,omitempty"`
+	MaterialRevision string   `json:"materialRevision"`
+	RequestKey       string   `json:"requestKey"`
 }
 
-type PostApiAdjudicationItemsIdDecisionRequestModelGroundTruth struct {
-	Labels   *map[string]JsonValue `json:"labels,omitempty"`
-	Rating   *float64              `json:"rating,omitempty"`
-	Feedback *string               `json:"feedback,omitempty"`
-	Verdict  *string               `json:"verdict,omitempty"`
+type PostApiAdjudicationItemsIdCommentsRequestModelValue struct {
+	Action           string  `json:"action"`
+	CommentId        float64 `json:"commentId"`
+	MaterialRevision string  `json:"materialRevision"`
+}
+
+type PostApiAdjudicationItemsIdCommentsResponse200ApplicationJsonModel struct {
+	Comment PostApiAdjudicationItemsIdCommentsResponse200ApplicationJsonModelComment `json:"comment"`
+}
+
+type PostApiAdjudicationItemsIdCommentsResponse200ApplicationJsonModelComment struct {
+	Id               float64        `json:"id"`
+	OrganizationId   OrganizationId `json:"organizationId"`
+	ItemId           float64        `json:"itemId"`
+	MaterialRevision string         `json:"materialRevision"`
+	ParentId         *float64       `json:"parentId"`
+	Body             string         `json:"body"`
+	AuthorId         string         `json:"authorId"`
+	AuthorKind       string         `json:"authorKind"`
+	RequestKey       string         `json:"requestKey"`
+	RequestHash      string         `json:"requestHash"`
+	ResolvedAt       *string        `json:"resolvedAt"`
+	ResolvedBy       *string        `json:"resolvedBy"`
+	CreatedAt        string         `json:"createdAt"`
+}
+
+type PostApiAdjudicationItemsIdDecisionRequestModel struct {
+	Decision             string                                                                          `json:"decision"`
+	Rationale            *string                                                                         `json:"rationale,omitempty"`
+	EditedFields         *map[string]JsonValue                                                           `json:"editedFields,omitempty"`
+	GroundTruth          *GetApiAdjudicationItemsIdResponse200ApplicationJsonModelLatestGroundTruthLabel `json:"groundTruth,omitempty"`
+	SeenMaterialRevision *string                                                                         `json:"seenMaterialRevision,omitempty"`
+	AutoAdjudication     *PostApiAdjudicationItemsIdDecisionRequestModelAutoAdjudication                 `json:"autoAdjudication,omitempty"`
 }
 
 type PostApiAdjudicationItemsIdDecisionRequestModelAutoAdjudication struct {
-	MeasurementRevisionId string  `json:"measurementRevisionId"`
 	ApprovalId            float64 `json:"approvalId"`
+	MeasurementRevisionId string  `json:"measurementRevisionId"`
 	ObservationId         string  `json:"observationId"`
+	IdempotencyKey        *string `json:"idempotencyKey,omitempty"`
 }
 
 type PostApiAdjudicationItemsIdDecisionResponse200ApplicationJsonModel struct {
@@ -19642,6 +21096,13 @@ type PostApiAdjudicationItemsIdDecisionResponse200ApplicationJsonModelDecision s
 	ReviewerId   string               `json:"reviewerId"`
 	ReviewerKind string               `json:"reviewerKind"`
 	CreatedAt    string               `json:"createdAt"`
+}
+
+type PostApiAdjudicationItemsIdGroundTruthRequestModel struct {
+	Labels   *map[string]JsonValue `json:"labels,omitempty"`
+	Rating   *float64              `json:"rating,omitempty"`
+	Feedback *string               `json:"feedback,omitempty"`
+	Verdict  *string               `json:"verdict,omitempty"`
 }
 
 type PostApiAdjudicationItemsIdPrepareRequestModel struct {
@@ -21631,31 +23092,37 @@ type PostApiAnnotationsTasksResponse201ApplicationJsonModel struct {
 }
 
 type PostApiArenaCompareRequestModel struct {
+	Blind         *bool     `json:"blind,omitempty"`
 	Prompt        string    `json:"prompt"`
 	Models        []string  `json:"models"`
 	JudgeConfigId **float64 `json:"judgeConfigId,omitempty"`
 }
 
 type PostApiArenaCompareResponse201ApplicationJsonModel struct {
-	MatchId        float64                                                           `json:"matchId"`
-	Winner         PostApiArenaCompareResponse201ApplicationJsonModelWinner          `json:"winner"`
-	JudgeReasoning string                                                            `json:"judgeReasoning"`
-	Responses      []PostApiArenaCompareResponse201ApplicationJsonModelResponsesItem `json:"responses"`
-	Scores         map[string]float64                                                `json:"scores"`
+	MatchId float64                                                    `json:"matchId"`
+	Review  *GetApiArenaReviewsIdResponse200ApplicationJsonModelReview `json:"review"`
 }
 
-type PostApiArenaCompareResponse201ApplicationJsonModelWinner struct {
+type PostApiArenaCompareResponse201ApplicationJsonModelValue struct {
+	MatchId        float64                                                                `json:"matchId"`
+	Winner         PostApiArenaCompareResponse201ApplicationJsonModelValueWinner          `json:"winner"`
+	JudgeReasoning string                                                                 `json:"judgeReasoning"`
+	Responses      []PostApiArenaCompareResponse201ApplicationJsonModelValueResponsesItem `json:"responses"`
+	Scores         map[string]float64                                                     `json:"scores"`
+}
+
+type PostApiArenaCompareResponse201ApplicationJsonModelValueWinner struct {
 	ModelId string `json:"modelId"`
 	Label   string `json:"label"`
 }
 
-type PostApiArenaCompareResponse201ApplicationJsonModelResponsesItem struct {
-	ModelId    string  `json:"modelId"`
-	Output     string  `json:"output"`
-	LatencyMs  float64 `json:"latencyMs"`
-	TokenCount float64 `json:"tokenCount"`
-	Cost       float64 `json:"cost"`
-	Error      *string `json:"error,omitempty"`
+type PostApiArenaCompareResponse201ApplicationJsonModelValueResponsesItem struct {
+	ModelId        string   `json:"modelId"`
+	Output         string   `json:"output"`
+	LatencyMs      float64  `json:"latencyMs"`
+	TokenCount     float64  `json:"tokenCount"`
+	Cost           *float64 `json:"cost"`
+	CostConfidence string   `json:"costConfidence"`
 }
 
 type PostApiArenaMatchesRequestModel struct {
@@ -21663,6 +23130,30 @@ type PostApiArenaMatchesRequestModel struct {
 	Models        []string              `json:"models"`
 	Metadata      *map[string]JsonValue `json:"metadata,omitempty"`
 	JudgeConfigId *float64              `json:"judgeConfigId,omitempty"`
+}
+
+type PostApiArenaReviewsIdRequestModel struct {
+	Choice    string  `json:"choice"`
+	Rationale *string `json:"rationale,omitempty"`
+}
+
+type PostApiArenaReviewsIdResponse200ApplicationJsonModel struct {
+	Review *GetApiArenaReviewsIdResponse200ApplicationJsonModelReview `json:"review"`
+}
+
+type PostApiAssessmentsIdRuntimeEvidenceRequestModel struct {
+	Reference              json.RawMessage `json:"reference"`
+	ExpectedReceiptHash    string          `json:"expectedReceiptHash"`
+	ExpectedAssessmentHash string          `json:"expectedAssessmentHash"`
+	IdempotencyKey         string          `json:"idempotencyKey"`
+	Rationale              string          `json:"rationale"`
+}
+
+type PostApiAssessmentsIdRuntimeEvidenceResponse200ApplicationJsonModel struct {
+	SnapshotId   float64                                                                          `json:"snapshotId"`
+	SnapshotHash string                                                                           `json:"snapshotHash"`
+	Review       GetApiAssessmentsIdResponse200ApplicationJsonModelRuntimeEvidenceItemsItemReview `json:"review"`
+	Replayed     bool                                                                             `json:"replayed"`
 }
 
 type PostApiAuditCorrectiveActionsRequestModel struct {
@@ -21898,6 +23389,20 @@ type PostApiBenchmarksResponse201ApplicationJsonModel struct {
 	Metrics        GetApiBenchmarksIdResponse200ApplicationJsonModelBenchmarkMetrics  `json:"metrics"`
 	IsPublic       *bool                                                              `json:"isPublic"`
 	TaskType       string                                                             `json:"taskType"`
+}
+
+type PostApiBillingAgentPaymentsTopUpsRequestModel struct {
+	AmountUsd float64 `json:"amountUsd"`
+}
+
+type PostApiBillingAgentPaymentsTopUpsResponse201ApplicationJsonModel struct {
+	TopUpId   string  `json:"topUpId"`
+	AmountUsd float64 `json:"amountUsd"`
+	Units     float64 `json:"units"`
+	Status    string  `json:"status"`
+	PayUrl    string  `json:"payUrl"`
+	ExpiresAt string  `json:"expiresAt"`
+	PaidAt    *string `json:"paidAt"`
 }
 
 type PostApiBillingPortalResponse200ApplicationJsonModel struct {
@@ -22657,7 +24162,12 @@ type PostApiCollectorResponse201ApplicationJsonModel struct {
 }
 
 type PostApiConnectionsGraphBackfillRequestModel struct {
-	References []GetApiConnectionsGraphIdResponse200ApplicationJsonModelSource `json:"references"`
+	References []PostApiConnectionsGraphBackfillRequestModelReferencesItem `json:"references"`
+}
+
+type PostApiConnectionsGraphBackfillRequestModelReferencesItem struct {
+	SourceId float64 `json:"sourceId"`
+	Source   string  `json:"source"`
 }
 
 type PostApiConnectionsGraphBackfillResponse200ApplicationJsonModel struct {
@@ -22666,9 +24176,53 @@ type PostApiConnectionsGraphBackfillResponse200ApplicationJsonModel struct {
 }
 
 type PostApiConnectionsGraphBackfillResponse200ApplicationJsonModelConnectionsItem struct {
-	Id       string                                                        `json:"id"`
-	Source   GetApiConnectionsGraphIdResponse200ApplicationJsonModelSource `json:"source"`
-	Revision float64                                                       `json:"revision"`
+	Id       string                                                    `json:"id"`
+	Source   PostApiConnectionsGraphBackfillRequestModelReferencesItem `json:"source"`
+	Revision float64                                                   `json:"revision"`
+}
+
+type PostApiConnectionsGraphIdDiscoverRequestModel struct {
+	ExpectedRevision       float64  `json:"expectedRevision"`
+	ExpectedAuthorityEpoch float64  `json:"expectedAuthorityEpoch"`
+	ExpectedSelectionEpoch float64  `json:"expectedSelectionEpoch"`
+	IdempotencyKey         string   `json:"idempotencyKey"`
+	EndpointId             *string  `json:"endpointId,omitempty"`
+	ParentGrantId          *string  `json:"parentGrantId,omitempty"`
+	Cursor                 *string  `json:"cursor,omitempty"`
+	Limit                  *float64 `json:"limit,omitempty"`
+}
+
+type PostApiConnectionsGraphIdExecuteRequestModel struct {
+	ExpectedRevision       float64    `json:"expectedRevision"`
+	ExpectedAuthorityEpoch float64    `json:"expectedAuthorityEpoch"`
+	ExpectedSelectionEpoch float64    `json:"expectedSelectionEpoch"`
+	IdempotencyKey         string     `json:"idempotencyKey"`
+	Operation              string     `json:"operation"`
+	GrantId                string     `json:"grantId"`
+	Cursor                 *string    `json:"cursor,omitempty"`
+	Query                  *string    `json:"query,omitempty"`
+	Vector                 *[]float64 `json:"vector,omitempty"`
+	Limit                  *float64   `json:"limit,omitempty"`
+	MaxTokens              *float64   `json:"maxTokens,omitempty"`
+}
+
+type PostApiConnectionsGraphIdGrantsRequestModel struct {
+	ExpectedRevision       float64   `json:"expectedRevision"`
+	ExpectedAuthorityEpoch float64   `json:"expectedAuthorityEpoch"`
+	ExpectedSelectionEpoch float64   `json:"expectedSelectionEpoch"`
+	IdempotencyKey         string    `json:"idempotencyKey"`
+	SnapshotId             *string   `json:"snapshotId,omitempty"`
+	NativeIds              *[]string `json:"nativeIds,omitempty"`
+	RemoveGrantIds         *[]string `json:"removeGrantIds,omitempty"`
+	Replace                *bool     `json:"replace,omitempty"`
+}
+
+type PostApiConnectionsGraphIdGrantsResponse200ApplicationJsonModel struct {
+	ConnectionId   string                                                                     `json:"connectionId"`
+	Revision       float64                                                                    `json:"revision"`
+	AuthorityEpoch float64                                                                    `json:"authorityEpoch"`
+	SelectionEpoch float64                                                                    `json:"selectionEpoch"`
+	Grants         []GetApiConnectionsGraphIdRuntimeResponse200ApplicationJsonModelGrantsItem `json:"grants"`
 }
 
 type PostApiConnectionsGraphIdLifecycleRequestModel struct {
@@ -22706,14 +24260,21 @@ type PostApiConnectionsGraphIdSelectionResponse200ApplicationJsonModel struct {
 }
 
 type PostApiConnectionsGraphRequestModel struct {
-	Name           string                                                `json:"name"`
-	SchemaVersion  float64                                               `json:"schemaVersion"`
-	IdempotencyKey string                                                `json:"idempotencyKey"`
-	DriverId       string                                                `json:"driverId"`
-	Fields         map[string]string                                     `json:"fields"`
-	AccountScope   string                                                `json:"accountScope"`
-	Placement      json.RawMessage                                       `json:"placement"`
-	Endpoints      []PatchApiConnectionsGraphIdRequestModelEndpointsItem `json:"endpoints"`
+	DriverId       string                                             `json:"driverId"`
+	Name           string                                             `json:"name"`
+	AccountScope   string                                             `json:"accountScope"`
+	Placement      json.RawMessage                                    `json:"placement"`
+	Fields         map[string]string                                  `json:"fields"`
+	IdempotencyKey string                                             `json:"idempotencyKey"`
+	SchemaVersion  float64                                            `json:"schemaVersion"`
+	Endpoints      []PostApiConnectionsGraphRequestModelEndpointsItem `json:"endpoints"`
+}
+
+type PostApiConnectionsGraphRequestModelEndpointsItem struct {
+	Id          string                                                                         `json:"id"`
+	Purpose     string                                                                         `json:"purpose"`
+	Credential  GetApiConnectionsGraphIdResponse200ApplicationJsonModelEndpointsItemCredential `json:"credential"`
+	NativeScope string                                                                         `json:"nativeScope"`
 }
 
 type PostApiCopilotProposalsIdAcceptRequestModel struct {
@@ -22753,21 +24314,38 @@ type PostApiCopilotProposalsIdRejectResponse200ApplicationJsonModel struct {
 }
 
 type PostApiCopilotThreadsIdActionsRequestModel struct {
-	Message         string  `json:"message"`
-	ModelPreference *string `json:"modelPreference,omitempty"`
+	Message            string   `json:"message"`
+	ModelPreference    *string  `json:"modelPreference,omitempty"`
+	Preview            *bool    `json:"preview,omitempty"`
+	MaxProviderCostUsd *float64 `json:"maxProviderCostUsd,omitempty"`
 }
 
 type PostApiCopilotThreadsIdActionsResponse200ApplicationJsonModel struct {
-	Message            PostApiCopilotThreadsIdActionsResponse200ApplicationJsonModelMessage            `json:"message"`
-	Proposal           *PostApiCopilotThreadsIdActionsResponse200ApplicationJsonModelProposal          `json:"proposal"`
-	ClarifyingQuestion *string                                                                         `json:"clarifyingQuestion"`
-	ModelCall          PostApiCopilotThreadsIdActionsResponse200ApplicationJsonModelModelCall          `json:"modelCall"`
-	ContextDisclosure  GetApiCopilotThreadsIdResponse200ApplicationJsonModelThreadContextDisclosure    `json:"contextDisclosure"`
-	KnowledgeRetrieval PostApiCopilotThreadsIdActionsResponse200ApplicationJsonModelKnowledgeRetrieval `json:"knowledgeRetrieval"`
-	Queries            []PostApiCopilotThreadsIdActionsResponse200ApplicationJsonModelQueriesItem      `json:"queries"`
+	CostEstimate PostApiCopilotThreadsIdActionsResponse200ApplicationJsonModelCostEstimate `json:"costEstimate"`
 }
 
-type PostApiCopilotThreadsIdActionsResponse200ApplicationJsonModelMessage struct {
+type PostApiCopilotThreadsIdActionsResponse200ApplicationJsonModelCostEstimate struct {
+	ProviderCostUpperBoundUsd float64                                                                                  `json:"providerCostUpperBoundUsd"`
+	MaxModelCalls             float64                                                                                  `json:"maxModelCalls"`
+	MaxInputBytes             float64                                                                                  `json:"maxInputBytes"`
+	EvalgateResultUnits       float64                                                                                  `json:"evalgateResultUnits"`
+	Scope                     string                                                                                   `json:"scope"`
+	Identities                []GetApiModelGatewayRoutingProfilesIdExplainResponse200ApplicationJsonModelSelectedModel `json:"identities"`
+	PricingIds                []float64                                                                                `json:"pricingIds"`
+	ExpiresAt                 string                                                                                   `json:"expiresAt"`
+}
+
+type PostApiCopilotThreadsIdActionsResponse200ApplicationJsonModelValue struct {
+	Message            PostApiCopilotThreadsIdActionsResponse200ApplicationJsonModelValueMessage            `json:"message"`
+	Proposal           *PostApiCopilotThreadsIdActionsResponse200ApplicationJsonModelValueProposal          `json:"proposal"`
+	ClarifyingQuestion *string                                                                              `json:"clarifyingQuestion"`
+	ModelCall          PostApiCopilotThreadsIdActionsResponse200ApplicationJsonModelValueModelCall          `json:"modelCall"`
+	ContextDisclosure  GetApiCopilotThreadsIdResponse200ApplicationJsonModelThreadContextDisclosure         `json:"contextDisclosure"`
+	KnowledgeRetrieval PostApiCopilotThreadsIdActionsResponse200ApplicationJsonModelValueKnowledgeRetrieval `json:"knowledgeRetrieval"`
+	Queries            []PostApiCopilotThreadsIdActionsResponse200ApplicationJsonModelValueQueriesItem      `json:"queries"`
+}
+
+type PostApiCopilotThreadsIdActionsResponse200ApplicationJsonModelValueMessage struct {
 	Content           string         `json:"content"`
 	ContentHash       string         `json:"contentHash"`
 	CreatedAt         string         `json:"createdAt"`
@@ -22781,7 +24359,7 @@ type PostApiCopilotThreadsIdActionsResponse200ApplicationJsonModelMessage struct
 	ThreadId          string         `json:"threadId"`
 }
 
-type PostApiCopilotThreadsIdActionsResponse200ApplicationJsonModelProposal struct {
+type PostApiCopilotThreadsIdActionsResponse200ApplicationJsonModelValueProposal struct {
 	After                 JsonValue                                                                            `json:"after"`
 	ApplicationResult     json.RawMessage                                                                      `json:"applicationResult"`
 	AuthorizationSnapshot GetApiCopilotProposalsIdResponse200ApplicationJsonModelProposalAuthorizationSnapshot `json:"authorizationSnapshot"`
@@ -22813,43 +24391,43 @@ type PostApiCopilotThreadsIdActionsResponse200ApplicationJsonModelProposal struc
 	Warnings              []GetApiCopilotProposalsIdResponse200ApplicationJsonModelProposalWarningsItem        `json:"warnings"`
 }
 
-type PostApiCopilotThreadsIdActionsResponse200ApplicationJsonModelModelCall struct {
-	Id        string                                                                     `json:"id"`
-	Status    string                                                                     `json:"status"`
-	Model     string                                                                     `json:"model"`
-	Provider  string                                                                     `json:"provider"`
-	Cost      PostApiCopilotThreadsIdActionsResponse200ApplicationJsonModelModelCallCost `json:"cost"`
-	LatencyMs float64                                                                    `json:"latencyMs"`
+type PostApiCopilotThreadsIdActionsResponse200ApplicationJsonModelValueModelCall struct {
+	Id        string                                                                          `json:"id"`
+	Status    string                                                                          `json:"status"`
+	Model     string                                                                          `json:"model"`
+	Provider  string                                                                          `json:"provider"`
+	Cost      PostApiCopilotThreadsIdActionsResponse200ApplicationJsonModelValueModelCallCost `json:"cost"`
+	LatencyMs float64                                                                         `json:"latencyMs"`
 }
 
-type PostApiCopilotThreadsIdActionsResponse200ApplicationJsonModelModelCallCost struct {
+type PostApiCopilotThreadsIdActionsResponse200ApplicationJsonModelValueModelCallCost struct {
 	AmountUsd string `json:"amountUsd"`
 	Source    string `json:"source"`
 }
 
-type PostApiCopilotThreadsIdActionsResponse200ApplicationJsonModelKnowledgeRetrieval struct {
-	Status     string                                                                                          `json:"status"`
-	Cutoff     *string                                                                                         `json:"cutoff"`
-	References []PostApiCopilotThreadsIdActionsResponse200ApplicationJsonModelKnowledgeRetrievalReferencesItem `json:"references"`
+type PostApiCopilotThreadsIdActionsResponse200ApplicationJsonModelValueKnowledgeRetrieval struct {
+	Status     string                                                                                               `json:"status"`
+	Cutoff     *string                                                                                              `json:"cutoff"`
+	References []PostApiCopilotThreadsIdActionsResponse200ApplicationJsonModelValueKnowledgeRetrievalReferencesItem `json:"references"`
 }
 
-type PostApiCopilotThreadsIdActionsResponse200ApplicationJsonModelKnowledgeRetrievalReferencesItem struct {
+type PostApiCopilotThreadsIdActionsResponse200ApplicationJsonModelValueKnowledgeRetrievalReferencesItem struct {
 	ChunkRef    string  `json:"chunkRef"`
 	DocumentId  string  `json:"documentId"`
 	ChunkId     *string `json:"chunkId"`
 	ContentHash *string `json:"contentHash"`
 }
 
-type PostApiCopilotThreadsIdActionsResponse200ApplicationJsonModelQueriesItem struct {
-	Tool      string                                                                            `json:"tool"`
-	Scope     PostApiCopilotThreadsIdActionsResponse200ApplicationJsonModelQueriesItemScope     `json:"scope"`
-	Citations []string                                                                          `json:"citations"`
-	Data      JsonValue                                                                         `json:"data"`
-	Error     *PostApiCopilotThreadsIdActionsResponse200ApplicationJsonModelQueriesItemError    `json:"error"`
-	Redaction PostApiCopilotThreadsIdActionsResponse200ApplicationJsonModelQueriesItemRedaction `json:"redaction"`
+type PostApiCopilotThreadsIdActionsResponse200ApplicationJsonModelValueQueriesItem struct {
+	Tool      string                                                                                 `json:"tool"`
+	Scope     PostApiCopilotThreadsIdActionsResponse200ApplicationJsonModelValueQueriesItemScope     `json:"scope"`
+	Citations []string                                                                               `json:"citations"`
+	Data      JsonValue                                                                              `json:"data"`
+	Error     *PostApiCopilotThreadsIdActionsResponse200ApplicationJsonModelValueQueriesItemError    `json:"error"`
+	Redaction PostApiCopilotThreadsIdActionsResponse200ApplicationJsonModelValueQueriesItemRedaction `json:"redaction"`
 }
 
-type PostApiCopilotThreadsIdActionsResponse200ApplicationJsonModelQueriesItemScope struct {
+type PostApiCopilotThreadsIdActionsResponse200ApplicationJsonModelValueQueriesItemScope struct {
 	DatasetId      *string              `json:"datasetId"`
 	DatasetName    *string              `json:"datasetName"`
 	Filters        map[string]JsonValue `json:"filters"`
@@ -22859,12 +24437,12 @@ type PostApiCopilotThreadsIdActionsResponse200ApplicationJsonModelQueriesItemSco
 	NextOffset     *float64             `json:"nextOffset"`
 }
 
-type PostApiCopilotThreadsIdActionsResponse200ApplicationJsonModelQueriesItemError struct {
+type PostApiCopilotThreadsIdActionsResponse200ApplicationJsonModelValueQueriesItemError struct {
 	Code    string `json:"code"`
 	Message string `json:"message"`
 }
 
-type PostApiCopilotThreadsIdActionsResponse200ApplicationJsonModelQueriesItemRedaction struct {
+type PostApiCopilotThreadsIdActionsResponse200ApplicationJsonModelValueQueriesItemRedaction struct {
 	State     string   `json:"state"`
 	Findings  []string `json:"findings"`
 	Truncated bool     `json:"truncated"`
@@ -23160,12 +24738,12 @@ type PostApiDashboardsIdRenderResponse200ApplicationJsonModelRendered struct {
 }
 
 type PostApiDashboardsIdRenderResponse200ApplicationJsonModelRenderedWidgetsItem struct {
-	WidgetKey    string                                                                         `json:"widgetKey"`
-	Status       string                                                                         `json:"status"`
-	Data         JsonValue                                                                      `json:"data"`
-	Warnings     []string                                                                       `json:"warnings"`
-	Error        *PostApiCopilotThreadsIdActionsResponse200ApplicationJsonModelQueriesItemError `json:"error,omitempty"`
-	DrilldownUrl string                                                                         `json:"drilldownUrl"`
+	WidgetKey    string                                                                              `json:"widgetKey"`
+	Status       string                                                                              `json:"status"`
+	Data         JsonValue                                                                           `json:"data"`
+	Warnings     []string                                                                            `json:"warnings"`
+	Error        *PostApiCopilotThreadsIdActionsResponse200ApplicationJsonModelValueQueriesItemError `json:"error,omitempty"`
+	DrilldownUrl string                                                                              `json:"drilldownUrl"`
 }
 
 type PostApiDashboardsIdSharesRequestModel struct {
@@ -23353,6 +24931,77 @@ type PostApiDecisionsResponse201ApplicationJsonModel struct {
 	Chosen         string                                                                   `json:"chosen"`
 	Alternatives   []GetApiDecisionsResponse200ApplicationJsonModelDecisionAlternativesItem `json:"alternatives"`
 	InputContext   *GetApiDecisionsResponse200ApplicationJsonModelDecisionInputContext      `json:"inputContext"`
+}
+
+type PostApiDemoCustomEvalRequestModel struct {
+	Input          *string   `json:"input,omitempty"`
+	Output         string    `json:"output"`
+	ExpectedOutput *string   `json:"expectedOutput,omitempty"`
+	Assertions     []string  `json:"assertions"`
+	Keywords       *[]string `json:"keywords,omitempty"`
+	LengthMin      *float64  `json:"lengthMin,omitempty"`
+	LengthMax      *float64  `json:"lengthMax,omitempty"`
+}
+
+type PostApiDemoCustomEvalResponse200ApplicationJsonModel struct {
+	Mode                string                                                           `json:"mode"`
+	Persisted           bool                                                             `json:"persisted"`
+	ProviderCalls       bool                                                             `json:"providerCalls"`
+	Billable            bool                                                             `json:"billable"`
+	Name                string                                                           `json:"name"`
+	Results             PostApiDemoCustomEvalResponse200ApplicationJsonModelResults      `json:"results"`
+	QualityScore        PostApiDemoCustomEvalResponse200ApplicationJsonModelQualityScore `json:"qualityScore"`
+	AssertionDurationMs float64                                                          `json:"assertionDurationMs"`
+}
+
+type PostApiDemoCustomEvalResponse200ApplicationJsonModelResults struct {
+	TotalTests float64                                                                `json:"totalTests"`
+	Passed     float64                                                                `json:"passed"`
+	Failed     float64                                                                `json:"failed"`
+	Tests      []PostApiDemoCustomEvalResponse200ApplicationJsonModelResultsTestsItem `json:"tests"`
+}
+
+type PostApiDemoCustomEvalResponse200ApplicationJsonModelResultsTestsItem struct {
+	Id       float64 `json:"id"`
+	Input    string  `json:"input"`
+	Expected string  `json:"expected"`
+	Actual   string  `json:"actual"`
+	Status   string  `json:"status"`
+	Score    float64 `json:"score"`
+	Notes    string  `json:"notes"`
+}
+
+type PostApiDemoCustomEvalResponse200ApplicationJsonModelQualityScore struct {
+	Overall            float64                                                                            `json:"overall"`
+	Grade              string                                                                             `json:"grade"`
+	Metrics            PostApiDemoCustomEvalResponse200ApplicationJsonModelQualityScoreMetrics            `json:"metrics"`
+	Trend              float64                                                                            `json:"trend"`
+	Insights           []string                                                                           `json:"insights"`
+	Recommendations    []string                                                                           `json:"recommendations"`
+	ShareableLink      *string                                                                            `json:"shareableLink,omitempty"`
+	MetricAvailability PostApiDemoCustomEvalResponse200ApplicationJsonModelQualityScoreMetricAvailability `json:"metricAvailability"`
+	UnavailableReasons PostApiDemoCustomEvalResponse200ApplicationJsonModelQualityScoreUnavailableReasons `json:"unavailableReasons"`
+}
+
+type PostApiDemoCustomEvalResponse200ApplicationJsonModelQualityScoreMetrics struct {
+	Accuracy    float64  `json:"accuracy"`
+	Safety      *float64 `json:"safety"`
+	Latency     *float64 `json:"latency"`
+	Cost        *float64 `json:"cost"`
+	Consistency *float64 `json:"consistency"`
+}
+
+type PostApiDemoCustomEvalResponse200ApplicationJsonModelQualityScoreMetricAvailability struct {
+	Latency     string `json:"latency"`
+	Cost        string `json:"cost"`
+	Consistency string `json:"consistency"`
+}
+
+type PostApiDemoCustomEvalResponse200ApplicationJsonModelQualityScoreUnavailableReasons struct {
+	Safety      *string `json:"safety,omitempty"`
+	Latency     *string `json:"latency,omitempty"`
+	Cost        *string `json:"cost,omitempty"`
+	Consistency *string `json:"consistency,omitempty"`
 }
 
 type PostApiDeployableAssetsApprovalsRequestModel struct {
@@ -24692,13 +26341,21 @@ type PostApiEvaluationsIdPlaygroundRunAllResponse200ApplicationJsonModelValueVal
 }
 
 type PostApiEvaluationsIdPlaygroundRunAllResponse200ApplicationJsonModelValueValueTraceLog struct {
-	ResultUnitReservation *DeleteApiPortableQualityChecksExecutionIdResponse200ApplicationJsonModelBudgetReservationResultUnitReservation `json:"resultUnitReservation,omitempty"`
-	Error                 string                                                                                                          `json:"error"`
-	FailedAt              string                                                                                                          `json:"failedAt"`
-	TotalCases            float64                                                                                                         `json:"totalCases"`
-	ProcessedCount        float64                                                                                                         `json:"processedCount"`
-	ManifestHash          string                                                                                                          `json:"manifestHash"`
-	Reconciliation        GetApiEvaluationsIdRunsResponse200ApplicationJsonModelItemReconciliationSummary                                 `json:"reconciliation"`
+	ResultUnitReservation *PostApiEvaluationsIdPlaygroundRunAllResponse200ApplicationJsonModelValueValueTraceLogResultUnitReservation `json:"resultUnitReservation,omitempty"`
+	Error                 string                                                                                                      `json:"error"`
+	FailedAt              string                                                                                                      `json:"failedAt"`
+	TotalCases            float64                                                                                                     `json:"totalCases"`
+	ProcessedCount        float64                                                                                                     `json:"processedCount"`
+	ManifestHash          string                                                                                                      `json:"manifestHash"`
+	Reconciliation        GetApiEvaluationsIdRunsResponse200ApplicationJsonModelItemReconciliationSummary                             `json:"reconciliation"`
+}
+
+type PostApiEvaluationsIdPlaygroundRunAllResponse200ApplicationJsonModelValueValueTraceLogResultUnitReservation struct {
+	Version          float64 `json:"version"`
+	LockId           string  `json:"lockId"`
+	Units            float64 `json:"units"`
+	ProducerFinished *bool   `json:"producerFinished,omitempty"`
+	HardBudget       *bool   `json:"hardBudget,omitempty"`
 }
 
 type PostApiEvaluationsIdPlaygroundRunRowResponse200ApplicationJsonModel struct {
@@ -25552,40 +27209,54 @@ type PostApiEvaluatorValidationOutcomesResponse202ApplicationJsonModelOutcome st
 }
 
 type PostApiEvaluatorValidationPlanRequestModel struct {
-	EvaluatorReleaseId string                                                     `json:"evaluatorReleaseId"`
-	ValidationType     string                                                     `json:"validationType"`
-	RequestedMetrics   []string                                                   `json:"requestedMetrics"`
-	SamplingManifest   PostApiEvaluatorValidationPlanRequestModelSamplingManifest `json:"samplingManifest"`
-	Source             *PostApiEvaluatorValidationPlanRequestModelSource          `json:"source,omitempty"`
-	Workflow           *json.RawMessage                                           `json:"workflow,omitempty"`
-	PlanHash           *string                                                    `json:"planHash,omitempty"`
-	IdempotencyKey     *string                                                    `json:"idempotencyKey,omitempty"`
-	EvaluationRunId    *float64                                                   `json:"evaluationRunId,omitempty"`
-	DatasetVersionId   *string                                                    `json:"datasetVersionId,omitempty"`
-	Comparison         *PostApiEvaluatorValidationPlanRequestModelComparison      `json:"comparison,omitempty"`
-	Qualification      *PostApiEvaluatorValidationPlanRequestModelQualification   `json:"qualification,omitempty"`
-	ExecutionBudget    *PostApiEvaluatorValidationPlanRequestModelExecutionBudget `json:"executionBudget,omitempty"`
+	EvaluatorReleaseId string                                                                                      `json:"evaluatorReleaseId"`
+	EvaluationRunId    *float64                                                                                    `json:"evaluationRunId,omitempty"`
+	DatasetVersionId   *string                                                                                     `json:"datasetVersionId,omitempty"`
+	ValidationType     string                                                                                      `json:"validationType"`
+	RequestedMetrics   []string                                                                                    `json:"requestedMetrics"`
+	SamplingManifest   GetApiEvaluatorValidationRunsIdResponse200ApplicationJsonModelValidationRunSamplingManifest `json:"samplingManifest"`
+	IdempotencyKey     *string                                                                                     `json:"idempotencyKey,omitempty"`
+	Comparison         *PostApiEvaluatorValidationPlanRequestModelComparison                                       `json:"comparison,omitempty"`
+	Qualification      *PostApiEvaluatorValidationPlanRequestModelQualification                                    `json:"qualification,omitempty"`
+	EvidenceAnalysis   *PostApiEvaluatorValidationPlanRequestModelEvidenceAnalysis                                 `json:"evidenceAnalysis,omitempty"`
+	Workflow           *json.RawMessage                                                                            `json:"workflow,omitempty"`
+	ExecutionBudget    *PostApiEvaluatorValidationPlanRequestModelExecutionBudget                                  `json:"executionBudget,omitempty"`
+	Source             *PostApiEvaluatorValidationPlanRequestModelSource                                           `json:"source,omitempty"`
+	PlanHash           *string                                                                                     `json:"planHash,omitempty"`
 }
 
-type PostApiEvaluatorValidationPlanRequestModelSamplingManifest struct {
-	Seed                float64                                                                                                      `json:"seed"`
-	Strategy            string                                                                                                       `json:"strategy"`
-	Metadata            *map[string]JsonValue                                                                                        `json:"metadata,omitempty"`
-	PopulationReference *string                                                                                                      `json:"populationReference,omitempty"`
-	Strata              *[]string                                                                                                    `json:"strata,omitempty"`
-	Exclusions          *[]GetApiEvaluatorValidationRunsIdResponse200ApplicationJsonModelValidationRunSamplingManifestExclusionsItem `json:"exclusions,omitempty"`
+type PostApiEvaluatorValidationPlanRequestModelComparison struct {
+	BaselineValidationRunId string                                                                    `json:"baselineValidationRunId"`
+	Purpose                 string                                                                    `json:"purpose"`
+	TaskId                  string                                                                    `json:"taskId"`
+	MinimumReleaseSupport   float64                                                                   `json:"minimumReleaseSupport"`
+	RecallFloor             float64                                                                   `json:"recallFloor"`
+	UnsafeAutoPassCeiling   float64                                                                   `json:"unsafeAutoPassCeiling"`
+	CriticalSlices          *[]PostApiEvaluatorValidationPlanRequestModelComparisonCriticalSlicesItem `json:"criticalSlices,omitempty"`
+	RequiredApprovalStage   *string                                                                   `json:"requiredApprovalStage,omitempty"`
 }
 
-type PostApiEvaluatorValidationPlanRequestModelSource struct {
-	RepositoryId float64 `json:"repositoryId"`
-	RootPath     string  `json:"rootPath"`
-	TargetSha    string  `json:"targetSha"`
-	ScanRunId    string  `json:"scanRunId"`
+type PostApiEvaluatorValidationPlanRequestModelComparisonCriticalSlicesItem struct {
+	SliceId                string  `json:"sliceId"`
+	MinimumSupport         float64 `json:"minimumSupport"`
+	RecallFloor            float64 `json:"recallFloor"`
+	UnsafeAutoPassCeiling  float64 `json:"unsafeAutoPassCeiling"`
+	BadCaseAutoPassCeiling float64 `json:"badCaseAutoPassCeiling"`
+}
+
+type PostApiEvaluatorValidationPlanRequestModelQualification struct {
+	PartitionId  string  `json:"partitionId"`
+	ReviewItemId float64 `json:"reviewItemId"`
+}
+
+type PostApiEvaluatorValidationPlanRequestModelEvidenceAnalysis struct {
+	Kind        string    `json:"kind"`
+	DecisionIds []float64 `json:"decisionIds"`
 }
 
 type PostApiEvaluatorValidationPlanRequestModelWorkflow struct {
-	Method           string    `json:"method"`
 	Kind             string    `json:"kind"`
+	Method           string    `json:"method"`
 	TopK             float64   `json:"topK"`
 	Cutoff           string    `json:"cutoff"`
 	DocumentIds      []float64 `json:"documentIds"`
@@ -25598,8 +27269,8 @@ type PostApiEvaluatorValidationPlanRequestModelWorkflowValue struct {
 }
 
 type PostApiEvaluatorValidationPlanRequestModelWorkflowValueValue struct {
-	SessionId string `json:"sessionId"`
 	Kind      string `json:"kind"`
+	SessionId string `json:"sessionId"`
 	RoundId   string `json:"roundId"`
 }
 
@@ -25608,27 +27279,19 @@ type PostApiEvaluatorValidationPlanRequestModelWorkflowValueValueValue struct {
 	ItemIds []float64 `json:"itemIds"`
 }
 
-type PostApiEvaluatorValidationPlanRequestModelComparison struct {
-	Purpose                 string  `json:"purpose"`
-	TaskId                  string  `json:"taskId"`
-	BaselineValidationRunId string  `json:"baselineValidationRunId"`
-	MinimumReleaseSupport   float64 `json:"minimumReleaseSupport"`
-	RecallFloor             float64 `json:"recallFloor"`
-	UnsafeAutoPassCeiling   float64 `json:"unsafeAutoPassCeiling"`
-	RequiredApprovalStage   *string `json:"requiredApprovalStage,omitempty"`
-}
-
-type PostApiEvaluatorValidationPlanRequestModelQualification struct {
-	ReviewItemId float64 `json:"reviewItemId"`
-	PartitionId  string  `json:"partitionId"`
-}
-
 type PostApiEvaluatorValidationPlanRequestModelExecutionBudget struct {
 	MaxCostUsd      float64  `json:"maxCostUsd"`
 	MaxCalls        float64  `json:"maxCalls"`
 	MaxRuntimeMs    float64  `json:"maxRuntimeMs"`
 	MaxInputBytes   float64  `json:"maxInputBytes"`
 	MaxDailyCostUsd *float64 `json:"maxDailyCostUsd,omitempty"`
+}
+
+type PostApiEvaluatorValidationPlanRequestModelSource struct {
+	RepositoryId float64 `json:"repositoryId"`
+	RootPath     string  `json:"rootPath"`
+	TargetSha    string  `json:"targetSha"`
+	ScanRunId    string  `json:"scanRunId"`
 }
 
 type PostApiEvaluatorValidationPlanResponse200ApplicationJsonModel struct {
@@ -25651,9 +27314,10 @@ type PostApiEvaluatorValidationPlanResponse200ApplicationJsonModelPlan struct {
 	Coverage              PostApiEvaluatorValidationPlanResponse200ApplicationJsonModelPlanCoverage                   `json:"coverage"`
 	RequestedMetrics      []string                                                                                    `json:"requestedMetrics"`
 	SamplingManifest      GetApiEvaluatorValidationRunsIdResponse200ApplicationJsonModelValidationRunSamplingManifest `json:"samplingManifest"`
-	Comparison            *PostApiEvaluatorValidationPlanResponse200ApplicationJsonModelPlanComparison                `json:"comparison"`
-	Qualification         *PostApiEvaluatorValidationPlanResponse200ApplicationJsonModelPlanQualification             `json:"qualification"`
+	Comparison            *PostApiEvaluatorValidationPlanRequestModelComparison                                       `json:"comparison"`
+	Qualification         *PostApiEvaluatorValidationPlanRequestModelQualification                                    `json:"qualification"`
 	Workflow              json.RawMessage                                                                             `json:"workflow"`
+	EvidenceAnalysis      *PostApiEvaluatorValidationPlanRequestModelEvidenceAnalysis                                 `json:"evidenceAnalysis"`
 	Authority             string                                                                                      `json:"authority"`
 	Reasons               []string                                                                                    `json:"reasons"`
 	PlanHash              string                                                                                      `json:"planHash"`
@@ -25761,43 +27425,20 @@ type PostApiEvaluatorValidationPlanResponse200ApplicationJsonModelPlanCoverage s
 	RepositoryWideCoverage string    `json:"repositoryWideCoverage"`
 }
 
-type PostApiEvaluatorValidationPlanResponse200ApplicationJsonModelPlanComparison struct {
-	BaselineValidationRunId string  `json:"baselineValidationRunId"`
-	Purpose                 string  `json:"purpose"`
-	TaskId                  string  `json:"taskId"`
-	MinimumReleaseSupport   float64 `json:"minimumReleaseSupport"`
-	RecallFloor             float64 `json:"recallFloor"`
-	UnsafeAutoPassCeiling   float64 `json:"unsafeAutoPassCeiling"`
-	RequiredApprovalStage   *string `json:"requiredApprovalStage,omitempty"`
-}
-
-type PostApiEvaluatorValidationPlanResponse200ApplicationJsonModelPlanQualification struct {
-	PartitionId  string  `json:"partitionId"`
-	ReviewItemId float64 `json:"reviewItemId"`
-}
-
-type PostApiEvaluatorValidationPlanResponse200ApplicationJsonModelPlanWorkflow struct {
-	Kind             string    `json:"kind"`
-	Method           string    `json:"method"`
-	TopK             float64   `json:"topK"`
-	Cutoff           string    `json:"cutoff"`
-	DocumentIds      []float64 `json:"documentIds"`
-	ReferenceVersion string    `json:"referenceVersion"`
-}
-
-type PostApiEvaluatorValidationPlanResponse200ApplicationJsonModelPlanWorkflowValue struct {
-	Kind      string `json:"kind"`
-	SessionId string `json:"sessionId"`
-	RoundId   string `json:"roundId"`
-}
-
 type PostApiEvaluatorValidationReleasesRequestModel struct {
 	Name            string                                                                                  `json:"name"`
-	Protocol        GetApiEvaluatorValidationReleasesIdResponse200ApplicationJsonModelReleaseProtocol       `json:"protocol"`
+	Protocol        PostApiEvaluatorValidationReleasesRequestModelProtocol                                  `json:"protocol"`
 	ScoreSemantics  GetApiEvaluatorValidationReleasesIdResponse200ApplicationJsonModelReleaseScoreSemantics `json:"scoreSemantics"`
 	Identity        *PostApiEvaluatorValidationReleasesRequestModelIdentity                                 `json:"identity,omitempty"`
 	JudgeConfigId   *float64                                                                                `json:"judgeConfigId,omitempty"`
 	ScorerVersionId *float64                                                                                `json:"scorerVersionId,omitempty"`
+}
+
+type PostApiEvaluatorValidationReleasesRequestModelProtocol struct {
+	Mode             string   `json:"mode"`
+	Counterbalancing *string  `json:"counterbalancing,omitempty"`
+	TiePolicy        *string  `json:"tiePolicy,omitempty"`
+	Repeats          *float64 `json:"repeats,omitempty"`
 }
 
 type PostApiEvaluatorValidationReleasesRequestModelIdentity struct {
@@ -26454,6 +28095,15 @@ type PostApiHarnessSchedulesResponse201ApplicationJsonModelSchedule struct {
 	BaselineKey    string                                                                   `json:"baselineKey"`
 }
 
+type PostApiIdentityMfaBackupCodeRequestModel struct {
+	Code string `json:"code"`
+}
+
+type PostApiIdentityMfaBackupCodeResponse200ApplicationJsonModel struct {
+	Verified  bool    `json:"verified"`
+	Remaining float64 `json:"remaining"`
+}
+
 type PostApiImprovementCandidatesCandidateIdAuthorizeRequestModel struct {
 	Action                       string    `json:"action"`
 	IdempotencyKey               string    `json:"idempotencyKey"`
@@ -26986,8 +28636,25 @@ type PostApiKnowledgeDocumentsRequestModel struct {
 }
 
 type PostApiKnowledgeDocumentsResponse201ApplicationJsonModel struct {
-	DocumentId float64 `json:"documentId"`
-	ChunkCount float64 `json:"chunkCount"`
+	DocumentId float64         `json:"documentId"`
+	ChunkCount float64         `json:"chunkCount"`
+	Embedding  json.RawMessage `json:"embedding"`
+}
+
+type PostApiKnowledgeDocumentsResponse201ApplicationJsonModelEmbedding struct {
+	Status   string  `json:"status"`
+	Embedded float64 `json:"embedded"`
+	Failed   float64 `json:"failed"`
+}
+
+type PostApiKnowledgeDocumentsResponse201ApplicationJsonModelEmbeddingValue struct {
+	Status string  `json:"status"`
+	Chunks float64 `json:"chunks"`
+}
+
+type PostApiKnowledgeDocumentsResponse201ApplicationJsonModelEmbeddingValueValue struct {
+	Status string `json:"status"`
+	Reason string `json:"reason"`
 }
 
 type PostApiKnowledgeDraftRequirementsRequestModel struct {
@@ -27056,10 +28723,18 @@ type PostApiKnowledgeNetworkPackagesPackageIdVersionsVersionIdInstallPlanRespons
 }
 
 type PostApiKnowledgeReindexEmbeddingsResponse200ApplicationJsonModel struct {
-	Updated    float64 `json:"updated"`
-	Errors     float64 `json:"errors"`
-	TotalStale float64 `json:"totalStale"`
-	Processed  float64 `json:"processed"`
+	Updated    float64                                                                `json:"updated"`
+	Errors     float64                                                                `json:"errors"`
+	TotalStale float64                                                                `json:"totalStale"`
+	Processed  float64                                                                `json:"processed"`
+	Chunks     PostApiKnowledgeReindexEmbeddingsResponse200ApplicationJsonModelChunks `json:"chunks"`
+	Model      string                                                                 `json:"model"`
+}
+
+type PostApiKnowledgeReindexEmbeddingsResponse200ApplicationJsonModelChunks struct {
+	Embedded  float64 `json:"embedded"`
+	Failed    float64 `json:"failed"`
+	Remaining float64 `json:"remaining"`
 }
 
 type PostApiKnowledgeReindexEmbeddingsResponse202ApplicationJsonModel struct {
@@ -27190,6 +28865,26 @@ type PostApiLlmJudgeConfigsRequestModelJudgesItem struct {
 	PinnedQuestionSchemaHash *string                                                                                           `json:"pinnedQuestionSchemaHash,omitempty"`
 	ReleaseBlocking          *bool                                                                                             `json:"releaseBlocking,omitempty"`
 	ConfidencePolicy         *GetApiLlmJudgeConfigsResponse200ApplicationJsonModelSettingsJudgesItemValueValueConfidencePolicy `json:"confidencePolicy,omitempty"`
+}
+
+type PostApiLlmJudgeEstimateRequestModel struct {
+	ConfigId  float64 `json:"configId"`
+	CaseCount float64 `json:"caseCount"`
+}
+
+type PostApiLlmJudgeEstimateResponse200ApplicationJsonModel struct {
+	ConfigId                        float64   `json:"configId"`
+	CaseCount                       float64   `json:"caseCount"`
+	ProviderCostUpperBoundUsd       float64   `json:"providerCostUpperBoundUsd"`
+	EvalgateResultCostUpperBoundUsd float64   `json:"evalgateResultCostUpperBoundUsd"`
+	ProviderChargesSeparate         bool      `json:"providerChargesSeparate"`
+	MaxProviderCalls                float64   `json:"maxProviderCalls"`
+	PricingIds                      []float64 `json:"pricingIds"`
+	ExpiresAt                       string    `json:"expiresAt"`
+	RemainingProviderBudgetUsd      *float64  `json:"remainingProviderBudgetUsd"`
+	FitsCurrentProviderBudget       bool      `json:"fitsCurrentProviderBudget"`
+	ReservesBudget                  bool      `json:"reservesBudget"`
+	AuthorizesExecution             bool      `json:"authorizesExecution"`
 }
 
 type PostApiLlmJudgeEvaluateRequestModel struct {
@@ -27531,10 +29226,11 @@ type PostApiModelGatewayConfigsIdHealthCheckResponse200ApplicationJsonModelValue
 }
 
 type PostApiModelGatewayConfigsRequestModel struct {
-	Name                       string    `json:"name"`
 	Backend                    string    `json:"backend"`
+	Name                       string    `json:"name"`
 	BaseUrl                    string    `json:"baseUrl"`
 	ApiKey                     string    `json:"apiKey"`
+	ConfiguredModels           *[]string `json:"configuredModels,omitempty"`
 	IsDefault                  *bool     `json:"isDefault,omitempty"`
 	AllowedUseCases            *[]string `json:"allowedUseCases,omitempty"`
 	DataPolicy                 *string   `json:"dataPolicy,omitempty"`
@@ -27546,7 +29242,6 @@ type PostApiModelGatewayConfigsRequestModel struct {
 	MaxCostPerRun              *string   `json:"maxCostPerRun,omitempty"`
 	MaxCostPerDay              *string   `json:"maxCostPerDay,omitempty"`
 	MaxCostPerMonth            *string   `json:"maxCostPerMonth,omitempty"`
-	ConfiguredModels           *[]string `json:"configuredModels,omitempty"`
 }
 
 type PostApiModelGatewayModelsSyncRequestModel struct {
@@ -27558,33 +29253,71 @@ type PostApiModelGatewayModelsSyncResponse200ApplicationJsonModel struct {
 }
 
 type PostApiModelGatewayRoutingProfilesIdTestResponse200ApplicationJsonModel struct {
-	Content                  string                                                                                 `json:"content"`
-	Usage                    PostApiModelGatewayRoutingProfilesIdTestResponse200ApplicationJsonModelUsage           `json:"usage"`
-	Cost                     json.RawMessage                                                                        `json:"cost"`
-	LatencyMs                float64                                                                                `json:"latencyMs"`
-	Model                    *string                                                                                `json:"model"`
-	Provider                 *string                                                                                `json:"provider"`
-	RequestedProfileId       *string                                                                                `json:"requestedProfileId"`
-	RequestedGatewayConfigId float64                                                                                `json:"requestedGatewayConfigId"`
-	RequestedModel           *string                                                                                `json:"requestedModel"`
-	RoutedModel              *string                                                                                `json:"routedModel"`
-	ReturnedModel            *string                                                                                `json:"returnedModel"`
-	RoutingExplanation       string                                                                                 `json:"routingExplanation"`
-	RuntimeConfigId          string                                                                                 `json:"runtimeConfigId"`
-	LedgerUrl                string                                                                                 `json:"ledgerUrl"`
-	RequestHash              string                                                                                 `json:"requestHash"`
-	RedactedPromptPreview    string                                                                                 `json:"redactedPromptPreview"`
-	RedactionState           string                                                                                 `json:"redactionState"`
-	EvidenceSummary          PostApiModelGatewayRoutingProfilesIdTestResponse200ApplicationJsonModelEvidenceSummary `json:"evidenceSummary"`
-	ModelCallId              string                                                                                 `json:"modelCallId"`
-	Status                   string                                                                                 `json:"status"`
-	Backend                  string                                                                                 `json:"backend"`
-	PolicyDecision           string                                                                                 `json:"policyDecision"`
-	FallbackChain            *[]string                                                                              `json:"fallbackChain,omitempty"`
-	RetryCount               *float64                                                                               `json:"retryCount,omitempty"`
-	ResponseHash             *string                                                                                `json:"responseHash,omitempty"`
-	EvidenceGraphEdgeIds     *[]string                                                                              `json:"evidenceGraphEdgeIds,omitempty"`
-	EvidenceState            *string                                                                                `json:"evidenceState,omitempty"`
+	DependencyEvidence       *PostApiModelGatewayRoutingProfilesIdTestResponse200ApplicationJsonModelDependencyEvidence   `json:"dependencyEvidence,omitempty"`
+	EnforcementReference     *PostApiModelGatewayRoutingProfilesIdTestResponse200ApplicationJsonModelEnforcementReference `json:"enforcementReference,omitempty"`
+	ModelCallId              string                                                                                       `json:"modelCallId"`
+	Status                   string                                                                                       `json:"status"`
+	Backend                  string                                                                                       `json:"backend"`
+	PolicyDecision           string                                                                                       `json:"policyDecision"`
+	ErrorCode                string                                                                                       `json:"errorCode"`
+	ErrorMessage             string                                                                                       `json:"errorMessage"`
+	ResponseHash             *string                                                                                      `json:"responseHash,omitempty"`
+	EvidenceGraphEdgeIds     *[]string                                                                                    `json:"evidenceGraphEdgeIds,omitempty"`
+	EvidenceState            *string                                                                                      `json:"evidenceState,omitempty"`
+	Content                  string                                                                                       `json:"content"`
+	Usage                    PostApiModelGatewayRoutingProfilesIdTestResponse200ApplicationJsonModelUsage                 `json:"usage"`
+	Cost                     json.RawMessage                                                                              `json:"cost"`
+	LatencyMs                float64                                                                                      `json:"latencyMs"`
+	Model                    *string                                                                                      `json:"model"`
+	Provider                 *string                                                                                      `json:"provider"`
+	RequestedProfileId       *string                                                                                      `json:"requestedProfileId"`
+	RequestedGatewayConfigId float64                                                                                      `json:"requestedGatewayConfigId"`
+	RequestedModel           *string                                                                                      `json:"requestedModel"`
+	RoutedModel              *string                                                                                      `json:"routedModel"`
+	ReturnedModel            *string                                                                                      `json:"returnedModel"`
+	RoutingExplanation       string                                                                                       `json:"routingExplanation"`
+	RuntimeConfigId          string                                                                                       `json:"runtimeConfigId"`
+	LedgerUrl                string                                                                                       `json:"ledgerUrl"`
+	RequestHash              string                                                                                       `json:"requestHash"`
+	RedactedPromptPreview    string                                                                                       `json:"redactedPromptPreview"`
+	RedactionState           string                                                                                       `json:"redactionState"`
+	EvidenceSummary          PostApiModelGatewayRoutingProfilesIdTestResponse200ApplicationJsonModelEvidenceSummary       `json:"evidenceSummary"`
+}
+
+type PostApiModelGatewayRoutingProfilesIdTestResponse200ApplicationJsonModelDependencyEvidence struct {
+	SchemaVersion     float64 `json:"schemaVersion"`
+	MaterialHash      string  `json:"materialHash"`
+	ConfigurationHash string  `json:"configurationHash"`
+	EndpointHash      string  `json:"endpointHash"`
+	ProfileHash       string  `json:"profileHash"`
+	ResolvedModelHash string  `json:"resolvedModelHash"`
+	RequestedProvider string  `json:"requestedProvider"`
+	RequestedModel    string  `json:"requestedModel"`
+	ActualProvider    *string `json:"actualProvider"`
+	ActualModel       *string `json:"actualModel"`
+	Backend           string  `json:"backend"`
+	RequestHash       *string `json:"requestHash"`
+	EvidenceState     string  `json:"evidenceState"`
+}
+
+type PostApiModelGatewayRoutingProfilesIdTestResponse200ApplicationJsonModelEnforcementReference struct {
+	ReceiptRef        string                                                                                                    `json:"receiptRef"`
+	Boundary          string                                                                                                    `json:"boundary"`
+	PolicyDecisionKey string                                                                                                    `json:"policyDecisionKey"`
+	PolicyHash        *string                                                                                                   `json:"policyHash"`
+	EvidenceScope     *PostApiModelGatewayRoutingProfilesIdTestResponse200ApplicationJsonModelEnforcementReferenceEvidenceScope `json:"evidenceScope"`
+	Timing            string                                                                                                    `json:"timing"`
+}
+
+type PostApiModelGatewayRoutingProfilesIdTestResponse200ApplicationJsonModelEnforcementReferenceEvidenceScope struct {
+	SchemaVersion   float64        `json:"schemaVersion"`
+	Kind            string         `json:"kind"`
+	OrganizationId  OrganizationId `json:"organizationId"`
+	EvaluationId    float64        `json:"evaluationId"`
+	EvaluationRunId float64        `json:"evaluationRunId"`
+	Environment     *string        `json:"environment"`
+	RunManifestHash *string        `json:"runManifestHash"`
+	CapturedAt      string         `json:"capturedAt"`
 }
 
 type PostApiModelGatewayRoutingProfilesIdTestResponse200ApplicationJsonModelUsage struct {
@@ -27595,11 +29328,6 @@ type PostApiModelGatewayRoutingProfilesIdTestResponse200ApplicationJsonModelUsag
 }
 
 type PostApiModelGatewayRoutingProfilesIdTestResponse200ApplicationJsonModelCost struct {
-	AmountUsd string `json:"amountUsd"`
-	Source    string `json:"source"`
-}
-
-type PostApiModelGatewayRoutingProfilesIdTestResponse200ApplicationJsonModelCostValue struct {
 	AmountUsd any    `json:"amountUsd"`
 	Source    string `json:"source"`
 }
@@ -27623,123 +29351,133 @@ type PostApiModelGatewayRoutingProfilesIdTestResponse200ApplicationJsonModelEvid
 }
 
 type PostApiModelGatewayRoutingProfilesIdTestResponse200ApplicationJsonModelValue struct {
-	Content                  string                                                                                 `json:"content"`
-	Usage                    PostApiModelGatewayRoutingProfilesIdTestResponse200ApplicationJsonModelUsage           `json:"usage"`
-	Cost                     json.RawMessage                                                                        `json:"cost"`
-	LatencyMs                float64                                                                                `json:"latencyMs"`
-	Model                    *string                                                                                `json:"model"`
-	Provider                 *string                                                                                `json:"provider"`
-	RequestedProfileId       *string                                                                                `json:"requestedProfileId"`
-	RequestedGatewayConfigId float64                                                                                `json:"requestedGatewayConfigId"`
-	RequestedModel           *string                                                                                `json:"requestedModel"`
-	RoutedModel              *string                                                                                `json:"routedModel"`
-	ReturnedModel            *string                                                                                `json:"returnedModel"`
-	RoutingExplanation       string                                                                                 `json:"routingExplanation"`
-	RuntimeConfigId          string                                                                                 `json:"runtimeConfigId"`
-	LedgerUrl                string                                                                                 `json:"ledgerUrl"`
-	RequestHash              string                                                                                 `json:"requestHash"`
-	RedactedPromptPreview    string                                                                                 `json:"redactedPromptPreview"`
-	RedactionState           string                                                                                 `json:"redactionState"`
-	EvidenceSummary          PostApiModelGatewayRoutingProfilesIdTestResponse200ApplicationJsonModelEvidenceSummary `json:"evidenceSummary"`
-	ModelCallId              string                                                                                 `json:"modelCallId"`
-	Status                   string                                                                                 `json:"status"`
-	Backend                  string                                                                                 `json:"backend"`
-	PolicyDecision           string                                                                                 `json:"policyDecision"`
-	FallbackChain            *[]string                                                                              `json:"fallbackChain,omitempty"`
-	RetryCount               *float64                                                                               `json:"retryCount,omitempty"`
-	ResponseHash             *string                                                                                `json:"responseHash,omitempty"`
-	EvidenceGraphEdgeIds     *[]string                                                                              `json:"evidenceGraphEdgeIds,omitempty"`
-	EvidenceState            *string                                                                                `json:"evidenceState,omitempty"`
+	DependencyEvidence       *PostApiModelGatewayRoutingProfilesIdTestResponse200ApplicationJsonModelDependencyEvidence   `json:"dependencyEvidence,omitempty"`
+	EnforcementReference     *PostApiModelGatewayRoutingProfilesIdTestResponse200ApplicationJsonModelEnforcementReference `json:"enforcementReference,omitempty"`
+	ModelCallId              string                                                                                       `json:"modelCallId"`
+	Status                   string                                                                                       `json:"status"`
+	Backend                  string                                                                                       `json:"backend"`
+	PolicyDecision           string                                                                                       `json:"policyDecision"`
+	ErrorCode                string                                                                                       `json:"errorCode"`
+	ErrorMessage             string                                                                                       `json:"errorMessage"`
+	ResponseHash             *string                                                                                      `json:"responseHash,omitempty"`
+	EvidenceGraphEdgeIds     *[]string                                                                                    `json:"evidenceGraphEdgeIds,omitempty"`
+	EvidenceState            *string                                                                                      `json:"evidenceState,omitempty"`
+	Content                  string                                                                                       `json:"content"`
+	Usage                    PostApiModelGatewayRoutingProfilesIdTestResponse200ApplicationJsonModelUsage                 `json:"usage"`
+	Cost                     json.RawMessage                                                                              `json:"cost"`
+	LatencyMs                float64                                                                                      `json:"latencyMs"`
+	Model                    *string                                                                                      `json:"model"`
+	Provider                 *string                                                                                      `json:"provider"`
+	RequestedProfileId       *string                                                                                      `json:"requestedProfileId"`
+	RequestedGatewayConfigId float64                                                                                      `json:"requestedGatewayConfigId"`
+	RequestedModel           *string                                                                                      `json:"requestedModel"`
+	RoutedModel              *string                                                                                      `json:"routedModel"`
+	ReturnedModel            *string                                                                                      `json:"returnedModel"`
+	RoutingExplanation       string                                                                                       `json:"routingExplanation"`
+	RuntimeConfigId          string                                                                                       `json:"runtimeConfigId"`
+	LedgerUrl                string                                                                                       `json:"ledgerUrl"`
+	RequestHash              string                                                                                       `json:"requestHash"`
+	RedactedPromptPreview    string                                                                                       `json:"redactedPromptPreview"`
+	RedactionState           string                                                                                       `json:"redactionState"`
+	EvidenceSummary          PostApiModelGatewayRoutingProfilesIdTestResponse200ApplicationJsonModelEvidenceSummary       `json:"evidenceSummary"`
 }
 
 type PostApiModelGatewayRoutingProfilesIdTestResponse200ApplicationJsonModelValueValue struct {
-	Content                  string                                                                                 `json:"content"`
-	Usage                    PostApiModelGatewayRoutingProfilesIdTestResponse200ApplicationJsonModelUsage           `json:"usage"`
-	Cost                     json.RawMessage                                                                        `json:"cost"`
-	LatencyMs                float64                                                                                `json:"latencyMs"`
-	Model                    *string                                                                                `json:"model"`
-	Provider                 *string                                                                                `json:"provider"`
-	RequestedProfileId       *string                                                                                `json:"requestedProfileId"`
-	RequestedGatewayConfigId float64                                                                                `json:"requestedGatewayConfigId"`
-	RequestedModel           *string                                                                                `json:"requestedModel"`
-	RoutedModel              *string                                                                                `json:"routedModel"`
-	ReturnedModel            *string                                                                                `json:"returnedModel"`
-	RoutingExplanation       string                                                                                 `json:"routingExplanation"`
-	RuntimeConfigId          string                                                                                 `json:"runtimeConfigId"`
-	LedgerUrl                string                                                                                 `json:"ledgerUrl"`
-	RequestHash              string                                                                                 `json:"requestHash"`
-	RedactedPromptPreview    string                                                                                 `json:"redactedPromptPreview"`
-	RedactionState           string                                                                                 `json:"redactionState"`
-	EvidenceSummary          PostApiModelGatewayRoutingProfilesIdTestResponse200ApplicationJsonModelEvidenceSummary `json:"evidenceSummary"`
-	ModelCallId              string                                                                                 `json:"modelCallId"`
-	Status                   string                                                                                 `json:"status"`
-	Backend                  string                                                                                 `json:"backend"`
-	PolicyDecision           string                                                                                 `json:"policyDecision"`
-	ErrorCode                string                                                                                 `json:"errorCode"`
-	ErrorMessage             string                                                                                 `json:"errorMessage"`
-	ResponseHash             *string                                                                                `json:"responseHash,omitempty"`
-	EvidenceGraphEdgeIds     *[]string                                                                              `json:"evidenceGraphEdgeIds,omitempty"`
-	EvidenceState            *string                                                                                `json:"evidenceState,omitempty"`
+	DependencyEvidence       *PostApiModelGatewayRoutingProfilesIdTestResponse200ApplicationJsonModelDependencyEvidence   `json:"dependencyEvidence,omitempty"`
+	EnforcementReference     *PostApiModelGatewayRoutingProfilesIdTestResponse200ApplicationJsonModelEnforcementReference `json:"enforcementReference,omitempty"`
+	ModelCallId              string                                                                                       `json:"modelCallId"`
+	Status                   string                                                                                       `json:"status"`
+	Embeddings               *[][]float64                                                                                 `json:"embeddings,omitempty"`
+	Backend                  string                                                                                       `json:"backend"`
+	PolicyDecision           string                                                                                       `json:"policyDecision"`
+	FallbackChain            *[]string                                                                                    `json:"fallbackChain,omitempty"`
+	RetryCount               *float64                                                                                     `json:"retryCount,omitempty"`
+	ResponseHash             *string                                                                                      `json:"responseHash,omitempty"`
+	EvidenceGraphEdgeIds     *[]string                                                                                    `json:"evidenceGraphEdgeIds,omitempty"`
+	EvidenceState            *string                                                                                      `json:"evidenceState,omitempty"`
+	Content                  string                                                                                       `json:"content"`
+	Usage                    PostApiModelGatewayRoutingProfilesIdTestResponse200ApplicationJsonModelUsage                 `json:"usage"`
+	Cost                     json.RawMessage                                                                              `json:"cost"`
+	LatencyMs                float64                                                                                      `json:"latencyMs"`
+	Model                    *string                                                                                      `json:"model"`
+	Provider                 *string                                                                                      `json:"provider"`
+	RequestedProfileId       *string                                                                                      `json:"requestedProfileId"`
+	RequestedGatewayConfigId float64                                                                                      `json:"requestedGatewayConfigId"`
+	RequestedModel           *string                                                                                      `json:"requestedModel"`
+	RoutedModel              *string                                                                                      `json:"routedModel"`
+	ReturnedModel            *string                                                                                      `json:"returnedModel"`
+	RoutingExplanation       string                                                                                       `json:"routingExplanation"`
+	RuntimeConfigId          string                                                                                       `json:"runtimeConfigId"`
+	LedgerUrl                string                                                                                       `json:"ledgerUrl"`
+	RequestHash              string                                                                                       `json:"requestHash"`
+	RedactedPromptPreview    string                                                                                       `json:"redactedPromptPreview"`
+	RedactionState           string                                                                                       `json:"redactionState"`
+	EvidenceSummary          PostApiModelGatewayRoutingProfilesIdTestResponse200ApplicationJsonModelEvidenceSummary       `json:"evidenceSummary"`
 }
 
 type PostApiModelGatewayRoutingProfilesIdTestResponse200ApplicationJsonModelValueValueValue struct {
-	Content                  string                                                                                 `json:"content"`
-	Usage                    PostApiModelGatewayRoutingProfilesIdTestResponse200ApplicationJsonModelUsage           `json:"usage"`
-	Cost                     json.RawMessage                                                                        `json:"cost"`
-	LatencyMs                float64                                                                                `json:"latencyMs"`
-	Model                    *string                                                                                `json:"model"`
-	Provider                 *string                                                                                `json:"provider"`
-	RequestedProfileId       *string                                                                                `json:"requestedProfileId"`
-	RequestedGatewayConfigId float64                                                                                `json:"requestedGatewayConfigId"`
-	RequestedModel           *string                                                                                `json:"requestedModel"`
-	RoutedModel              *string                                                                                `json:"routedModel"`
-	ReturnedModel            *string                                                                                `json:"returnedModel"`
-	RoutingExplanation       string                                                                                 `json:"routingExplanation"`
-	RuntimeConfigId          string                                                                                 `json:"runtimeConfigId"`
-	LedgerUrl                string                                                                                 `json:"ledgerUrl"`
-	RequestHash              string                                                                                 `json:"requestHash"`
-	RedactedPromptPreview    string                                                                                 `json:"redactedPromptPreview"`
-	RedactionState           string                                                                                 `json:"redactionState"`
-	EvidenceSummary          PostApiModelGatewayRoutingProfilesIdTestResponse200ApplicationJsonModelEvidenceSummary `json:"evidenceSummary"`
-	ModelCallId              string                                                                                 `json:"modelCallId"`
-	Status                   string                                                                                 `json:"status"`
-	Backend                  string                                                                                 `json:"backend"`
-	PolicyDecision           string                                                                                 `json:"policyDecision"`
-	ErrorCode                string                                                                                 `json:"errorCode"`
-	ErrorMessage             string                                                                                 `json:"errorMessage"`
-	ResponseHash             *string                                                                                `json:"responseHash,omitempty"`
-	EvidenceGraphEdgeIds     *[]string                                                                              `json:"evidenceGraphEdgeIds,omitempty"`
-	EvidenceState            *string                                                                                `json:"evidenceState,omitempty"`
+	DependencyEvidence       *PostApiModelGatewayRoutingProfilesIdTestResponse200ApplicationJsonModelDependencyEvidence   `json:"dependencyEvidence,omitempty"`
+	EnforcementReference     *PostApiModelGatewayRoutingProfilesIdTestResponse200ApplicationJsonModelEnforcementReference `json:"enforcementReference,omitempty"`
+	ModelCallId              string                                                                                       `json:"modelCallId"`
+	Status                   string                                                                                       `json:"status"`
+	Embeddings               *[][]float64                                                                                 `json:"embeddings,omitempty"`
+	Backend                  string                                                                                       `json:"backend"`
+	PolicyDecision           string                                                                                       `json:"policyDecision"`
+	FallbackChain            *[]string                                                                                    `json:"fallbackChain,omitempty"`
+	RetryCount               *float64                                                                                     `json:"retryCount,omitempty"`
+	ResponseHash             *string                                                                                      `json:"responseHash,omitempty"`
+	EvidenceGraphEdgeIds     *[]string                                                                                    `json:"evidenceGraphEdgeIds,omitempty"`
+	EvidenceState            *string                                                                                      `json:"evidenceState,omitempty"`
+	Content                  string                                                                                       `json:"content"`
+	Usage                    PostApiModelGatewayRoutingProfilesIdTestResponse200ApplicationJsonModelUsage                 `json:"usage"`
+	Cost                     json.RawMessage                                                                              `json:"cost"`
+	LatencyMs                float64                                                                                      `json:"latencyMs"`
+	Model                    *string                                                                                      `json:"model"`
+	Provider                 *string                                                                                      `json:"provider"`
+	RequestedProfileId       *string                                                                                      `json:"requestedProfileId"`
+	RequestedGatewayConfigId float64                                                                                      `json:"requestedGatewayConfigId"`
+	RequestedModel           *string                                                                                      `json:"requestedModel"`
+	RoutedModel              *string                                                                                      `json:"routedModel"`
+	ReturnedModel            *string                                                                                      `json:"returnedModel"`
+	RoutingExplanation       string                                                                                       `json:"routingExplanation"`
+	RuntimeConfigId          string                                                                                       `json:"runtimeConfigId"`
+	LedgerUrl                string                                                                                       `json:"ledgerUrl"`
+	RequestHash              string                                                                                       `json:"requestHash"`
+	RedactedPromptPreview    string                                                                                       `json:"redactedPromptPreview"`
+	RedactionState           string                                                                                       `json:"redactionState"`
+	EvidenceSummary          PostApiModelGatewayRoutingProfilesIdTestResponse200ApplicationJsonModelEvidenceSummary       `json:"evidenceSummary"`
 }
 
 type PostApiModelGatewayRoutingProfilesIdTestResponse200ApplicationJsonModelValueValueValueValue struct {
-	Content                  string                                                                                 `json:"content"`
-	Usage                    PostApiModelGatewayRoutingProfilesIdTestResponse200ApplicationJsonModelUsage           `json:"usage"`
-	Cost                     json.RawMessage                                                                        `json:"cost"`
-	LatencyMs                float64                                                                                `json:"latencyMs"`
-	Model                    *string                                                                                `json:"model"`
-	Provider                 *string                                                                                `json:"provider"`
-	RequestedProfileId       *string                                                                                `json:"requestedProfileId"`
-	RequestedGatewayConfigId float64                                                                                `json:"requestedGatewayConfigId"`
-	RequestedModel           *string                                                                                `json:"requestedModel"`
-	RoutedModel              *string                                                                                `json:"routedModel"`
-	ReturnedModel            *string                                                                                `json:"returnedModel"`
-	RoutingExplanation       string                                                                                 `json:"routingExplanation"`
-	RuntimeConfigId          string                                                                                 `json:"runtimeConfigId"`
-	LedgerUrl                string                                                                                 `json:"ledgerUrl"`
-	RequestHash              string                                                                                 `json:"requestHash"`
-	RedactedPromptPreview    string                                                                                 `json:"redactedPromptPreview"`
-	RedactionState           string                                                                                 `json:"redactionState"`
-	EvidenceSummary          PostApiModelGatewayRoutingProfilesIdTestResponse200ApplicationJsonModelEvidenceSummary `json:"evidenceSummary"`
-	ModelCallId              string                                                                                 `json:"modelCallId"`
-	Status                   string                                                                                 `json:"status"`
-	Backend                  string                                                                                 `json:"backend"`
-	PolicyDecision           string                                                                                 `json:"policyDecision"`
-	ErrorCode                string                                                                                 `json:"errorCode"`
-	ErrorMessage             string                                                                                 `json:"errorMessage"`
-	ResponseHash             *string                                                                                `json:"responseHash,omitempty"`
-	EvidenceGraphEdgeIds     *[]string                                                                              `json:"evidenceGraphEdgeIds,omitempty"`
-	EvidenceState            *string                                                                                `json:"evidenceState,omitempty"`
+	DependencyEvidence       *PostApiModelGatewayRoutingProfilesIdTestResponse200ApplicationJsonModelDependencyEvidence   `json:"dependencyEvidence,omitempty"`
+	EnforcementReference     *PostApiModelGatewayRoutingProfilesIdTestResponse200ApplicationJsonModelEnforcementReference `json:"enforcementReference,omitempty"`
+	ModelCallId              string                                                                                       `json:"modelCallId"`
+	Status                   string                                                                                       `json:"status"`
+	Backend                  string                                                                                       `json:"backend"`
+	PolicyDecision           string                                                                                       `json:"policyDecision"`
+	ErrorCode                string                                                                                       `json:"errorCode"`
+	ErrorMessage             string                                                                                       `json:"errorMessage"`
+	ResponseHash             *string                                                                                      `json:"responseHash,omitempty"`
+	EvidenceGraphEdgeIds     *[]string                                                                                    `json:"evidenceGraphEdgeIds,omitempty"`
+	EvidenceState            *string                                                                                      `json:"evidenceState,omitempty"`
+	Content                  string                                                                                       `json:"content"`
+	Usage                    PostApiModelGatewayRoutingProfilesIdTestResponse200ApplicationJsonModelUsage                 `json:"usage"`
+	Cost                     json.RawMessage                                                                              `json:"cost"`
+	LatencyMs                float64                                                                                      `json:"latencyMs"`
+	Model                    *string                                                                                      `json:"model"`
+	Provider                 *string                                                                                      `json:"provider"`
+	RequestedProfileId       *string                                                                                      `json:"requestedProfileId"`
+	RequestedGatewayConfigId float64                                                                                      `json:"requestedGatewayConfigId"`
+	RequestedModel           *string                                                                                      `json:"requestedModel"`
+	RoutedModel              *string                                                                                      `json:"routedModel"`
+	ReturnedModel            *string                                                                                      `json:"returnedModel"`
+	RoutingExplanation       string                                                                                       `json:"routingExplanation"`
+	RuntimeConfigId          string                                                                                       `json:"runtimeConfigId"`
+	LedgerUrl                string                                                                                       `json:"ledgerUrl"`
+	RequestHash              string                                                                                       `json:"requestHash"`
+	RedactedPromptPreview    string                                                                                       `json:"redactedPromptPreview"`
+	RedactionState           string                                                                                       `json:"redactionState"`
+	EvidenceSummary          PostApiModelGatewayRoutingProfilesIdTestResponse200ApplicationJsonModelEvidenceSummary       `json:"evidenceSummary"`
 }
 
 type PostApiModelGatewayRoutingProfilesRequestModel struct {
@@ -27865,76 +29603,76 @@ type PostApiOnlineEvalsBackfillsIdResumeRequestModel struct {
 }
 
 type PostApiOnlineEvalsBackfillsIdResumeResponse202ApplicationJsonModel struct {
-	IdempotentReplay           bool                                                                                               `json:"idempotentReplay"`
-	Id                         string                                                                                             `json:"id"`
-	OrganizationId             OrganizationId                                                                                     `json:"organizationId"`
-	MonitorId                  float64                                                                                            `json:"monitorId"`
-	MonitorVersionId           string                                                                                             `json:"monitorVersionId"`
-	RunType                    string                                                                                             `json:"runType"`
-	Status                     string                                                                                             `json:"status"`
-	IdempotencyKey             string                                                                                             `json:"idempotencyKey"`
-	RequestHash                string                                                                                             `json:"requestHash"`
-	ClaimToken                 *string                                                                                            `json:"claimToken"`
-	ClaimedBy                  *string                                                                                            `json:"claimedBy"`
-	Attempt                    float64                                                                                            `json:"attempt"`
-	WindowStart                *string                                                                                            `json:"windowStart"`
-	WindowEnd                  *string                                                                                            `json:"windowEnd"`
-	MatchedTraces              float64                                                                                            `json:"matchedTraces"`
-	SampledTraces              float64                                                                                            `json:"sampledTraces"`
-	ProcessedSamples           float64                                                                                            `json:"processedSamples"`
-	FailedSamples              float64                                                                                            `json:"failedSamples"`
-	AlertCount                 float64                                                                                            `json:"alertCount"`
-	EstimatedCostUsd           *string                                                                                            `json:"estimatedCostUsd"`
-	ActualCostUsd              *string                                                                                            `json:"actualCostUsd"`
-	SimulationResult           *GetApiOnlineEvalsMonitorsIdBackfillsResponse200ApplicationJsonModelBackfillsItemSimulationResult  `json:"simulationResult"`
-	EvidenceJson               GetApiOnlineEvalsMonitorsIdBackfillsResponse200ApplicationJsonModelBackfillsItemEvidenceJson       `json:"evidenceJson"`
-	MissingEvidence            []string                                                                                           `json:"missingEvidence"`
-	RetryHistory               []GetApiOnlineEvalsAlertsIdDeliveriesResponse200ApplicationJsonModelDeliveriesItemRetryHistoryItem `json:"retryHistory"`
-	AlertsEnabled              bool                                                                                               `json:"alertsEnabled"`
-	CandidateGenerationEnabled bool                                                                                               `json:"candidateGenerationEnabled"`
-	CreatedBy                  string                                                                                             `json:"createdBy"`
-	CreatedAt                  string                                                                                             `json:"createdAt"`
-	StartedAt                  *string                                                                                            `json:"startedAt"`
-	CompletedAt                *string                                                                                            `json:"completedAt"`
-	CancelRequestedAt          *string                                                                                            `json:"cancelRequestedAt"`
-	CancelledAt                *string                                                                                            `json:"cancelledAt"`
+	IdempotentReplay           bool                                                                                                           `json:"idempotentReplay"`
+	Id                         string                                                                                                         `json:"id"`
+	OrganizationId             OrganizationId                                                                                                 `json:"organizationId"`
+	MonitorId                  float64                                                                                                        `json:"monitorId"`
+	MonitorVersionId           string                                                                                                         `json:"monitorVersionId"`
+	RunType                    string                                                                                                         `json:"runType"`
+	Status                     string                                                                                                         `json:"status"`
+	IdempotencyKey             string                                                                                                         `json:"idempotencyKey"`
+	RequestHash                string                                                                                                         `json:"requestHash"`
+	ClaimToken                 *string                                                                                                        `json:"claimToken"`
+	ClaimedBy                  *string                                                                                                        `json:"claimedBy"`
+	Attempt                    float64                                                                                                        `json:"attempt"`
+	WindowStart                *string                                                                                                        `json:"windowStart"`
+	WindowEnd                  *string                                                                                                        `json:"windowEnd"`
+	MatchedTraces              float64                                                                                                        `json:"matchedTraces"`
+	SampledTraces              float64                                                                                                        `json:"sampledTraces"`
+	ProcessedSamples           float64                                                                                                        `json:"processedSamples"`
+	FailedSamples              float64                                                                                                        `json:"failedSamples"`
+	AlertCount                 float64                                                                                                        `json:"alertCount"`
+	EstimatedCostUsd           *string                                                                                                        `json:"estimatedCostUsd"`
+	ActualCostUsd              *string                                                                                                        `json:"actualCostUsd"`
+	SimulationResult           *GetApiOnlineEvalsMonitorsIdBackfillsResponse200ApplicationJsonModelBackfillsItemSimulationResult              `json:"simulationResult"`
+	EvidenceJson               GetApiOnlineEvalsMonitorsIdBackfillsResponse200ApplicationJsonModelBackfillsItemEvidenceJson                   `json:"evidenceJson"`
+	MissingEvidence            []string                                                                                                       `json:"missingEvidence"`
+	RetryHistory               []GetApiOnlineEvalsMonitorsIdBackfillsResponse200ApplicationJsonModelBackfillsItemEvidenceJsonRetryHistoryItem `json:"retryHistory"`
+	AlertsEnabled              bool                                                                                                           `json:"alertsEnabled"`
+	CandidateGenerationEnabled bool                                                                                                           `json:"candidateGenerationEnabled"`
+	CreatedBy                  string                                                                                                         `json:"createdBy"`
+	CreatedAt                  string                                                                                                         `json:"createdAt"`
+	StartedAt                  *string                                                                                                        `json:"startedAt"`
+	CompletedAt                *string                                                                                                        `json:"completedAt"`
+	CancelRequestedAt          *string                                                                                                        `json:"cancelRequestedAt"`
+	CancelledAt                *string                                                                                                        `json:"cancelledAt"`
 }
 
 type PostApiOnlineEvalsBackfillsIdResumeResponse202ApplicationJsonModelValue struct {
-	BudgetPreflight            PostApiOnlineEvalsBackfillsIdResumeResponse202ApplicationJsonModelValueBudgetPreflight             `json:"budgetPreflight"`
-	IdempotentReplay           bool                                                                                               `json:"idempotentReplay"`
-	Status                     string                                                                                             `json:"status"`
-	Id                         string                                                                                             `json:"id"`
-	CreatedAt                  string                                                                                             `json:"createdAt"`
-	OrganizationId             OrganizationId                                                                                     `json:"organizationId"`
-	CreatedBy                  string                                                                                             `json:"createdBy"`
-	StartedAt                  *string                                                                                            `json:"startedAt"`
-	CompletedAt                *string                                                                                            `json:"completedAt"`
-	IdempotencyKey             string                                                                                             `json:"idempotencyKey"`
-	RequestHash                string                                                                                             `json:"requestHash"`
-	WindowStart                *string                                                                                            `json:"windowStart"`
-	WindowEnd                  *string                                                                                            `json:"windowEnd"`
-	EstimatedCostUsd           *string                                                                                            `json:"estimatedCostUsd"`
-	CancelRequestedAt          *string                                                                                            `json:"cancelRequestedAt"`
-	EvidenceJson               GetApiOnlineEvalsMonitorsIdBackfillsResponse200ApplicationJsonModelBackfillsItemEvidenceJson       `json:"evidenceJson"`
-	Attempt                    float64                                                                                            `json:"attempt"`
-	MonitorId                  float64                                                                                            `json:"monitorId"`
-	MonitorVersionId           string                                                                                             `json:"monitorVersionId"`
-	CancelledAt                *string                                                                                            `json:"cancelledAt"`
-	ActualCostUsd              *string                                                                                            `json:"actualCostUsd"`
-	RunType                    string                                                                                             `json:"runType"`
-	ClaimToken                 *string                                                                                            `json:"claimToken"`
-	ClaimedBy                  *string                                                                                            `json:"claimedBy"`
-	MatchedTraces              float64                                                                                            `json:"matchedTraces"`
-	SampledTraces              float64                                                                                            `json:"sampledTraces"`
-	ProcessedSamples           float64                                                                                            `json:"processedSamples"`
-	FailedSamples              float64                                                                                            `json:"failedSamples"`
-	AlertCount                 float64                                                                                            `json:"alertCount"`
-	SimulationResult           *GetApiOnlineEvalsMonitorsIdBackfillsResponse200ApplicationJsonModelBackfillsItemSimulationResult  `json:"simulationResult"`
-	MissingEvidence            []string                                                                                           `json:"missingEvidence"`
-	RetryHistory               []GetApiOnlineEvalsAlertsIdDeliveriesResponse200ApplicationJsonModelDeliveriesItemRetryHistoryItem `json:"retryHistory"`
-	AlertsEnabled              bool                                                                                               `json:"alertsEnabled"`
-	CandidateGenerationEnabled bool                                                                                               `json:"candidateGenerationEnabled"`
+	BudgetPreflight            PostApiOnlineEvalsBackfillsIdResumeResponse202ApplicationJsonModelValueBudgetPreflight                         `json:"budgetPreflight"`
+	IdempotentReplay           bool                                                                                                           `json:"idempotentReplay"`
+	ActualCostUsd              *string                                                                                                        `json:"actualCostUsd"`
+	AlertCount                 float64                                                                                                        `json:"alertCount"`
+	AlertsEnabled              bool                                                                                                           `json:"alertsEnabled"`
+	Attempt                    float64                                                                                                        `json:"attempt"`
+	CancelRequestedAt          *string                                                                                                        `json:"cancelRequestedAt"`
+	CancelledAt                *string                                                                                                        `json:"cancelledAt"`
+	CandidateGenerationEnabled bool                                                                                                           `json:"candidateGenerationEnabled"`
+	ClaimToken                 *string                                                                                                        `json:"claimToken"`
+	ClaimedBy                  *string                                                                                                        `json:"claimedBy"`
+	CompletedAt                *string                                                                                                        `json:"completedAt"`
+	CreatedAt                  string                                                                                                         `json:"createdAt"`
+	CreatedBy                  string                                                                                                         `json:"createdBy"`
+	EstimatedCostUsd           *string                                                                                                        `json:"estimatedCostUsd"`
+	EvidenceJson               GetApiOnlineEvalsMonitorsIdBackfillsResponse200ApplicationJsonModelBackfillsItemEvidenceJson                   `json:"evidenceJson"`
+	FailedSamples              float64                                                                                                        `json:"failedSamples"`
+	Id                         string                                                                                                         `json:"id"`
+	IdempotencyKey             string                                                                                                         `json:"idempotencyKey"`
+	MatchedTraces              float64                                                                                                        `json:"matchedTraces"`
+	MissingEvidence            []string                                                                                                       `json:"missingEvidence"`
+	MonitorId                  float64                                                                                                        `json:"monitorId"`
+	MonitorVersionId           string                                                                                                         `json:"monitorVersionId"`
+	OrganizationId             OrganizationId                                                                                                 `json:"organizationId"`
+	ProcessedSamples           float64                                                                                                        `json:"processedSamples"`
+	RequestHash                string                                                                                                         `json:"requestHash"`
+	RetryHistory               []GetApiOnlineEvalsMonitorsIdBackfillsResponse200ApplicationJsonModelBackfillsItemEvidenceJsonRetryHistoryItem `json:"retryHistory"`
+	RunType                    string                                                                                                         `json:"runType"`
+	SampledTraces              float64                                                                                                        `json:"sampledTraces"`
+	SimulationResult           *GetApiOnlineEvalsMonitorsIdBackfillsResponse200ApplicationJsonModelBackfillsItemSimulationResult              `json:"simulationResult"`
+	StartedAt                  *string                                                                                                        `json:"startedAt"`
+	Status                     string                                                                                                         `json:"status"`
+	WindowEnd                  *string                                                                                                        `json:"windowEnd"`
+	WindowStart                *string                                                                                                        `json:"windowStart"`
 }
 
 type PostApiOnlineEvalsBackfillsIdResumeResponse202ApplicationJsonModelValueBudgetPreflight struct {
@@ -28055,6 +29793,39 @@ type PostApiOrchestrationEvalsRunsResponse202ApplicationJsonModel struct {
 	JobId      float64 `json:"jobId"`
 }
 
+type PostApiOrganizationsIdentityDomainsDomainIdVerifyResponse200ApplicationJsonModel struct {
+	Domain GetApiOrganizationsIdentityResponse200ApplicationJsonModelDomainsItem `json:"domain"`
+}
+
+type PostApiOrganizationsIdentityDomainsRequestModel struct {
+	Domain string `json:"domain"`
+}
+
+type PostApiOrganizationsIdentityMembersUserIdMfaResetResponse200ApplicationJsonModel struct {
+	Reset bool `json:"reset"`
+}
+
+type PostApiOrganizationsIdentitySsoProvidersRequestModel struct {
+	DisplayName  string  `json:"displayName"`
+	Domain       string  `json:"domain"`
+	Protocol     string  `json:"protocol"`
+	ProviderId   *string `json:"providerId,omitempty"`
+	Issuer       string  `json:"issuer"`
+	ClientId     string  `json:"clientId"`
+	ClientSecret string  `json:"clientSecret"`
+}
+
+type PostApiOrganizationsIdentitySsoProvidersRequestModelValue struct {
+	DisplayName        string  `json:"displayName"`
+	Domain             string  `json:"domain"`
+	Protocol           string  `json:"protocol"`
+	ProviderId         *string `json:"providerId,omitempty"`
+	IdpMetadataXml     *string `json:"idpMetadataXml,omitempty"`
+	EntityId           *string `json:"entityId,omitempty"`
+	SsoUrl             *string `json:"ssoUrl,omitempty"`
+	SigningCertificate *string `json:"signingCertificate,omitempty"`
+}
+
 type PostApiOrganizationsInvitationsAcceptRequestModel struct {
 	Token string `json:"token"`
 }
@@ -28086,6 +29857,36 @@ type PostApiOrganizationsMembersResponse201ApplicationJsonModel struct {
 
 type PostApiOrganizationsRequestModel struct {
 	Name string `json:"name"`
+}
+
+type PostApiOrgCredentialVaultsInfisicalBindingsBindingIdCheckResponse200ApplicationJsonModel struct {
+	Binding        GetApiOrgCredentialVaultsInfisicalResponse200ApplicationJsonModelBindingsItem `json:"binding"`
+	VaultRead      string                                                                        `json:"vaultRead"`
+	ProviderAccess string                                                                        `json:"providerAccess"`
+	ProviderError  *string                                                                       `json:"providerError"`
+}
+
+type PostApiOrgCredentialVaultsInfisicalBindingsRequestModel struct {
+	Environment string  `json:"environment"`
+	SecretPath  *string `json:"secretPath,omitempty"`
+	SecretName  string  `json:"secretName"`
+	Provider    string  `json:"provider"`
+}
+
+type PostApiOrgCredentialVaultsInfisicalBindingsResponse201ApplicationJsonModel struct {
+	Binding GetApiOrgCredentialVaultsInfisicalResponse200ApplicationJsonModelBindingsItem `json:"binding"`
+}
+
+type PostApiOrgCredentialVaultsInfisicalRequestModel struct {
+	Region             string `json:"region"`
+	ClientId           string `json:"clientId"`
+	ProjectId          string `json:"projectId"`
+	DefaultEnvironment string `json:"defaultEnvironment"`
+	ClientSecret       string `json:"clientSecret"`
+}
+
+type PostApiOrgCredentialVaultsInfisicalResponse201ApplicationJsonModel struct {
+	Connection GetApiOrgCredentialVaultsInfisicalResponse200ApplicationJsonModelConnection `json:"connection"`
 }
 
 type PostApiOrgKeysKeyIdRotateRequestModel struct {
@@ -29568,28 +31369,45 @@ type PostApiProductionInsightsDiscoverResponse201ApplicationJsonModelDiscovery s
 }
 
 type PostApiProductionInsightsDiscoverResponse201ApplicationJsonModelDiscoveryFrame struct {
-	OrganizationId           OrganizationId `json:"organizationId"`
-	QueryDigest              string         `json:"queryDigest"`
-	LookbackBoundary         string         `json:"lookbackBoundary"`
-	MaximumEligibleReportId  *float64       `json:"maximumEligibleReportId"`
-	TotalEligibleRows        float64        `json:"totalEligibleRows"`
-	TotalWeightedOccurrences float64        `json:"totalWeightedOccurrences"`
-	ClassifierVersion        string         `json:"classifierVersion"`
-	SamplingPolicyVersion    string         `json:"samplingPolicyVersion"`
-	Seed                     string         `json:"seed"`
-	Mode                     string         `json:"mode"`
-	InitiatedBy              string         `json:"initiatedBy"`
-	CanonicalExecutionId     string         `json:"canonicalExecutionId"`
+	OrganizationId           OrganizationId                                                                                                   `json:"organizationId"`
+	QueryDigest              string                                                                                                           `json:"queryDigest"`
+	LookbackBoundary         string                                                                                                           `json:"lookbackBoundary"`
+	MaximumEligibleReportId  *float64                                                                                                         `json:"maximumEligibleReportId"`
+	TotalEligibleRows        float64                                                                                                          `json:"totalEligibleRows"`
+	TotalWeightedOccurrences float64                                                                                                          `json:"totalWeightedOccurrences"`
+	ClassifierVersion        string                                                                                                           `json:"classifierVersion"`
+	SamplingPolicyVersion    string                                                                                                           `json:"samplingPolicyVersion"`
+	Seed                     string                                                                                                           `json:"seed"`
+	Mode                     string                                                                                                           `json:"mode"`
+	InitiatedBy              string                                                                                                           `json:"initiatedBy"`
+	CanonicalExecutionId     string                                                                                                           `json:"canonicalExecutionId"`
+	ProductionObservation    GetApiOnlineEvalsMonitorsIdBackfillsResponse200ApplicationJsonModelBackfillsItemSimulationResultObservationFrame `json:"productionObservation"`
 }
 
 type PostApiProductionInsightsDiscoverResponse201ApplicationJsonModelDiscoveryCheckpoint struct {
-	Frame          PostApiProductionInsightsDiscoverResponse201ApplicationJsonModelDiscoveryFrame `json:"frame"`
-	CursorReportId *float64                                                                       `json:"cursorReportId"`
-	ScannedRows    float64                                                                        `json:"scannedRows"`
-	SampledRows    float64                                                                        `json:"sampledRows"`
-	OmittedRows    float64                                                                        `json:"omittedRows"`
-	State          string                                                                         `json:"state"`
-	UpdatedAt      string                                                                         `json:"updatedAt"`
+	Frame          PostApiProductionInsightsDiscoverResponse201ApplicationJsonModelDiscoveryCheckpointFrame `json:"frame"`
+	CursorReportId *float64                                                                                 `json:"cursorReportId"`
+	ScannedRows    float64                                                                                  `json:"scannedRows"`
+	SampledRows    float64                                                                                  `json:"sampledRows"`
+	OmittedRows    float64                                                                                  `json:"omittedRows"`
+	State          string                                                                                   `json:"state"`
+	UpdatedAt      string                                                                                   `json:"updatedAt"`
+}
+
+type PostApiProductionInsightsDiscoverResponse201ApplicationJsonModelDiscoveryCheckpointFrame struct {
+	OrganizationId           OrganizationId                                                                                                    `json:"organizationId"`
+	QueryDigest              string                                                                                                            `json:"queryDigest"`
+	LookbackBoundary         string                                                                                                            `json:"lookbackBoundary"`
+	MaximumEligibleReportId  *float64                                                                                                          `json:"maximumEligibleReportId"`
+	TotalEligibleRows        float64                                                                                                           `json:"totalEligibleRows"`
+	TotalWeightedOccurrences float64                                                                                                           `json:"totalWeightedOccurrences"`
+	ClassifierVersion        string                                                                                                            `json:"classifierVersion"`
+	SamplingPolicyVersion    string                                                                                                            `json:"samplingPolicyVersion"`
+	Seed                     string                                                                                                            `json:"seed"`
+	Mode                     string                                                                                                            `json:"mode"`
+	InitiatedBy              string                                                                                                            `json:"initiatedBy"`
+	CanonicalExecutionId     string                                                                                                            `json:"canonicalExecutionId"`
+	ProductionObservation    *GetApiOnlineEvalsMonitorsIdBackfillsResponse200ApplicationJsonModelBackfillsItemSimulationResultObservationFrame `json:"productionObservation,omitempty"`
 }
 
 type PostApiProductionInsightsTopicsMergeRequestModel struct {
@@ -31155,13 +32973,201 @@ type PostApiQualityRequestModelRedTeamGateExpectedTarget struct {
 }
 
 type PostApiQualityResponse200ApplicationJsonModel struct {
-	Success          bool                                                                      `json:"success"`
-	RunId            float64                                                                   `json:"runId"`
-	Integrity        *GetApiQualityResponse200ApplicationJsonModelIntegrity                    `json:"integrity"`
-	WorkflowCoverage *GetApiEvaluationsIdAgentWorkflowsResponse200ApplicationJsonModelCoverage `json:"workflowCoverage"`
-	GateResult       *PostApiQualityResponse200ApplicationJsonModelGateResult                  `json:"gateResult"`
-	CheckReport      *PostApiQualityResponse200ApplicationJsonModelCheckReport                 `json:"checkReport"`
-	QualityScore     PostApiQualityResponse200ApplicationJsonModelQualityScore                 `json:"qualityScore"`
+	Success          bool                                                           `json:"success"`
+	RunId            float64                                                        `json:"runId"`
+	Integrity        *PostApiQualityResponse200ApplicationJsonModelIntegrity        `json:"integrity"`
+	WorkflowCoverage *PostApiQualityResponse200ApplicationJsonModelWorkflowCoverage `json:"workflowCoverage"`
+	GateResult       *PostApiQualityResponse200ApplicationJsonModelGateResult       `json:"gateResult"`
+	CheckReport      *PostApiQualityResponse200ApplicationJsonModelCheckReport      `json:"checkReport"`
+	QualityScore     PostApiQualityResponse200ApplicationJsonModelQualityScore      `json:"qualityScore"`
+}
+
+type PostApiQualityResponse200ApplicationJsonModelIntegrity struct {
+	Summary           PostApiQualityResponse200ApplicationJsonModelIntegritySummary             `json:"summary"`
+	DatasetIntegrity  PostApiQualityResponse200ApplicationJsonModelIntegrityDatasetIntegrity    `json:"datasetIntegrity"`
+	MetricValidity    GetApiEvaluationsIdIntegrityResponse200ApplicationJsonModelMetricValidity `json:"metricValidity"`
+	AntiGaming        GetApiEvaluationsIdIntegrityResponse200ApplicationJsonModelAntiGaming     `json:"antiGaming"`
+	CoverageIntegrity PostApiQualityResponse200ApplicationJsonModelIntegrityCoverageIntegrity   `json:"coverageIntegrity"`
+	Lifecycle         PostApiQualityResponse200ApplicationJsonModelIntegrityLifecycle           `json:"lifecycle"`
+	Warnings          []PostApiQualityResponse200ApplicationJsonModelIntegrityWarningsItem      `json:"warnings"`
+	Events            []PostApiQualityResponse200ApplicationJsonModelIntegrityEventsItem        `json:"events"`
+	Metadata          GetApiEvaluationsIdIntegrityResponse200ApplicationJsonModelMetadata       `json:"metadata"`
+}
+
+type PostApiQualityResponse200ApplicationJsonModelIntegritySummary struct {
+	ByBehavior   PostApiQualityResponse200ApplicationJsonModelIntegritySummaryByBehavior    `json:"byBehavior"`
+	ByDifficulty PostApiQualityResponse200ApplicationJsonModelIntegritySummaryByDifficulty  `json:"byDifficulty"`
+	Trajectory   *PostApiQualityResponse200ApplicationJsonModelIntegritySummaryTrajectory   `json:"trajectory,omitempty"`
+	Workflow     *PostApiQualityResponse200ApplicationJsonModelIntegritySummaryWorkflow     `json:"workflow,omitempty"`
+	Metadata     GetApiEvaluationsIdIntegrityResponse200ApplicationJsonModelSummaryMetadata `json:"metadata"`
+}
+
+type PostApiQualityResponse200ApplicationJsonModelIntegritySummaryByBehavior struct {
+	Classification     PostApiQualityResponse200ApplicationJsonModelIntegritySummaryByBehaviorClassification `json:"classification"`
+	Extraction         PostApiQualityResponse200ApplicationJsonModelIntegritySummaryByBehaviorClassification `json:"extraction"`
+	MultiStepReasoning PostApiQualityResponse200ApplicationJsonModelIntegritySummaryByBehaviorClassification `json:"multi_step_reasoning"`
+	Retrieval          PostApiQualityResponse200ApplicationJsonModelIntegritySummaryByBehaviorClassification `json:"retrieval"`
+	ToolUse            PostApiQualityResponse200ApplicationJsonModelIntegritySummaryByBehaviorClassification `json:"tool_use"`
+}
+
+type PostApiQualityResponse200ApplicationJsonModelIntegritySummaryByBehaviorClassification struct {
+	Mean               float64                                                                                                  `json:"mean"`
+	StdDev             float64                                                                                                  `json:"stdDev"`
+	N                  float64                                                                                                  `json:"n"`
+	ConfidenceInterval *GetApiEvaluationsIdIntegrityResponse200ApplicationJsonModelSummaryByBehaviorRetrievalConfidenceInterval `json:"confidenceInterval"`
+	Composition        GetApiEvaluationsIdIntegrityResponse200ApplicationJsonModelSummaryByBehaviorRetrievalComposition         `json:"composition"`
+	Status             string                                                                                                   `json:"status"`
+	Warnings           []string                                                                                                 `json:"warnings"`
+}
+
+type PostApiQualityResponse200ApplicationJsonModelIntegritySummaryByDifficulty struct {
+	Easy   PostApiQualityResponse200ApplicationJsonModelIntegritySummaryByBehaviorClassification `json:"easy"`
+	Flaky  PostApiQualityResponse200ApplicationJsonModelIntegritySummaryByBehaviorClassification `json:"flaky"`
+	Hard   PostApiQualityResponse200ApplicationJsonModelIntegritySummaryByBehaviorClassification `json:"hard"`
+	Medium PostApiQualityResponse200ApplicationJsonModelIntegritySummaryByBehaviorClassification `json:"medium"`
+}
+
+type PostApiQualityResponse200ApplicationJsonModelIntegritySummaryTrajectory struct {
+	Efficiency PostApiQualityResponse200ApplicationJsonModelIntegritySummaryByBehaviorClassification `json:"efficiency"`
+	ToolUsage  PostApiQualityResponse200ApplicationJsonModelIntegritySummaryByBehaviorClassification `json:"toolUsage"`
+}
+
+type PostApiQualityResponse200ApplicationJsonModelIntegritySummaryWorkflow struct {
+	Axes   PostApiQualityResponse200ApplicationJsonModelIntegritySummaryWorkflowAxes   `json:"axes"`
+	Slices PostApiQualityResponse200ApplicationJsonModelIntegritySummaryWorkflowSlices `json:"slices"`
+}
+
+type PostApiQualityResponse200ApplicationJsonModelIntegritySummaryWorkflowAxes struct {
+	AutonomyFit       PostApiQualityResponse200ApplicationJsonModelIntegritySummaryByBehaviorClassification `json:"autonomyFit"`
+	EscalationQuality PostApiQualityResponse200ApplicationJsonModelIntegritySummaryByBehaviorClassification `json:"escalationQuality"`
+	ApprovalSafety    PostApiQualityResponse200ApplicationJsonModelIntegritySummaryByBehaviorClassification `json:"approvalSafety"`
+	HookCompliance    PostApiQualityResponse200ApplicationJsonModelIntegritySummaryByBehaviorClassification `json:"hookCompliance"`
+	MemoryCorrectness PostApiQualityResponse200ApplicationJsonModelIntegritySummaryByBehaviorClassification `json:"memoryCorrectness"`
+	RecoveryQuality   PostApiQualityResponse200ApplicationJsonModelIntegritySummaryByBehaviorClassification `json:"recoveryQuality"`
+	HandoffQuality    PostApiQualityResponse200ApplicationJsonModelIntegritySummaryByBehaviorClassification `json:"handoffQuality"`
+	Debuggability     PostApiQualityResponse200ApplicationJsonModelIntegritySummaryByBehaviorClassification `json:"debuggability"`
+}
+
+type PostApiQualityResponse200ApplicationJsonModelIntegritySummaryWorkflowSlices struct {
+	ByAutonomy      PostApiQualityResponse200ApplicationJsonModelIntegritySummaryWorkflowSlicesByAutonomy      `json:"byAutonomy"`
+	ByWorkflowClass PostApiQualityResponse200ApplicationJsonModelIntegritySummaryWorkflowSlicesByWorkflowClass `json:"byWorkflowClass"`
+}
+
+type PostApiQualityResponse200ApplicationJsonModelIntegritySummaryWorkflowSlicesByAutonomy struct {
+	Autopilot        PostApiQualityResponse200ApplicationJsonModelIntegritySummaryByBehaviorClassification `json:"autopilot"`
+	BypassApprovals  PostApiQualityResponse200ApplicationJsonModelIntegritySummaryByBehaviorClassification `json:"bypass_approvals"`
+	DefaultApprovals PostApiQualityResponse200ApplicationJsonModelIntegritySummaryByBehaviorClassification `json:"default_approvals"`
+	Manual           PostApiQualityResponse200ApplicationJsonModelIntegritySummaryByBehaviorClassification `json:"manual"`
+}
+
+type PostApiQualityResponse200ApplicationJsonModelIntegritySummaryWorkflowSlicesByWorkflowClass struct {
+	ApprovalGatedMutation PostApiQualityResponse200ApplicationJsonModelIntegritySummaryByBehaviorClassification `json:"approval_gated_mutation"`
+	BackgroundExecution   PostApiQualityResponse200ApplicationJsonModelIntegritySummaryByBehaviorClassification `json:"background_execution"`
+	HandoffHeavy          PostApiQualityResponse200ApplicationJsonModelIntegritySummaryByBehaviorClassification `json:"handoff_heavy"`
+	MemorySensitive       PostApiQualityResponse200ApplicationJsonModelIntegritySummaryByBehaviorClassification `json:"memory_sensitive"`
+	ParallelToolUse       PostApiQualityResponse200ApplicationJsonModelIntegritySummaryByBehaviorClassification `json:"parallel_tool_use"`
+	PolicyConflict        PostApiQualityResponse200ApplicationJsonModelIntegritySummaryByBehaviorClassification `json:"policy_conflict"`
+	RecoveryRequired      PostApiQualityResponse200ApplicationJsonModelIntegritySummaryByBehaviorClassification `json:"recovery_required"`
+}
+
+type PostApiQualityResponse200ApplicationJsonModelIntegrityDatasetIntegrity struct {
+	BehaviorDistribution   PostApiQualityResponse200ApplicationJsonModelIntegrityDatasetIntegrityBehaviorDistribution   `json:"behaviorDistribution"`
+	DifficultyDistribution PostApiQualityResponse200ApplicationJsonModelIntegrityDatasetIntegrityDifficultyDistribution `json:"difficultyDistribution"`
+	FailureOriginShare     float64                                                                                      `json:"failureOriginShare"`
+	SyntheticOnly          bool                                                                                         `json:"syntheticOnly"`
+	CoverageWarnings       []string                                                                                     `json:"coverageWarnings"`
+}
+
+type PostApiQualityResponse200ApplicationJsonModelIntegrityDatasetIntegrityBehaviorDistribution struct {
+	Classification     float64 `json:"classification"`
+	Extraction         float64 `json:"extraction"`
+	MultiStepReasoning float64 `json:"multi_step_reasoning"`
+	Retrieval          float64 `json:"retrieval"`
+	ToolUse            float64 `json:"tool_use"`
+}
+
+type PostApiQualityResponse200ApplicationJsonModelIntegrityDatasetIntegrityDifficultyDistribution struct {
+	Easy   float64 `json:"easy"`
+	Flaky  float64 `json:"flaky"`
+	Hard   float64 `json:"hard"`
+	Medium float64 `json:"medium"`
+}
+
+type PostApiQualityResponse200ApplicationJsonModelIntegrityCoverageIntegrity struct {
+	CoverageByBehavior  PostApiQualityResponse200ApplicationJsonModelIntegrityDatasetIntegrityBehaviorDistribution      `json:"coverageByBehavior"`
+	DominantFailureMode GetApiEvaluationsIdIntegrityResponse200ApplicationJsonModelCoverageIntegrityDominantFailureMode `json:"dominantFailureMode"`
+	LowFailureDiversity bool                                                                                            `json:"lowFailureDiversity"`
+}
+
+type PostApiQualityResponse200ApplicationJsonModelIntegrityLifecycle struct {
+	Counts                 PostApiQualityResponse200ApplicationJsonModelIntegrityLifecycleCounts                       `json:"counts"`
+	RecommendedTransitions []PostApiQualityResponse200ApplicationJsonModelIntegrityLifecycleRecommendedTransitionsItem `json:"recommendedTransitions"`
+}
+
+type PostApiQualityResponse200ApplicationJsonModelIntegrityLifecycleCounts struct {
+	Active     float64 `json:"active"`
+	ActiveGate float64 `json:"active_gate"`
+	Archived   float64 `json:"archived"`
+	Candidate  float64 `json:"candidate"`
+	Deprecated float64 `json:"deprecated"`
+	Superseded float64 `json:"superseded"`
+	Validated  float64 `json:"validated"`
+}
+
+type PostApiQualityResponse200ApplicationJsonModelIntegrityLifecycleRecommendedTransitionsItem struct {
+	TestCaseId   float64 `json:"testCaseId"`
+	CurrentState string  `json:"currentState"`
+	NextState    string  `json:"nextState"`
+	Reason       string  `json:"reason"`
+}
+
+type PostApiQualityResponse200ApplicationJsonModelIntegrityWarningsItem struct {
+	Code     string                `json:"code"`
+	Severity string                `json:"severity"`
+	Message  string                `json:"message"`
+	Context  *map[string]JsonValue `json:"context,omitempty"`
+}
+
+type PostApiQualityResponse200ApplicationJsonModelIntegrityEventsItem struct {
+	Type    string                `json:"type"`
+	Message string                `json:"message"`
+	Context *map[string]JsonValue `json:"context,omitempty"`
+}
+
+type PostApiQualityResponse200ApplicationJsonModelWorkflowCoverage struct {
+	TotalCases                float64                                                                                `json:"totalCases"`
+	AgentWorkflowCases        float64                                                                                `json:"agentWorkflowCases"`
+	CoverageRate              float64                                                                                `json:"coverageRate"`
+	WorkflowClassDistribution PostApiQualityResponse200ApplicationJsonModelWorkflowCoverageWorkflowClassDistribution `json:"workflowClassDistribution"`
+	AutonomyDistribution      PostApiQualityResponse200ApplicationJsonModelWorkflowCoverageAutonomyDistribution      `json:"autonomyDistribution"`
+	GeneratedCandidateCount   float64                                                                                `json:"generatedCandidateCount"`
+	ExperimentRecipeCount     float64                                                                                `json:"experimentRecipeCount"`
+	Gaps                      []PostApiQualityResponse200ApplicationJsonModelWorkflowCoverageGapsItem                `json:"gaps"`
+}
+
+type PostApiQualityResponse200ApplicationJsonModelWorkflowCoverageWorkflowClassDistribution struct {
+	ApprovalGatedMutation float64 `json:"approval_gated_mutation"`
+	BackgroundExecution   float64 `json:"background_execution"`
+	HandoffHeavy          float64 `json:"handoff_heavy"`
+	MemorySensitive       float64 `json:"memory_sensitive"`
+	ParallelToolUse       float64 `json:"parallel_tool_use"`
+	PolicyConflict        float64 `json:"policy_conflict"`
+	RecoveryRequired      float64 `json:"recovery_required"`
+}
+
+type PostApiQualityResponse200ApplicationJsonModelWorkflowCoverageAutonomyDistribution struct {
+	Autopilot        float64 `json:"autopilot"`
+	BypassApprovals  float64 `json:"bypass_approvals"`
+	DefaultApprovals float64 `json:"default_approvals"`
+	Manual           float64 `json:"manual"`
+}
+
+type PostApiQualityResponse200ApplicationJsonModelWorkflowCoverageGapsItem struct {
+	Id             string `json:"id"`
+	WorkflowClass  string `json:"workflowClass"`
+	Severity       string `json:"severity"`
+	Description    string `json:"description"`
+	Recommendation string `json:"recommendation"`
 }
 
 type PostApiQualityResponse200ApplicationJsonModelGateResult struct {
@@ -31205,32 +33211,32 @@ type PostApiQualityResponse200ApplicationJsonModelGateResultRedTeamEvidence stru
 }
 
 type PostApiQualityResponse200ApplicationJsonModelCheckReport struct {
-	SchemaVersion        float64                                                                   `json:"schemaVersion"`
-	EvaluationId         string                                                                    `json:"evaluationId"`
-	RunId                float64                                                                   `json:"runId"`
-	Verdict              string                                                                    `json:"verdict"`
-	GateApplied          bool                                                                      `json:"gateApplied"`
-	GateMode             string                                                                    `json:"gateMode"`
-	ReasonCode           string                                                                    `json:"reasonCode"`
-	ReasonMessage        **string                                                                  `json:"reasonMessage,omitempty"`
-	ActionableMessage    *string                                                                   `json:"actionableMessage,omitempty"`
-	Score                *float64                                                                  `json:"score,omitempty"`
-	BaselineScore        **float64                                                                 `json:"baselineScore,omitempty"`
-	Delta                **float64                                                                 `json:"delta,omitempty"`
-	BaselineMissing      *bool                                                                     `json:"baselineMissing,omitempty"`
-	BaselineRunId        **float64                                                                 `json:"baselineRunId,omitempty"`
-	Flags                *[]string                                                                 `json:"flags,omitempty"`
-	Thresholds           *PostApiQualityResponse200ApplicationJsonModelCheckReportThresholds       `json:"thresholds,omitempty"`
-	ProviderAvailability *GetApiQualityResponse200ApplicationJsonModelProviderAvailability         `json:"providerAvailability,omitempty"`
-	ProviderAdmission    *PostApiQualityResponse200ApplicationJsonModelGateResultProviderAdmission `json:"providerAdmission,omitempty"`
-	RedTeamAdmission     *PostApiQualityResponse200ApplicationJsonModelGateResultRedTeamAdmission  `json:"redTeamAdmission,omitempty"`
-	RedTeamEvidence      *PostApiQualityResponse200ApplicationJsonModelGateResultRedTeamEvidence   `json:"redTeamEvidence,omitempty"`
-	ReleaseReadiness     *string                                                                   `json:"releaseReadiness,omitempty"`
-	N                    **float64                                                                 `json:"n,omitempty"`
-	EvidenceLevel        **string                                                                  `json:"evidenceLevel,omitempty"`
-	DashboardUrl         *string                                                                   `json:"dashboardUrl,omitempty"`
-	CheckedAt            string                                                                    `json:"checkedAt"`
-	Source               string                                                                    `json:"source"`
+	SchemaVersion        float64                                                                       `json:"schemaVersion"`
+	EvaluationId         string                                                                        `json:"evaluationId"`
+	RunId                float64                                                                       `json:"runId"`
+	Verdict              string                                                                        `json:"verdict"`
+	GateApplied          bool                                                                          `json:"gateApplied"`
+	GateMode             string                                                                        `json:"gateMode"`
+	ReasonCode           string                                                                        `json:"reasonCode"`
+	ReasonMessage        **string                                                                      `json:"reasonMessage,omitempty"`
+	ActionableMessage    *string                                                                       `json:"actionableMessage,omitempty"`
+	Score                *float64                                                                      `json:"score,omitempty"`
+	BaselineScore        **float64                                                                     `json:"baselineScore,omitempty"`
+	Delta                **float64                                                                     `json:"delta,omitempty"`
+	BaselineMissing      *bool                                                                         `json:"baselineMissing,omitempty"`
+	BaselineRunId        **float64                                                                     `json:"baselineRunId,omitempty"`
+	Flags                *[]string                                                                     `json:"flags,omitempty"`
+	Thresholds           *PostApiQualityResponse200ApplicationJsonModelCheckReportThresholds           `json:"thresholds,omitempty"`
+	ProviderAvailability *PostApiQualityResponse200ApplicationJsonModelCheckReportProviderAvailability `json:"providerAvailability,omitempty"`
+	ProviderAdmission    *PostApiQualityResponse200ApplicationJsonModelGateResultProviderAdmission     `json:"providerAdmission,omitempty"`
+	RedTeamAdmission     *PostApiQualityResponse200ApplicationJsonModelGateResultRedTeamAdmission      `json:"redTeamAdmission,omitempty"`
+	RedTeamEvidence      *PostApiQualityResponse200ApplicationJsonModelGateResultRedTeamEvidence       `json:"redTeamEvidence,omitempty"`
+	ReleaseReadiness     *string                                                                       `json:"releaseReadiness,omitempty"`
+	N                    **float64                                                                     `json:"n,omitempty"`
+	EvidenceLevel        **string                                                                      `json:"evidenceLevel,omitempty"`
+	DashboardUrl         *string                                                                       `json:"dashboardUrl,omitempty"`
+	CheckedAt            string                                                                        `json:"checkedAt"`
+	Source               string                                                                        `json:"source"`
 }
 
 type PostApiQualityResponse200ApplicationJsonModelCheckReportThresholds struct {
@@ -31244,6 +33250,19 @@ type PostApiQualityResponse200ApplicationJsonModelCheckReportThresholds struct {
 	RequireFreshCalibration *bool    `json:"requireFreshCalibration,omitempty"`
 }
 
+type PostApiQualityResponse200ApplicationJsonModelCheckReportProviderAvailability struct {
+	State            string   `json:"state"`
+	FreshCache       *bool    `json:"freshCache,omitempty"`
+	CalibrationState *string  `json:"calibrationState,omitempty"`
+	Provider         *string  `json:"provider,omitempty"`
+	Model            *string  `json:"model,omitempty"`
+	RunId            *float64 `json:"runId,omitempty"`
+	Attempted        *float64 `json:"attempted,omitempty"`
+	Succeeded        *float64 `json:"succeeded,omitempty"`
+	Failed           *float64 `json:"failed,omitempty"`
+	Source           *string  `json:"source,omitempty"`
+}
+
 type PostApiQualityResponse200ApplicationJsonModelQualityScore struct {
 	Score           float64                                                            `json:"score"`
 	Breakdown       PostApiQualityResponse200ApplicationJsonModelQualityScoreBreakdown `json:"breakdown"`
@@ -31254,12 +33273,12 @@ type PostApiQualityResponse200ApplicationJsonModelQualityScore struct {
 }
 
 type PostApiQualityResponse200ApplicationJsonModelQualityScoreBreakdown struct {
-	PassRate float64 `json:"passRate"`
-	Safety   float64 `json:"safety"`
-	Judge    float64 `json:"judge"`
-	Schema   float64 `json:"schema"`
-	Latency  float64 `json:"latency"`
-	Cost     float64 `json:"cost"`
+	PassRate float64  `json:"passRate"`
+	Safety   *float64 `json:"safety,omitempty"`
+	Judge    *float64 `json:"judge,omitempty"`
+	Schema   *float64 `json:"schema,omitempty"`
+	Latency  *float64 `json:"latency,omitempty"`
+	Cost     *float64 `json:"cost,omitempty"`
 }
 
 type PostApiRedTeamAttackCasesGenerateRequestModel struct {
@@ -32648,60 +34667,42 @@ type PostApiScorersScorerIdTestRequestModel struct {
 }
 
 type PostApiScorersScorerIdTestResponse200ApplicationJsonModel struct {
-	ResultRecord GetApiScorersScorerIdResponse200ApplicationJsonModelUsageResultsItem `json:"resultRecord"`
-	Execution    PostApiScorersScorerIdTestResponse200ApplicationJsonModelExecution   `json:"execution"`
-	Version      GetApiScorersScorerIdResponse200ApplicationJsonModelVersionsItem     `json:"version"`
-	Idempotent   bool                                                                 `json:"idempotent"`
+	ResultRecord PostApiScorersScorerIdTestResponse200ApplicationJsonModelResultRecord `json:"resultRecord"`
+	Execution    PostApiScorersScorerIdTestResponse200ApplicationJsonModelExecution    `json:"execution"`
+	Version      PostApiScorersScorerIdTestResponse200ApplicationJsonModelVersion      `json:"version"`
+	Idempotent   bool                                                                  `json:"idempotent"`
+}
+
+type PostApiScorersScorerIdTestResponse200ApplicationJsonModelResultRecord struct {
+	ArtifactId          float64              `json:"artifactId"`
+	CalibrationRunId    *string              `json:"calibrationRunId"`
+	CalibrationSetId    *string              `json:"calibrationSetId"`
+	ComparabilityStatus string               `json:"comparabilityStatus"`
+	ContentHash         string               `json:"contentHash"`
+	CostUsd             *string              `json:"costUsd"`
+	CreatedAt           string               `json:"createdAt"`
+	ErrorCode           *string              `json:"errorCode"`
+	ErrorMessage        *string              `json:"errorMessage"`
+	Evidence            map[string]JsonValue `json:"evidence"`
+	Id                  string               `json:"id"`
+	IdempotencyKey      string               `json:"idempotencyKey"`
+	LatencyMs           float64              `json:"latencyMs"`
+	Logs                []string             `json:"logs"`
+	MappingVersionId    *string              `json:"mappingVersionId"`
+	ModelCallId         *string              `json:"modelCallId"`
+	NormalizedScore     *string              `json:"normalizedScore"`
+	OrganizationId      OrganizationId       `json:"organizationId"`
+	Passed              *bool                `json:"passed"`
+	RawScore            *string              `json:"rawScore"`
+	Reasoning           *string              `json:"reasoning"`
+	ResourceId          string               `json:"resourceId"`
+	ScoreMappingId      *string              `json:"scoreMappingId"`
+	Status              string               `json:"status"`
+	Surface             string               `json:"surface"`
+	VersionId           float64              `json:"versionId"`
 }
 
 type PostApiScorersScorerIdTestResponse200ApplicationJsonModelExecution struct {
-	Status              string                                                                                   `json:"status"`
-	Result              *GetApiScorersScorerIdAlignmentRunsRunIdResponse200ApplicationJsonModelResultsItemResult `json:"result"`
-	NormalizedScore     *float64                                                                                 `json:"normalizedScore"`
-	ComparabilityStatus string                                                                                   `json:"comparabilityStatus"`
-	Logs                []string                                                                                 `json:"logs"`
-	LatencyMs           float64                                                                                  `json:"latencyMs"`
-	ModelCallId         string                                                                                   `json:"modelCallId"`
-	CostUsd             *string                                                                                  `json:"costUsd"`
-}
-
-type PostApiScorersScorerIdTestResponse200ApplicationJsonModelValue struct {
-	ResultRecord PostApiScorersScorerIdTestResponse200ApplicationJsonModelValueResultRecord `json:"resultRecord"`
-	Execution    PostApiScorersScorerIdTestResponse200ApplicationJsonModelValueExecution    `json:"execution"`
-	Version      GetApiScorersScorerIdResponse200ApplicationJsonModelVersionsItem           `json:"version"`
-	Idempotent   bool                                                                       `json:"idempotent"`
-}
-
-type PostApiScorersScorerIdTestResponse200ApplicationJsonModelValueResultRecord struct {
-	Status              string               `json:"status"`
-	Id                  string               `json:"id"`
-	CreatedAt           string               `json:"createdAt"`
-	OrganizationId      OrganizationId       `json:"organizationId"`
-	ArtifactId          float64              `json:"artifactId"`
-	VersionId           float64              `json:"versionId"`
-	ContentHash         string               `json:"contentHash"`
-	Evidence            map[string]JsonValue `json:"evidence"`
-	IdempotencyKey      string               `json:"idempotencyKey"`
-	ErrorMessage        *string              `json:"errorMessage"`
-	Passed              *bool                `json:"passed"`
-	ErrorCode           *string              `json:"errorCode"`
-	LatencyMs           float64              `json:"latencyMs"`
-	ResourceId          string               `json:"resourceId"`
-	Surface             string               `json:"surface"`
-	CostUsd             *string              `json:"costUsd"`
-	ModelCallId         *string              `json:"modelCallId"`
-	MappingVersionId    *string              `json:"mappingVersionId"`
-	Logs                []string             `json:"logs"`
-	Reasoning           *string              `json:"reasoning"`
-	RawScore            *string              `json:"rawScore"`
-	NormalizedScore     *string              `json:"normalizedScore"`
-	ComparabilityStatus string               `json:"comparabilityStatus"`
-	CalibrationSetId    *string              `json:"calibrationSetId"`
-	CalibrationRunId    *string              `json:"calibrationRunId"`
-	ScoreMappingId      *string              `json:"scoreMappingId"`
-}
-
-type PostApiScorersScorerIdTestResponse200ApplicationJsonModelValueExecution struct {
 	Status                  string                                                                                   `json:"status"`
 	Result                  *GetApiScorersScorerIdAlignmentRunsRunIdResponse200ApplicationJsonModelResultsItemResult `json:"result"`
 	Logs                    []string                                                                                 `json:"logs"`
@@ -32717,6 +34718,116 @@ type PostApiScorersScorerIdTestResponse200ApplicationJsonModelValueExecution str
 	CalibrationSetVersionId **string                                                                                 `json:"calibrationSetVersionId,omitempty"`
 	CalibrationRunId        **string                                                                                 `json:"calibrationRunId,omitempty"`
 	ScoreMappingId          **string                                                                                 `json:"scoreMappingId,omitempty"`
+	ExecutionReceipt        *PostApiScorersScorerIdTestResponse200ApplicationJsonModelExecutionExecutionReceipt      `json:"executionReceipt,omitempty"`
+}
+
+type PostApiScorersScorerIdTestResponse200ApplicationJsonModelExecutionExecutionReceipt struct {
+	SchemaVersion     float64                                                                                       `json:"schemaVersion"`
+	InputHash         string                                                                                        `json:"inputHash"`
+	IdentityHash      string                                                                                        `json:"identityHash"`
+	RootReceiptHash   string                                                                                        `json:"rootReceiptHash"`
+	Nodes             []PostApiScorersScorerIdTestResponse200ApplicationJsonModelExecutionExecutionReceiptNodesItem `json:"nodes"`
+	ExpandedNodeCount float64                                                                                       `json:"expandedNodeCount"`
+	Complete          bool                                                                                          `json:"complete"`
+	ReceiptHash       string                                                                                        `json:"receiptHash"`
+}
+
+type PostApiScorersScorerIdTestResponse200ApplicationJsonModelExecutionExecutionReceiptNodesItem struct {
+	Path                    []float64                                                                                               `json:"path"`
+	ArtifactId              float64                                                                                                 `json:"artifactId"`
+	VersionId               float64                                                                                                 `json:"versionId"`
+	ContentHash             string                                                                                                  `json:"contentHash"`
+	InputHash               string                                                                                                  `json:"inputHash"`
+	Status                  string                                                                                                  `json:"status"`
+	Output                  *GetApiScorersScorerIdAlignmentRunsRunIdResponse200ApplicationJsonModelResultsItemResult                `json:"output"`
+	OutputHash              string                                                                                                  `json:"outputHash"`
+	Identity                PostApiScorersScorerIdTestResponse200ApplicationJsonModelExecutionExecutionReceiptNodesItemIdentity     `json:"identity"`
+	IdentityHash            string                                                                                                  `json:"identityHash"`
+	CalibrationMaterialHash string                                                                                                  `json:"calibrationMaterialHash"`
+	Calibration             PostApiScorersScorerIdTestResponse200ApplicationJsonModelExecutionExecutionReceiptNodesItemCalibration  `json:"calibration"`
+	ModelCallId             *string                                                                                                 `json:"modelCallId"`
+	Gateway                 *PostApiModelGatewayRoutingProfilesIdTestResponse200ApplicationJsonModelDependencyEvidence              `json:"gateway"`
+	CodeRuntime             *PostApiScorersScorerIdTestResponse200ApplicationJsonModelExecutionExecutionReceiptNodesItemCodeRuntime `json:"codeRuntime"`
+	ChildReceiptHashes      []string                                                                                                `json:"childReceiptHashes"`
+	ReceiptHash             string                                                                                                  `json:"receiptHash"`
+}
+
+type PostApiScorersScorerIdTestResponse200ApplicationJsonModelExecutionExecutionReceiptNodesItemIdentity struct {
+	Version                     string  `json:"version"`
+	SourceType                  string  `json:"sourceType"`
+	SourceId                    float64 `json:"sourceId"`
+	Provider                    string  `json:"provider"`
+	Model                       string  `json:"model"`
+	ModelSnapshot               *string `json:"modelSnapshot"`
+	JudgeConfigHash             string  `json:"judgeConfigHash"`
+	PromptHash                  string  `json:"promptHash"`
+	RubricHash                  string  `json:"rubricHash"`
+	ParserHash                  string  `json:"parserHash"`
+	OutputSchemaHash            string  `json:"outputSchemaHash"`
+	RuntimeConfigHash           string  `json:"runtimeConfigHash"`
+	CalibrationMappingVersionId *string `json:"calibrationMappingVersionId"`
+}
+
+type PostApiScorersScorerIdTestResponse200ApplicationJsonModelExecutionExecutionReceiptNodesItemCalibration struct {
+	NormalizedScore     *float64 `json:"normalizedScore"`
+	ComparabilityStatus string   `json:"comparabilityStatus"`
+	MappingVersionId    *string  `json:"mappingVersionId"`
+}
+
+type PostApiScorersScorerIdTestResponse200ApplicationJsonModelExecutionExecutionReceiptNodesItemCodeRuntime struct {
+	SchemaVersion float64 `json:"schemaVersion"`
+	Runner        string  `json:"runner"`
+	Language      string  `json:"language"`
+	Runtime       string  `json:"runtime"`
+	Image         *string `json:"image"`
+	SeccompHash   *string `json:"seccompHash"`
+	RunnerHash    string  `json:"runnerHash"`
+	Transpiler    string  `json:"transpiler"`
+	NodeVersion   *string `json:"nodeVersion"`
+}
+
+type PostApiScorersScorerIdTestResponse200ApplicationJsonModelVersion struct {
+	VersionId        float64                                                                    `json:"versionId"`
+	ArtifactId       float64                                                                    `json:"artifactId"`
+	OrganizationId   OrganizationId                                                             `json:"organizationId"`
+	VersionNumber    float64                                                                    `json:"versionNumber"`
+	Payload          map[string]JsonValue                                                       `json:"payload"`
+	Metadata         *map[string]JsonValue                                                      `json:"metadata"`
+	CreatedBy        string                                                                     `json:"createdBy"`
+	ParentVersionId  *float64                                                                   `json:"parentVersionId"`
+	ContentHash      string                                                                     `json:"contentHash"`
+	PackageHash      *string                                                                    `json:"packageHash"`
+	PackageSignature *string                                                                    `json:"packageSignature"`
+	ReviewStatus     string                                                                     `json:"reviewStatus"`
+	ReviewRevision   float64                                                                    `json:"reviewRevision"`
+	SubmittedBy      *string                                                                    `json:"submittedBy"`
+	ApprovedBy       *string                                                                    `json:"approvedBy"`
+	Definition       PostApiScorersScorerIdTestResponse200ApplicationJsonModelVersionDefinition `json:"definition"`
+	CreatedAt        string                                                                     `json:"createdAt"`
+	SubmittedAt      *string                                                                    `json:"submittedAt"`
+	ApprovedAt       *string                                                                    `json:"approvedAt"`
+}
+
+type PostApiScorersScorerIdTestResponse200ApplicationJsonModelVersionDefinition struct {
+	Description    string                                                                                `json:"description"`
+	InputSchema    GetApiPromptsPromptIdResolveResponse200ApplicationJsonModelDefinitionInputSchema      `json:"inputSchema"`
+	OutputSchema   GetApiPromptsPromptIdResolveResponse200ApplicationJsonModelDefinitionInputSchema      `json:"outputSchema"`
+	ScoreScale     GetApiScorersScorerIdResponse200ApplicationJsonModelVersionsItemDefinitionScoreScale  `json:"scoreScale"`
+	Implementation json.RawMessage                                                                       `json:"implementation"`
+	Calibration    GetApiScorersScorerIdResponse200ApplicationJsonModelVersionsItemDefinitionCalibration `json:"calibration"`
+	Tags           []string                                                                              `json:"tags"`
+}
+
+type PostApiScorersScorerIdTestResponse200ApplicationJsonModelVersionDefinitionImplementation struct {
+	Type        string                                                                                                             `json:"type"`
+	Aggregation string                                                                                                             `json:"aggregation"`
+	Components  []GetApiScorersScorerIdResponse200ApplicationJsonModelVersionsItemDefinitionImplementationValueValueComponentsItem `json:"components"`
+}
+
+type PostApiScorersScorerIdTestResponse200ApplicationJsonModelVersionDefinitionImplementationValue struct {
+	Type     string                                                                                         `json:"type"`
+	Operator string                                                                                         `json:"operator"`
+	Config   GetApiScorersScorerIdResponse200ApplicationJsonModelVersionsItemDefinitionImplementationConfig `json:"config"`
 }
 
 type PostApiScorersScorerIdVersionsRequestModel struct {
@@ -32761,6 +34872,7 @@ type PostApiScorersScorerIdVersionsVersionIdPublishRequestModel struct {
 
 type PostApiScorersScorerIdVersionsVersionIdPublishResponse200ApplicationJsonModel struct {
 	Environment       string  `json:"environment"`
+	Authority         string  `json:"authority"`
 	VersionId         float64 `json:"versionId"`
 	Revision          float64 `json:"revision"`
 	Idempotent        bool    `json:"idempotent"`
@@ -32770,6 +34882,7 @@ type PostApiScorersScorerIdVersionsVersionIdPublishResponse200ApplicationJsonMod
 
 type PostApiScorersScorerIdVersionsVersionIdPublishResponse200ApplicationJsonModelValue struct {
 	Environment       string  `json:"environment"`
+	Authority         string  `json:"authority"`
 	VersionId         float64 `json:"versionId"`
 	ContentHash       string  `json:"contentHash"`
 	PreviousVersionId float64 `json:"previousVersionId"`
@@ -32953,7 +35066,7 @@ type PostApiTracesIdSpansResponse201ApplicationJsonModel struct {
 	Id              float64                                                         `json:"id"`
 	Name            string                                                          `json:"name"`
 	CreatedAt       string                                                          `json:"createdAt"`
-	Metadata        *GetApiTracesIdResponse200ApplicationJsonModelSpansItemMetadata `json:"metadata"`
+	Metadata        *GetApiTracesIdSpansResponse200ApplicationJsonModelItemMetadata `json:"metadata"`
 	Provider        *string                                                         `json:"provider"`
 	Model           *string                                                         `json:"model"`
 	TraceId         float64                                                         `json:"traceId"`
@@ -33363,6 +35476,26 @@ type PutApiCostsAlertsRequestModel struct {
 	MonthlyBudgetUsd **float64 `json:"monthlyBudgetUsd,omitempty"`
 }
 
+type PutApiCostsResultBudgetRequestModel struct {
+	MonthlyResultLimit float64 `json:"monthlyResultLimit"`
+	ExpectedRevision   float64 `json:"expectedRevision"`
+	Reason             string  `json:"reason"`
+}
+
+type PutApiCostsResultBudgetResponse200ApplicationJsonModel struct {
+	MonthlyResultLimit            float64 `json:"monthlyResultLimit"`
+	Revision                      float64 `json:"revision"`
+	PeriodStart                   string  `json:"periodStart"`
+	CommittedResults              float64 `json:"committedResults"`
+	ReservedResults               float64 `json:"reservedResults"`
+	RemainingResults              float64 `json:"remainingResults"`
+	Period                        string  `json:"period"`
+	EvalgateUsdPerThousandResults float64 `json:"evalgateUsdPerThousandResults"`
+	ProviderCostsIncluded         bool    `json:"providerCostsIncluded"`
+	CanManage                     bool    `json:"canManage"`
+	Enforced                      bool    `json:"enforced"`
+}
+
 type PutApiEvaluationsIdRegressionRequestModel struct {
 	TestCaseIds []float64 `json:"testCaseIds"`
 }
@@ -33423,29 +35556,30 @@ type PutApiOrganizationsRequestModel struct {
 }
 
 type PutApiSystemControlsRequestModel struct {
-	Pii               *PutApiSystemControlsRequestModelPii               `json:"pii,omitempty"`
 	ExternalProviders *PutApiSystemControlsRequestModelExternalProviders `json:"externalProviders,omitempty"`
 	Retention         *PutApiSystemControlsRequestModelRetention         `json:"retention,omitempty"`
+	Pii               *PutApiSystemControlsRequestModelPii               `json:"pii,omitempty"`
 	CostAlerts        *PutApiCostsAlertsRequestModel                     `json:"costAlerts,omitempty"`
 	AccessControl     *PutApiSystemControlsRequestModelAccessControl     `json:"accessControl,omitempty"`
+}
+
+type PutApiSystemControlsRequestModelExternalProviders struct {
+	AllowExternalLLM *bool     `json:"allowExternalLLM,omitempty"`
+	ProviderMode     *string   `json:"providerMode,omitempty"`
+	AllowedProviders *[]string `json:"allowedProviders,omitempty"`
+}
+
+type PutApiSystemControlsRequestModelRetention struct {
+	EvalData           *string   `json:"evalData,omitempty"`
+	Logs               *string   `json:"logs,omitempty"`
+	CustomEvalDataDays **float64 `json:"customEvalDataDays,omitempty"`
+	CustomLogDays      **float64 `json:"customLogDays,omitempty"`
 }
 
 type PutApiSystemControlsRequestModelPii struct {
 	ScrubMode         *string `json:"scrubMode,omitempty"`
 	AllowPIIEmbedding *bool   `json:"allowPIIEmbedding,omitempty"`
 	AllowRawStorage   *bool   `json:"allowRawStorage,omitempty"`
-}
-
-type PutApiSystemControlsRequestModelExternalProviders struct {
-	AllowedProviders *[]string `json:"allowedProviders,omitempty"`
-	AllowExternalLLM *bool     `json:"allowExternalLLM,omitempty"`
-}
-
-type PutApiSystemControlsRequestModelRetention struct {
-	Logs               *string   `json:"logs,omitempty"`
-	EvalData           *string   `json:"evalData,omitempty"`
-	CustomEvalDataDays **float64 `json:"customEvalDataDays,omitempty"`
-	CustomLogDays      **float64 `json:"customLogDays,omitempty"`
 }
 
 type PutApiSystemControlsRequestModelAccessControl struct {
@@ -33550,6 +35684,20 @@ type ResendOrganizationInvitationResponseModel struct {
 	Status    string `json:"status"`
 	SentAt    string `json:"sentAt"`
 	ExpiresAt string `json:"expiresAt"`
+}
+
+type ResultBudgetResponseModel struct {
+	MonthlyResultLimit            int64   `json:"monthlyResultLimit"`
+	Revision                      int64   `json:"revision"`
+	PeriodStart                   string  `json:"periodStart"`
+	CommittedResults              int64   `json:"committedResults"`
+	ReservedResults               int64   `json:"reservedResults"`
+	RemainingResults              int64   `json:"remainingResults"`
+	Period                        string  `json:"period"`
+	EvalgateUsdPerThousandResults float64 `json:"evalgateUsdPerThousandResults"`
+	ProviderCostsIncluded         bool    `json:"providerCostsIncluded"`
+	CanManage                     bool    `json:"canManage"`
+	Enforced                      bool    `json:"enforced"`
 }
 
 type ScoreTrajectoryAnalysisRequestModel struct {
@@ -33784,6 +35932,12 @@ type UpdateEvaluationRequestModelModelSettings struct {
 
 type UpdateOrganizationMemberRequestModel struct {
 	Role string `json:"role"`
+}
+
+type UpdateResultBudgetRequestModel struct {
+	MonthlyResultLimit int64  `json:"monthlyResultLimit"`
+	ExpectedRevision   int64  `json:"expectedRevision"`
+	Reason             string `json:"reason"`
 }
 
 type UpdateWebhookRequestModel struct {
@@ -34110,6 +36264,30 @@ func (value *GetApiAnnotationsTasksIdItemsResponse200ApplicationJsonModelItemsIt
 }
 
 // UnmarshalJSON retains explicit null separately from an omitted optional field.
+func (value *GetApiAssessmentsIdResponse200ApplicationJsonModelDecisionsItemReceiptsItem) UnmarshalJSON(data []byte) error {
+	type plain GetApiAssessmentsIdResponse200ApplicationJsonModelDecisionsItemReceiptsItem
+	decoded := plain(*value)
+	nulls, err := decodeModelJSON(data, &decoded, "policyVersion", "deploymentVersion", "proof")
+	if err != nil {
+		return err
+	}
+	if nulls["policyVersion"] {
+		var zero *string
+		decoded.PolicyVersion = &zero
+	}
+	if nulls["deploymentVersion"] {
+		var zero *string
+		decoded.DeploymentVersion = &zero
+	}
+	if nulls["proof"] {
+		var zero JsonValue
+		decoded.Proof = &zero
+	}
+	*value = GetApiAssessmentsIdResponse200ApplicationJsonModelDecisionsItemReceiptsItem(decoded)
+	return nil
+}
+
+// UnmarshalJSON retains explicit null separately from an omitted optional field.
 func (value *GetApiAuditLogsExportResponse200ApplicationJsonModelDataItemMetadata) UnmarshalJSON(data []byte) error {
 	type plain GetApiAuditLogsExportResponse200ApplicationJsonModelDataItemMetadata
 	decoded := plain(*value)
@@ -34286,6 +36464,22 @@ func (value *GetApiChangeAssessmentsIdResponse200ApplicationJsonModelComparisons
 		decoded.CandidateValue = &zero
 	}
 	*value = GetApiChangeAssessmentsIdResponse200ApplicationJsonModelComparisonsItemDimensionsItem(decoded)
+	return nil
+}
+
+// UnmarshalJSON retains explicit null separately from an omitted optional field.
+func (value *GetApiConnectionsGraphIdOperationsOperationIdResponse200ApplicationJsonModelResultDocumentsItem) UnmarshalJSON(data []byte) error {
+	type plain GetApiConnectionsGraphIdOperationsOperationIdResponse200ApplicationJsonModelResultDocumentsItem
+	decoded := plain(*value)
+	nulls, err := decodeModelJSON(data, &decoded, "score")
+	if err != nil {
+		return err
+	}
+	if nulls["score"] {
+		var zero *float64
+		decoded.Score = &zero
+	}
+	*value = GetApiConnectionsGraphIdOperationsOperationIdResponse200ApplicationJsonModelResultDocumentsItem(decoded)
 	return nil
 }
 
@@ -34722,6 +36916,22 @@ func (value *GetApiEvaluationsIdRunsResponse200ApplicationJsonModelItemRunManife
 }
 
 // UnmarshalJSON retains explicit null separately from an omitted optional field.
+func (value *GetApiEvaluationsIdRunsResponse200ApplicationJsonModelItemRunManifestDatasetCasesItemSnapshot) UnmarshalJSON(data []byte) error {
+	type plain GetApiEvaluationsIdRunsResponse200ApplicationJsonModelItemRunManifestDatasetCasesItemSnapshot
+	decoded := plain(*value)
+	nulls, err := decodeModelJSON(data, &decoded, "metadata")
+	if err != nil {
+		return err
+	}
+	if nulls["metadata"] {
+		var zero *map[string]JsonValue
+		decoded.Metadata = &zero
+	}
+	*value = GetApiEvaluationsIdRunsResponse200ApplicationJsonModelItemRunManifestDatasetCasesItemSnapshot(decoded)
+	return nil
+}
+
+// UnmarshalJSON retains explicit null separately from an omitted optional field.
 func (value *GetApiEvaluationsIdRunsResponse200ApplicationJsonModelItemRunManifestExecution) UnmarshalJSON(data []byte) error {
 	type plain GetApiEvaluationsIdRunsResponse200ApplicationJsonModelItemRunManifestExecution
 	decoded := plain(*value)
@@ -34926,6 +37136,22 @@ func (value *GetApiEvaluationsIdRunsRunIdDatasetSnapshotsResponse200ApplicationJ
 }
 
 // UnmarshalJSON retains explicit null separately from an omitted optional field.
+func (value *GetApiEvaluationsIdRunsRunIdResponse200ApplicationJsonModelResultsItemToolCallsItem) UnmarshalJSON(data []byte) error {
+	type plain GetApiEvaluationsIdRunsRunIdResponse200ApplicationJsonModelResultsItemToolCallsItem
+	decoded := plain(*value)
+	nulls, err := decodeModelJSON(data, &decoded, "success")
+	if err != nil {
+		return err
+	}
+	if nulls["success"] {
+		var zero *bool
+		decoded.Success = &zero
+	}
+	*value = GetApiEvaluationsIdRunsRunIdResponse200ApplicationJsonModelResultsItemToolCallsItem(decoded)
+	return nil
+}
+
+// UnmarshalJSON retains explicit null separately from an omitted optional field.
 func (value *GetApiEvaluationsResponse200ApplicationJsonModelTestCasesItemMetadata) UnmarshalJSON(data []byte) error {
 	type plain GetApiEvaluationsResponse200ApplicationJsonModelTestCasesItemMetadata
 	decoded := plain(*value)
@@ -34950,6 +37176,22 @@ func (value *GetApiEvaluationsResponse200ApplicationJsonModelTestCasesItemMetada
 		decoded.EvalCaseId = &zero
 	}
 	*value = GetApiEvaluationsResponse200ApplicationJsonModelTestCasesItemMetadata(decoded)
+	return nil
+}
+
+// UnmarshalJSON retains explicit null separately from an omitted optional field.
+func (value *GetApiEvaluatorValidationReleasesIdResponse200ApplicationJsonModelReleaseIdentity) UnmarshalJSON(data []byte) error {
+	type plain GetApiEvaluatorValidationReleasesIdResponse200ApplicationJsonModelReleaseIdentity
+	decoded := plain(*value)
+	nulls, err := decodeModelJSON(data, &decoded, "calibrationMappingVersionId")
+	if err != nil {
+		return err
+	}
+	if nulls["calibrationMappingVersionId"] {
+		var zero *string
+		decoded.CalibrationMappingVersionId = &zero
+	}
+	*value = GetApiEvaluatorValidationReleasesIdResponse200ApplicationJsonModelReleaseIdentity(decoded)
 	return nil
 }
 
@@ -35334,6 +37576,38 @@ func (value *GetApiPortableQualityDeliveriesDeliveryIdResponse200ApplicationJson
 }
 
 // UnmarshalJSON retains explicit null separately from an omitted optional field.
+func (value *GetApiProductionInsightsTopicsResponse200ApplicationJsonModelRanking) UnmarshalJSON(data []byte) error {
+	type plain GetApiProductionInsightsTopicsResponse200ApplicationJsonModelRanking
+	decoded := plain(*value)
+	nulls, err := decodeModelJSON(data, &decoded, "scope", "capturedUnits", "attributedUnits", "unassignedUnits", "omittedFailureReports")
+	if err != nil {
+		return err
+	}
+	if nulls["scope"] {
+		var zero any
+		decoded.Scope = &zero
+	}
+	if nulls["capturedUnits"] {
+		var zero any
+		decoded.CapturedUnits = &zero
+	}
+	if nulls["attributedUnits"] {
+		var zero any
+		decoded.AttributedUnits = &zero
+	}
+	if nulls["unassignedUnits"] {
+		var zero any
+		decoded.UnassignedUnits = &zero
+	}
+	if nulls["omittedFailureReports"] {
+		var zero any
+		decoded.OmittedFailureReports = &zero
+	}
+	*value = GetApiProductionInsightsTopicsResponse200ApplicationJsonModelRanking(decoded)
+	return nil
+}
+
+// UnmarshalJSON retains explicit null separately from an omitted optional field.
 func (value *GetApiPromptsPromptIdResolveResponse200ApplicationJsonModelDefinitionVariablesItem) UnmarshalJSON(data []byte) error {
 	type plain GetApiPromptsPromptIdResolveResponse200ApplicationJsonModelDefinitionVariablesItem
 	decoded := plain(*value)
@@ -35426,6 +37700,22 @@ func (value *GetApiRepositoryIntelligenceRepositoriesRepositoryIdGraphScenarioCa
 }
 
 // UnmarshalJSON retains explicit null separately from an omitted optional field.
+func (value *GetApiRepositoryIntelligenceRepositoriesRepositoryIdScansScanRunIdResponse200ApplicationJsonModel) UnmarshalJSON(data []byte) error {
+	type plain GetApiRepositoryIntelligenceRepositoriesRepositoryIdScansScanRunIdResponse200ApplicationJsonModel
+	decoded := plain(*value)
+	nulls, err := decodeModelJSON(data, &decoded, "binaryEvidence")
+	if err != nil {
+		return err
+	}
+	if nulls["binaryEvidence"] {
+		var zero *GetApiRepositoryIntelligenceRepositoriesRepositoryIdScansScanRunIdResponse200ApplicationJsonModelBinaryEvidence
+		decoded.BinaryEvidence = &zero
+	}
+	*value = GetApiRepositoryIntelligenceRepositoriesRepositoryIdScansScanRunIdResponse200ApplicationJsonModel(decoded)
+	return nil
+}
+
+// UnmarshalJSON retains explicit null separately from an omitted optional field.
 func (value *GetApiScorersScorerIdAlignmentRunsRunIdResponse200ApplicationJsonModelExampleSnapshotItemInput) UnmarshalJSON(data []byte) error {
 	type plain GetApiScorersScorerIdAlignmentRunsRunIdResponse200ApplicationJsonModelExampleSnapshotItemInput
 	decoded := plain(*value)
@@ -35514,6 +37804,26 @@ func (value *GetApiTracesIdResponse200ApplicationJsonModelTraceMetadata) Unmarsh
 		decoded.Score = &zero
 	}
 	*value = GetApiTracesIdResponse200ApplicationJsonModelTraceMetadata(decoded)
+	return nil
+}
+
+// UnmarshalJSON retains explicit null separately from an omitted optional field.
+func (value *GetApiTracesIdResponse200ApplicationJsonModelToolEvidenceCallsItem) UnmarshalJSON(data []byte) error {
+	type plain GetApiTracesIdResponse200ApplicationJsonModelToolEvidenceCallsItem
+	decoded := plain(*value)
+	nulls, err := decodeModelJSON(data, &decoded, "subagentId", "parallelGroup")
+	if err != nil {
+		return err
+	}
+	if nulls["subagentId"] {
+		var zero *string
+		decoded.SubagentId = &zero
+	}
+	if nulls["parallelGroup"] {
+		var zero *string
+		decoded.ParallelGroup = &zero
+	}
+	*value = GetApiTracesIdResponse200ApplicationJsonModelToolEvidenceCallsItem(decoded)
 	return nil
 }
 
@@ -35970,6 +38280,22 @@ func (value *PatchApiOnlineEvalsMonitorsIdRequestModelSampling) UnmarshalJSON(da
 		decoded.AdaptiveTargetRate = &zero
 	}
 	*value = PatchApiOnlineEvalsMonitorsIdRequestModelSampling(decoded)
+	return nil
+}
+
+// UnmarshalJSON retains explicit null separately from an omitted optional field.
+func (value *PatchApiOrganizationsIdentityPolicyRequestModel) UnmarshalJSON(data []byte) error {
+	type plain PatchApiOrganizationsIdentityPolicyRequestModel
+	decoded := plain(*value)
+	nulls, err := decodeModelJSON(data, &decoded, "recoveryAdminUserId")
+	if err != nil {
+		return err
+	}
+	if nulls["recoveryAdminUserId"] {
+		var zero *string
+		decoded.RecoveryAdminUserId = &zero
+	}
+	*value = PatchApiOrganizationsIdentityPolicyRequestModel(decoded)
 	return nil
 }
 
@@ -38458,8 +40784,8 @@ func (value *PostApiScorersScorerIdAlignmentRunsRequestModelExamplesItemInput) U
 }
 
 // UnmarshalJSON retains explicit null separately from an omitted optional field.
-func (value *PostApiScorersScorerIdTestResponse200ApplicationJsonModelValueExecution) UnmarshalJSON(data []byte) error {
-	type plain PostApiScorersScorerIdTestResponse200ApplicationJsonModelValueExecution
+func (value *PostApiScorersScorerIdTestResponse200ApplicationJsonModelExecution) UnmarshalJSON(data []byte) error {
+	type plain PostApiScorersScorerIdTestResponse200ApplicationJsonModelExecution
 	decoded := plain(*value)
 	nulls, err := decodeModelJSON(data, &decoded, "costUsd", "mappingVersionId", "calibrationSetId", "calibrationSetVersionId", "calibrationRunId", "scoreMappingId")
 	if err != nil {
@@ -38489,7 +40815,7 @@ func (value *PostApiScorersScorerIdTestResponse200ApplicationJsonModelValueExecu
 		var zero *string
 		decoded.ScoreMappingId = &zero
 	}
-	*value = PostApiScorersScorerIdTestResponse200ApplicationJsonModelValueExecution(decoded)
+	*value = PostApiScorersScorerIdTestResponse200ApplicationJsonModelExecution(decoded)
 	return nil
 }
 
